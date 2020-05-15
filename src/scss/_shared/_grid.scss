@@ -27,7 +27,6 @@ $paddingRight: $paddingLeft;
     max-width: $maxWidth;
   }
 
-
   &-fluid {
     @extend %grid;
     max-width: 100%;

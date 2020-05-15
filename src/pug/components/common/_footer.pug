@@ -1,7 +1,100 @@
 // FOOTER :: START
 
 footer#footer.footer
-	.c-grid
-		.footer__wrapper
+
+	.c-grid-fluid
+
+		.footer__wrapper.footer__wrapper-1
+			.footer__wrapper-left
+
+				p.c-label CONTACT
+				p.footer__title.c-title!= "Let’s discuss your<br>future project"
+
+				.footer__row
+					.footer__col.footer__col-1
+						p.footer__heading Morocco
+						p.footer__heading.footer__heading--light Rabat
+
+						.footer__details
+							.footer__details-wrapper
+								p.footer__details-title Telephone
+								a.footer__details-description(href="tel:212620306744") +212-6 2030 - 6744
+							.footer__details-wrapper
+								p.footer__details-title E-mail
+								a.footer__details-description(href='mailto:hello@bloomtec.com') hello@bloomtec.com
+							.footer__details-wrapper
+								p.footer__details-title Address
+								p.footer__details-description Broadway #101A, Vancouver, BC V6H 1E3, Canada
+
+					.footer__col.footer__col-2
+						p.footer__heading BloomTec
+
+						.footer__line
+
+						ul.footer__nav
+							li.footer__nav-item
+								a.footer__nav-link(href="#") About US
+							li.footer__nav-item
+								a.footer__nav-link(href="#") Portfolio
+							li.footer__nav-item
+								a.footer__nav-link(href="#") Services
+							li.footer__nav-item
+								a.footer__nav-link(href="#" footer-link-js)
+									span Legals
+									+iconSVG('corner')
+								.footer__nav-link-wrapper(footer-wrapper-js)
+									a.footer__nav-link.footer__nav-link--inner(href="#") Terms and Conditions
+									a.footer__nav-link.footer__nav-link--inner(href="#") Privacy Policy
+									a.footer__nav-link.footer__nav-link--inner(href="#") Cookies Policy
+
+			.footer__wrapper-right
+
+				p.footer__subtitle Let’s talk :)
+
+				form.footer__form(action='' method='' autocomplete='off')
+					.footer__form-field
+						input.footer__form-input(type='text' name='let-from-name' id='let-from-name' required input-js)
+						label.footer__form-label(for='let-from-name') name
+					.footer__form-field
+						input.footer__form-input(type='tel' name='let-from-tel' id='let-from-tel' required input-js)
+						label.footer__form-label(for='let-from-tel') Telephone
+					.footer__form-field
+						input.footer__form-input(type='email' name='let-from-email' id='let-from-email' required input-js)
+						label.footer__form-label(for='let-from-email') E-mail
+					.footer__form-field
+						input.footer__form-input(type='text' name='let-from-question' id='let-from-question' required input-js)
+						label.footer__form-label(for='let-from-question') Your question
+					.footer__form-field
+						button.footer__form-btn(type='submit')
+							span Discuss a project
+							+iconSVG('arrow-right')
+					.footer__form-field
+
+						.c-checkbox.c-checkbox--footer
+							input.c-checkbox__input(type='checkbox' name='' id='read-terms')
+							label.c-checkbox__label(for='read-terms')
+								i
+									+iconSVG('checkmark')
+								span!= "I have read and agreed to the <a href='#'>Terms and Conditions</a>"
+
+		.footer__wrapper.footer__wrapper-2
+			.footer__wrapper-left
+
+				.footer__sitemap
+					.footer__sitemap-line
+					p.footer__sitemap-text SITEMAP
+					+iconSVG('arrow-right')
+
+			.footer__wrapper-middle
+
+				.copyright
+					p.copyright__text © Bloomtec 2020. All rights reserved.
+
+			.footer__wrapper-right
+
+				a.top(href="#")
+					span.top__text Top
+					+iconSVG('top-arrow')
+
 
 // FOOTER :: END

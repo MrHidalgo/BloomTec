@@ -42,7 +42,31 @@ var initPreventBehavior = function initPreventBehavior() {
  * =============================================
  * CALLBACK :: start
  * ============================================= */
+	var footerLinkToggle = function footerLinkToggle() {
+		$('[footer-link-js]').on('click', function (ev) {
+			$(ev.currentTarget).toggleClass('is-active');
+			$(ev.currentTarget).siblings('[footer-wrapper-js]').slideToggle(350).css({ display: 'flex' });
+		});
+	};
 
+	var inputFocusAnimate = function inputFocusAnimate() {
+		var inputElem = $("[input-js]");
+
+		inputElem.on("focus", function (e) {
+			var curElem = $(e.target);
+
+			curElem.closest(".footer__form-field").addClass("is-focus");
+		});
+
+		inputElem.on("blur", function (e) {
+			var curElem = $(e.target),
+			    curElemVal = curElem.val().trim();
+
+			if (curElemVal === "") {
+				curElem.closest(".footer__form-field").removeClass("is-focus");
+			}
+		});
+	};
 	/*
  * CALLBACK :: end
  * ============================================= */
@@ -61,6 +85,8 @@ var initPreventBehavior = function initPreventBehavior() {
 		// ==========================================
 
 		// callback
+		footerLinkToggle();
+		inputFocusAnimate();
 		// ==========================================
 	};
 	initNative();

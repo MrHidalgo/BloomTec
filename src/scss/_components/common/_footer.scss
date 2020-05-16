@@ -16,9 +16,8 @@
 		background-color: $c-white;
 	}
 
-	.c-grid-fluid {
-		padding-left: 135px;
-		padding-right: 135px;
+	.c-grid {
+		max-width: 1680px;
 	}
 
 	&__wrapper {

@@ -1,0 +1,55 @@
+// SECTION :: START
+
+.clients {
+	z-index: 3;
+	position: relative;
+	padding-top: 168px;
+	background-color: $c-black;
+
+	&__wrapper {
+		padding-left: 63px;
+	}
+
+	&__title {
+		padding-bottom: 114px;
+	}
+
+	&__box {
+		&-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			max-width: 958px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 146px;
+
+			> div {
+				width: 100%;
+				max-width: calc(100% / 4);
+				padding-bottom: 83px;
+			}
+		}
+	}
+
+	&__block {
+		position: relative;
+		transform: translateY(50%);
+		width: 100%;
+		max-width: 1088px;
+		min-height: 197px;
+		padding: 54px 0 55px 138px;
+		background-color: #0e65f3;
+
+		&-text {
+			width: 100%;
+			max-width: 561px;
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 30px;
+			color: #fff;
+		}
+	}
+}
+
+// SECTION :: END

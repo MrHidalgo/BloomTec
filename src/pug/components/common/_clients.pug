@@ -1,0 +1,22 @@
+// SECTION :: START
+
+section#clients.clients
+	.c-grid
+
+		p.clients__label.c-label
+			span.c-label__line
+			span OUR CLIENTS
+
+		.clients__wrapper
+
+			p.clients__title.c-title!= "We are trusted, we are known,<br>we are valued"
+
+			.clients__box-wrapper
+				-for(let idx = 1; idx < 13; idx++)
+					div
+						img.clients__box-img(src="img/img-clients-" + idx + ".png" srcset="img/img-clients-" + idx + "@2x.png 2x" alt="")
+
+		.clients__block
+			p.clients__block-text We offer exactly what you need. There are a lot of ideas, but there is only one solution - the most effective one.
+
+// SECTION :: END

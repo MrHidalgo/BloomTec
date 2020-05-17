@@ -1,0 +1,47 @@
+// SECTION :: START
+
+.mission {
+	padding-bottom: 173px;
+	background-color: #000000;
+
+	&__wrapper {
+		display: flex;
+
+		&-left {
+			width: 100%;
+			max-width: 398px;
+		}
+
+		&-right {
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+			padding-top: 91px;
+			padding-left: 154px;
+		}
+	}
+
+	&__img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+
+	&__title {
+		padding-bottom: 71px;
+	}
+
+	&__desc {
+		width: 100%;
+		max-width: 775px;
+		font-size: 24px;
+		line-height: 38px;
+		color: #fff;
+
+		&:not(:last-of-type) {
+			padding-bottom: 40px;
+		}
+	}
+}
+
+// SECTION :: END

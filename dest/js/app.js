@@ -87,6 +87,12 @@ var initSwiper = function initSwiper() {
 			}
 		});
 	};
+
+	var menuToggle = function menuToggle() {
+		$('[menu-toggle-js]').on('click', function (ev) {
+			$('#menu').toggle();
+		});
+	};
 	/*
  * CALLBACK :: end
  * ============================================= */
@@ -108,6 +114,7 @@ var initSwiper = function initSwiper() {
 		// callback
 		footerLinkToggle();
 		inputFocusAnimate();
+		menuToggle();
 		// ==========================================
 	};
 	initNative();

@@ -551,6 +551,11 @@ picture {
   color: #000;
 }
 
+/* line 12, src/scss/_macros/_title.scss */
+.c-title.c-title--blue {
+  color: #0E65F3;
+}
+
 /* line 3, src/scss/_macros/_label.scss */
 .c-label {
   display: -webkit-box;
@@ -1174,6 +1179,286 @@ picture {
   stroke: #0E65F3;
 }
 
+/* line 3, src/scss/_components/common/_menu.scss */
+.menu {
+  z-index: 1010;
+  position: fixed;
+  display: none;
+  top: 170px;
+  left: 0;
+  width: 100%;
+  height: -webkit-calc(100vh - 170px);
+  height: calc(100vh - 170px);
+}
+
+/* line 12, src/scss/_components/common/_menu.scss */
+.menu__btn {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-calc(100% / 4);
+  width: calc(100% / 4);
+  height: 50%;
+  padding: 30px;
+  background-color: #0e65f3;
+}
+
+/* line 25, src/scss/_components/common/_menu.scss */
+.menu__btn-1:before, .menu__btn-1:after, .menu__btn-2:before, .menu__btn-2:after, .menu__btn-3:before, .menu__btn-3:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #0b59d8;
+}
+
+/* line 34, src/scss/_components/common/_menu.scss */
+.menu__btn-1:before, .menu__btn-2:before, .menu__btn-3:before {
+  width: 103px;
+  height: 2px;
+}
+
+/* line 38, src/scss/_components/common/_menu.scss */
+.menu__btn-1:after, .menu__btn-2:after, .menu__btn-3:after {
+  width: 2px;
+  height: 103px;
+}
+
+/* line 47, src/scss/_components/common/_menu.scss */
+.menu__btn-6:before, .menu__btn-6:after, .menu__btn-7:before, .menu__btn-7:after, .menu__btn-8:before, .menu__btn-8:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  background-color: #0b59d8;
+}
+
+/* line 55, src/scss/_components/common/_menu.scss */
+.menu__btn-6:before, .menu__btn-7:before, .menu__btn-8:before {
+  top: -2px;
+  left: 0;
+  width: 103px;
+  height: 2px;
+}
+
+/* line 61, src/scss/_components/common/_menu.scss */
+.menu__btn-6:after, .menu__btn-7:after, .menu__btn-8:after {
+  top: 0;
+  width: 2px;
+  height: 103px;
+}
+
+/* line 68, src/scss/_components/common/_menu.scss */
+.menu__btn-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 75, src/scss/_components/common/_menu.scss */
+.menu__btn-num {
+  padding-bottom: 13px;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 28px;
+  color: #fff;
+}
+
+/* line 83, src/scss/_components/common/_menu.scss */
+.menu__btn-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 87, src/scss/_components/common/_menu.scss */
+.menu__btn-title span {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+}
+
+/* line 3, src/scss/_components/common/_services.scss */
+.services {
+  position: relative;
+  padding-top: 33px;
+}
+
+/* line 7, src/scss/_components/common/_services.scss */
+.services__bg {
+  z-index: 0;
+  position: absolute;
+  top: 33px;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: -webkit-calc(100% - 33px);
+  height: calc(100% - 33px);
+}
+
+/* line 17, src/scss/_components/common/_services.scss */
+.services__bg-line {
+  width: 1px;
+  height: 100%;
+  background-color: #8E8E8E;
+}
+
+/* line 24, src/scss/_components/common/_services.scss */
+.services__wrapper {
+  position: relative;
+}
+
+/* line 28, src/scss/_components/common/_services.scss */
+.services__content {
+  z-index: 2;
+  position: relative;
+  padding-bottom: 103px;
+}
+
+/* line 34, src/scss/_components/common/_services.scss */
+.services__title {
+  padding-left: 63px;
+  padding-bottom: 82px;
+}
+
+/* line 39, src/scss/_components/common/_services.scss */
+.services__box {
+  width: 100%;
+  max-width: 395px;
+  padding-left: 30px;
+}
+
+/* line 44, src/scss/_components/common/_services.scss */
+.services__box-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+/* line 48, src/scss/_components/common/_services.scss */
+.services__box-wrapper > div {
+  width: 100%;
+  max-width: -webkit-calc(100% / 3);
+  max-width: calc(100% / 3);
+  padding-bottom: 73px;
+}
+
+/* line 55, src/scss/_components/common/_services.scss */
+.services__box-num {
+  padding-bottom: 13px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000;
+}
+
+/* line 62, src/scss/_components/common/_services.scss */
+.services__box-title {
+  padding-bottom: 32px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+}
+
+/* line 70, src/scss/_components/common/_services.scss */
+.services__box-desc {
+  padding-bottom: 32px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000;
+}
+
+/* line 77, src/scss/_components/common/_services.scss */
+.services__box-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 61px;
+  padding-left: 31px;
+}
+
+/* line 85, src/scss/_components/common/_services.scss */
+.services__box-btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #0e65f3;
+}
+
+/* line 95, src/scss/_components/common/_services.scss */
+.services__box-btn-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+/* line 100, src/scss/_components/common/_services.scss */
+.services__box-btn span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  letter-spacing: 0.09em;
+  line-height: 42px;
+  color: #000;
+}
+
+/* line 109, src/scss/_components/common/_services.scss */
+.services__box-btn svg {
+  margin-left: 35px;
+  stroke: #0e65f3;
+}
+
 /* line 3, src/scss/_components/common/_request.scss */
 .request {
   z-index: 4;
@@ -1502,165 +1787,6 @@ picture {
   color: #fff;
 }
 
-/* line 3, src/scss/_components/homepage/_services.scss */
-.services {
-  position: relative;
-  padding-top: 33px;
-}
-
-/* line 7, src/scss/_components/homepage/_services.scss */
-.services__bg {
-  z-index: 0;
-  position: absolute;
-  top: 33px;
-  left: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  height: -webkit-calc(100% - 33px);
-  height: calc(100% - 33px);
-}
-
-/* line 17, src/scss/_components/homepage/_services.scss */
-.services__bg-line {
-  width: 1px;
-  height: 100%;
-  background-color: #8E8E8E;
-}
-
-/* line 24, src/scss/_components/homepage/_services.scss */
-.services__wrapper {
-  position: relative;
-}
-
-/* line 28, src/scss/_components/homepage/_services.scss */
-.services__content {
-  z-index: 2;
-  position: relative;
-  padding-bottom: 103px;
-}
-
-/* line 34, src/scss/_components/homepage/_services.scss */
-.services__title {
-  padding-left: 63px;
-  padding-bottom: 82px;
-}
-
-/* line 39, src/scss/_components/homepage/_services.scss */
-.services__box {
-  width: 100%;
-  max-width: 395px;
-  padding-left: 30px;
-}
-
-/* line 44, src/scss/_components/homepage/_services.scss */
-.services__box-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-}
-
-/* line 48, src/scss/_components/homepage/_services.scss */
-.services__box-wrapper > div {
-  width: 100%;
-  max-width: -webkit-calc(100% / 3);
-  max-width: calc(100% / 3);
-  padding-bottom: 73px;
-}
-
-/* line 55, src/scss/_components/homepage/_services.scss */
-.services__box-num {
-  padding-bottom: 13px;
-  font-size: 16px;
-  line-height: 28px;
-  color: #000;
-}
-
-/* line 62, src/scss/_components/homepage/_services.scss */
-.services__box-title {
-  padding-bottom: 32px;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
-  color: #000;
-}
-
-/* line 70, src/scss/_components/homepage/_services.scss */
-.services__box-desc {
-  padding-bottom: 32px;
-  font-size: 18px;
-  line-height: 28px;
-  color: #000;
-}
-
-/* line 77, src/scss/_components/homepage/_services.scss */
-.services__box-btn {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 61px;
-  padding-left: 31px;
-}
-
-/* line 85, src/scss/_components/homepage/_services.scss */
-.services__box-btn:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 100%;
-  background-color: #0e65f3;
-}
-
-/* line 95, src/scss/_components/homepage/_services.scss */
-.services__box-btn-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-/* line 100, src/scss/_components/homepage/_services.scss */
-.services__box-btn span {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 21px;
-  letter-spacing: 0.09em;
-  line-height: 42px;
-  color: #000;
-}
-
-/* line 109, src/scss/_components/homepage/_services.scss */
-.services__box-btn svg {
-  margin-left: 35px;
-  stroke: #0e65f3;
-}
-
 /* line 3, src/scss/_components/homepage/_portfolio.scss */
 .portfolio {
   background-color: #000;
@@ -1943,6 +2069,177 @@ picture {
 .do__btn svg {
   margin-left: 35px;
   stroke: #0e65f3;
+}
+
+/* line 3, src/scss/_components/abouts/_mission.scss */
+.mission {
+  padding-bottom: 173px;
+  background-color: #000000;
+}
+
+/* line 7, src/scss/_components/abouts/_mission.scss */
+.mission__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 10, src/scss/_components/abouts/_mission.scss */
+.mission__wrapper-left {
+  width: 100%;
+  max-width: 398px;
+}
+
+/* line 15, src/scss/_components/abouts/_mission.scss */
+.mission__wrapper-right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-top: 91px;
+  padding-left: 154px;
+}
+
+/* line 24, src/scss/_components/abouts/_mission.scss */
+.mission__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 30, src/scss/_components/abouts/_mission.scss */
+.mission__title {
+  padding-bottom: 71px;
+}
+
+/* line 34, src/scss/_components/abouts/_mission.scss */
+.mission__desc {
+  width: 100%;
+  max-width: 775px;
+  font-size: 24px;
+  line-height: 38px;
+  color: #fff;
+}
+
+/* line 41, src/scss/_components/abouts/_mission.scss */
+.mission__desc:not(:last-of-type) {
+  padding-bottom: 40px;
+}
+
+/* line 3, src/scss/_components/abouts/_roadmap.scss */
+.roadmap {
+  padding-top: 175px;
+  padding-bottom: 240px;
+}
+
+/* line 7, src/scss/_components/abouts/_roadmap.scss */
+.roadmap__wrapper {
+  padding-left: 63px;
+}
+
+/* line 11, src/scss/_components/abouts/_roadmap.scss */
+.roadmap__title {
+  padding-bottom: 71px;
+}
+
+/* line 15, src/scss/_components/abouts/_roadmap.scss */
+.roadmap__desc {
+  width: 100%;
+  max-width: 950px;
+  padding-bottom: 92px;
+  font-size: 24px;
+  line-height: 38px;
+  color: #000;
+}
+
+/* line 24, src/scss/_components/abouts/_roadmap.scss */
+.roadmap__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 28px;
+}
+
+/* line 33, src/scss/_components/abouts/_roadmap.scss */
+.roadmap__box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding-right: 86px;
+}
+
+/* line 40, src/scss/_components/abouts/_roadmap.scss */
+.roadmap__box-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 43, src/scss/_components/abouts/_roadmap.scss */
+.roadmap__box-wrapper > div {
+  width: 100%;
+  max-width: -webkit-calc(100% / 5);
+  max-width: calc(100% / 5);
+}
+
+/* line 49, src/scss/_components/abouts/_roadmap.scss */
+.roadmap__box-head {
+  padding-bottom: 32px;
+}
+
+/* line 53, src/scss/_components/abouts/_roadmap.scss */
+.roadmap__box-body {
+  position: relative;
+  padding-left: 45px;
+}
+
+/* line 57, src/scss/_components/abouts/_roadmap.scss */
+.roadmap__box-body:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 9px;
+  height: 53px;
+  background-color: #0e65f3;
+}
+
+/* line 68, src/scss/_components/abouts/_roadmap.scss */
+.roadmap__box-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+}
+
+/* line 75, src/scss/_components/abouts/_roadmap.scss */
+.roadmap__box-title span {
+  color: #0e65f3;
+}
+
+/* line 80, src/scss/_components/abouts/_roadmap.scss */
+.roadmap__box-desc {
+  font-size: 18px;
+  line-height: 31px;
+  color: #8e8e8e;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

@@ -32,6 +32,13 @@
 			}
 		});
 	};
+
+
+	const menuToggle = () => {
+		$('[menu-toggle-js]').on('click', (ev) => {
+			$('#menu').toggle();
+		});
+	};
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -54,6 +61,7 @@
 		// callback
 		footerLinkToggle();
 		inputFocusAnimate();
+		menuToggle();
 		// ==========================================
 	};
 	initNative();

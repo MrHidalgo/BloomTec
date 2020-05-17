@@ -1,5 +1,30 @@
 // COMMON :: START
 
+.social {
+	display: flex;
+	flex-direction: column;
+
+	&__item {
+		display: flex;
+	}
+
+	&__title,
+	&__desc,
+	&__link {
+		font-size: 15px;
+		line-height: 21px;
+	}
+
+	&__title,
+	&__desc {
+		color: #8e8e8e;
+	}
+
+	&__link {
+		color: #000;
+	}
+}
+
 .copyright {
 	&__text {
 		text-transform: uppercase;

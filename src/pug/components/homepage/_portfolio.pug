@@ -1,0 +1,47 @@
+// SECTION :: START
+
+section#portfolio.portfolio
+
+	.c-grid
+
+		.portfolio__wrapper
+
+			.portfolio__bg
+				.portfolio__bg-line
+				.portfolio__bg-line
+				.portfolio__bg-line
+				.portfolio__bg-line
+
+			.portfolio__content
+				.portfolio__content-left
+
+					p.portfolio__label.c-label
+						span.c-label__line
+						span Portfolio
+
+					p.portfolio__title.c-title Our best projects
+
+					.portfolio__btn-wrapper
+						a.portfolio__btn(href="#")
+							span Go to the pagE
+							+iconSVG('arrow-right')
+
+				.portfolio__content-right
+
+					.portfolio__slider
+
+						mixin swiperContent()
+							.swiper-slide.swiper-slide-1
+								img(src="img/img-portfolio-1.jpg" srcset="img/img-portfolio-1@2x.jpg 2x" alt="")
+							.swiper-slide.swiper-slide-2
+								img(src="img/img-portfolio-2.jpg" srcset="img/img-portfolio-2@2x.jpg 2x" alt="")
+							.swiper-slide.swiper-slide-3
+								img(src="img/img-portfolio-3.jpg" srcset="img/img-portfolio-3@2x.jpg 2x" alt="")
+							.swiper-slide.swiper-slide-1
+								img(src="img/img-portfolio-1.jpg" srcset="img/img-portfolio-1@2x.jpg 2x" alt="")
+							.swiper-slide.swiper-slide-2
+								img(src="img/img-portfolio-2.jpg" srcset="img/img-portfolio-2@2x.jpg 2x" alt="")
+
+						+swiper('portfolioSlider', 'swiperContent', true, false, false)
+
+// SECTION :: END

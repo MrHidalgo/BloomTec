@@ -35,6 +35,26 @@ var initPreventBehavior = function initPreventBehavior() {
 };
 
 /**
+ * @name initSwiper
+ *
+ * @description initialize Swiper
+ */
+var initSwiper = function initSwiper() {
+
+	var portfolioSlider = new Swiper('.portfolioSlider', {
+		freeMode: false,
+		effect: 'slide', // "slide", "fade", "cube", "coverflow" or "flip"
+		speed: 750,
+		slidesPerView: 'auto',
+		spaceBetween: 0,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true
+		}
+	});
+};
+
+/**
  * @description Document DOM ready.
  */
 (function () {
@@ -82,6 +102,7 @@ var initPreventBehavior = function initPreventBehavior() {
 		// ==========================================
 
 		// lib
+		initSwiper();
 		// ==========================================
 
 		// callback

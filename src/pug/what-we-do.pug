@@ -5,8 +5,14 @@ pageClassName: p-whatWeDo
 ---
 extends shared/_layout
 
+block header
+	include components/common/_header--light
+
 block content
 	div.body.body--start(class!= pageClassName)
+
+		include components/what-we-do/_main
+		include components/what-we-do/_relationships
 
 		include components/common/_services
 		include components/common/_clients

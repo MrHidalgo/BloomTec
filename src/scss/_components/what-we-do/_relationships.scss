@@ -1,0 +1,36 @@
+// SECTION :: START
+
+.relationships {
+	padding-top: 244px;
+	background-color: $c-black;
+
+	&__wrapper {
+		position: relative;
+		padding-left: 63px;
+		padding-bottom: 156px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 1px;
+			height: 100%;
+			background-color: #0e65f3;
+		}
+	}
+
+	&__title {
+		padding-bottom: 88px;
+	}
+
+	&__desc {
+		width: 100%;
+		max-width: 812px;
+		font-size: 24px;
+		line-height: 38px;
+		color: #fff;
+	}
+}
+
+// SECTION :: END

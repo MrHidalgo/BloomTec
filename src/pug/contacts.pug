@@ -5,5 +5,11 @@ pageClassName: p-contacts
 ---
 extends shared/_layout
 
+block header
+	include components/common/_header--light
+
 block content
 	div.body.body--start(class!= pageClassName)
+
+		include components/contacts/_main
+		include components/contacts/_forms

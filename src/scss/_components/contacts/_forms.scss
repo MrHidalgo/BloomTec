@@ -1,0 +1,128 @@
+// SECTION :: START
+
+.forms {
+	padding-top: 43px;
+	background-color: $c-black;
+
+	&__wrapper {
+		padding-left: 63px;
+	}
+
+	&__desc {
+		width: 100%;
+		max-width: 812px;
+		padding-bottom: 67px;
+		font-size: 24px;
+		line-height: 38px;
+		color: #fff;
+	}
+
+	&__form {
+		position: relative;
+		width: 100%;
+		max-width: 1376px;
+		padding-left: 75px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 1px;
+			height: 100%;
+			background-color: #0E65F3;
+		}
+
+		&-field {
+			display: flex;
+			align-items: center;
+			padding-bottom: 36px;
+
+			&--textarea {
+				align-items: flex-start;
+				padding-bottom: 53px;
+			}
+
+			&--btn {
+				padding-bottom: 201px;
+			}
+		}
+
+		&-text {
+			font-weight: bold;
+			font-size: 35px;
+			color: #fff;
+		}
+
+		&-input,
+		&-textarea {
+			appearance: none;
+			outline: none;
+			width: 398px;
+			height: 75px;
+			padding: 0 30px;
+			border: none;
+			box-shadow: none;
+			border-radius: 0;
+			background-color: #2b2b2b;
+			margin-left: 30px;
+			margin-right: 30px;
+			font-size: 25px;
+			color: #fff;
+			@include inputPlaceholder {
+				font-size: 25px;
+				color: #8e8e8e;
+			}
+		}
+
+		&-textarea {
+			resize: none;
+			width: 100%;
+			max-width: 805px;
+			height: 302px;
+			margin-right: 0;
+			padding: 25px 30px;
+		}
+
+		&-btn {
+			outline: none;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 305px;
+			height: 123px;
+			border: none;
+			box-shadow: none;
+			border-radius: 0;
+			margin-left: auto;
+			background-color: #0E65F3;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 21px;
+			letter-spacing: 0.09em;
+			line-height: 42px;
+			color: #fff;
+		}
+	}
+
+	&__block {
+		position: relative;
+		width: 100%;
+		max-width: 1088px;
+		min-height: 197px;
+		padding: 55px 55px 55px 138px;
+		background-color: #0E65F3;
+
+		&-text {
+			width: 100%;
+			max-width: 561px;
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 30px;
+			color: #fff;
+		}
+	}
+}
+
+// SECTION :: END

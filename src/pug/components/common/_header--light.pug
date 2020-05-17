@@ -33,13 +33,13 @@ header#header.header.header--light
 							li.header__nav-item
 								a.header__nav-link(href="#") HOME
 							li.header__nav-item
-								a.header__nav-link(href="#") About US
+								a.header__nav-link(href="#" class!= (pageClassName === 'p-abouts')?"is-active":"") About US
 							li.header__nav-item
 								a.header__nav-link(href="#") Portfolio
 							li.header__nav-item
-								a.header__nav-link(href="#") Services
+								a.header__nav-link(href="#" class!= (pageClassName === 'p-whatWeDo')?"is-active":"") Services
 							li.header__nav-item
-								a.header__nav-link(href="#") Contact
+								a.header__nav-link(href="#" class!= (pageClassName === 'p-contacts')?"is-active":"") Contact
 
 					.header__nav-right
 						a.header__btn(href="#" menu-toggle-js) GET ESTIMATION

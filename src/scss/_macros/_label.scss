@@ -5,6 +5,18 @@
 	align-items: center;
 	padding-bottom: 23px;
 
+	&.c-label--dark {
+		.c-label {
+			&__line {
+				background-color: $c-black;
+			}
+		}
+
+		span {
+			color: $c-black;
+		}
+	}
+
 	&__line {
 		width: 53px;
 		height: 2px;

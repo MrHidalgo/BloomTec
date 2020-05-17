@@ -1,4 +1,17 @@
 @charset "UTF-8";
+/* line 14, src/scss/_utilities/_extend.scss */
+.about__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 /* line 1, src/scss/_generated/_spriteSVG.scss */
 .icon-arrow-right {
   width: 16px;
@@ -475,6 +488,11 @@ picture {
   color: #fff;
 }
 
+/* line 9, src/scss/_macros/_title.scss */
+.c-title.c-title--dark {
+  color: #000;
+}
+
 /* line 3, src/scss/_macros/_label.scss */
 .c-label {
   display: -webkit-box;
@@ -488,7 +506,17 @@ picture {
   padding-bottom: 23px;
 }
 
-/* line 8, src/scss/_macros/_label.scss */
+/* line 10, src/scss/_macros/_label.scss */
+.c-label.c-label--dark .c-label__line {
+  background-color: #000;
+}
+
+/* line 15, src/scss/_macros/_label.scss */
+.c-label.c-label--dark span {
+  color: #000;
+}
+
+/* line 20, src/scss/_macros/_label.scss */
 .c-label__line {
   width: 53px;
   height: 2px;
@@ -496,7 +524,7 @@ picture {
   background-color: #fff;
 }
 
-/* line 15, src/scss/_macros/_label.scss */
+/* line 27, src/scss/_macros/_label.scss */
 .c-label span {
   text-transform: uppercase;
   font-weight: bold;
@@ -1157,6 +1185,251 @@ picture {
   font-size: 24px;
   line-height: 30px;
   color: #fff;
+}
+
+/* line 3, src/scss/_components/homepage/_about.scss */
+.about {
+  padding-top: 75px;
+  padding-bottom: 40px;
+}
+
+/* line 7, src/scss/_components/homepage/_about.scss */
+.about__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 63px;
+}
+
+/* line 13, src/scss/_components/homepage/_about.scss */
+.about__wrapper-1 .about__wrapper-left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 18, src/scss/_components/homepage/_about.scss */
+.about__wrapper-1 .about__wrapper-right {
+  width: 100%;
+  max-width: 812px;
+}
+
+/* line 27, src/scss/_components/homepage/_about.scss */
+.about__wrapper-2 .about__wrapper-left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 32, src/scss/_components/homepage/_about.scss */
+.about__wrapper-2 .about__wrapper-right {
+  width: 100%;
+  max-width: 1088px;
+}
+
+/* line 40, src/scss/_components/homepage/_about.scss */
+.about__title {
+  padding-bottom: 24px;
+}
+
+/* line 44, src/scss/_components/homepage/_about.scss */
+.about__desc {
+  width: 100%;
+  max-width: 562px;
+  font-size: 24px;
+  line-height: 38px;
+  color: #8e8e8e;
+}
+
+/* line 52, src/scss/_components/homepage/_about.scss */
+.about__img {
+  position: relative;
+  width: 100%;
+  height: 827px;
+}
+
+/* line 62, src/scss/_components/homepage/_about.scss */
+.about__block {
+  width: 100%;
+  min-height: 197px;
+  padding: 54px 54px 54px 138px;
+  background-color: #0e65f3;
+}
+
+/* line 68, src/scss/_components/homepage/_about.scss */
+.about__block-text {
+  width: 100%;
+  max-width: 380px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+}
+
+/* line 3, src/scss/_components/homepage/_services.scss */
+.services {
+  position: relative;
+  padding-top: 33px;
+}
+
+/* line 7, src/scss/_components/homepage/_services.scss */
+.services__bg {
+  z-index: 0;
+  position: absolute;
+  top: 33px;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: -webkit-calc(100% - 33px);
+  height: calc(100% - 33px);
+}
+
+/* line 17, src/scss/_components/homepage/_services.scss */
+.services__bg-line {
+  width: 1px;
+  height: 100%;
+  background-color: #8E8E8E;
+}
+
+/* line 24, src/scss/_components/homepage/_services.scss */
+.services__wrapper {
+  position: relative;
+}
+
+/* line 28, src/scss/_components/homepage/_services.scss */
+.services__content {
+  z-index: 2;
+  position: relative;
+  padding-bottom: 103px;
+}
+
+/* line 34, src/scss/_components/homepage/_services.scss */
+.services__title {
+  padding-left: 63px;
+  padding-bottom: 82px;
+}
+
+/* line 39, src/scss/_components/homepage/_services.scss */
+.services__box {
+  width: 100%;
+  max-width: 395px;
+  padding-left: 30px;
+}
+
+/* line 44, src/scss/_components/homepage/_services.scss */
+.services__box-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+/* line 48, src/scss/_components/homepage/_services.scss */
+.services__box-wrapper > div {
+  width: 100%;
+  max-width: -webkit-calc(100% / 3);
+  max-width: calc(100% / 3);
+  padding-bottom: 73px;
+}
+
+/* line 55, src/scss/_components/homepage/_services.scss */
+.services__box-num {
+  padding-bottom: 13px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000;
+}
+
+/* line 62, src/scss/_components/homepage/_services.scss */
+.services__box-title {
+  padding-bottom: 32px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+}
+
+/* line 70, src/scss/_components/homepage/_services.scss */
+.services__box-desc {
+  padding-bottom: 32px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000;
+}
+
+/* line 77, src/scss/_components/homepage/_services.scss */
+.services__box-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 61px;
+  padding-left: 31px;
+}
+
+/* line 85, src/scss/_components/homepage/_services.scss */
+.services__box-btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #0e65f3;
+}
+
+/* line 95, src/scss/_components/homepage/_services.scss */
+.services__box-btn-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+/* line 100, src/scss/_components/homepage/_services.scss */
+.services__box-btn span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  letter-spacing: 0.09em;
+  line-height: 42px;
+  color: #000;
+}
+
+/* line 109, src/scss/_components/homepage/_services.scss */
+.services__box-btn svg {
+  margin-left: 35px;
+  stroke: #0e65f3;
 }
 
 /* line 3, src/scss/_components/homepage/_portfolio.scss */

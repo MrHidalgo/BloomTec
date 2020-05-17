@@ -1,0 +1,80 @@
+// SECTION :: START
+
+-
+	const arrServices = [
+		{
+			num: '01',
+			title: 'Brand<br>Marketing',
+			description: 'We help businesses construct their identity and develop a tailored and concise brand strategy that will appeal to your target audience.',
+		},
+		{
+			num: '02',
+			title: 'Website Design<br>& Development',
+			description: 'Our work empowers businesses to create unique user experiences that engage, captivate, and deliver results. Need your website designed in Toronto?',
+		},
+		{
+			num: '03',
+			title: 'Creative, Graphic Design<br>& Communication',
+			description: 'We are experienced storytellers, with a knack for incorporating brand insights into compelling visual designs for use in digital and print advertising campaigns.',
+		},
+		{
+			num: '04',
+			title: 'Social Media<br>& Online Ads Management',
+			description: 'We create impactful social campaigns and experiences that drive audiences towards achieving your business objectives.',
+		},
+		{
+			num: '02',
+			title: 'Marketing<br>Strategy',
+			description: 'Create a marketing roadmap for your business with the help of our expert strategists. Learn more about our award winning marketing strategy in Toronto.',
+		},
+		{
+			num: '03',
+			title: 'Content Marketing<br>& Public Relations',
+			description: 'Reach customers on the go with high performance Android and iOS app development, including monetization strategies.',
+		},
+		{
+			num: '04',
+			title: 'Mobile Application<br>Development',
+			description: 'Reach customers on the go with high performance Android and iOS app development, including monetization strategies.',
+		},
+		{
+			num: '02',
+			title: 'Video<br>Production',
+			description: 'Our video production team films, produces, and edits content that will raise brand awareness, engagement, and conversion rates.',
+		},
+	];
+
+
+section#services.services
+
+	.c-grid
+
+		p.services__label.c-label.c-label--dark
+			span.c-label__line
+			span Services
+
+		p.services__title.c-title.c-title--dark!= "360°of Digital<br>Services Expertise"
+
+		.services__wrapper
+
+			.services__bg
+				.services__bg-line
+				.services__bg-line
+				.services__bg-line
+				.services__bg-line
+
+			.services__content
+
+				.services__box-wrapper
+					-for(let i = 0; i < arrServices.length; i ++)
+						div
+							.services__box
+								p.services__box-num!= arrServices[i].num
+								p.services__box-title!= arrServices[i].title
+								p.services__box-desc!= arrServices[i].description
+								.services__box-btn-wrapper
+									a.services__box-btn(href="#")
+										span Read more
+										+iconSVG('arrow-right')
+
+// SECTION :: END

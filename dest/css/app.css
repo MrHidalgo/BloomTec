@@ -2157,25 +2157,37 @@ picture {
 
 /* line 3, src/scss/_components/abouts/_mission.scss */
 .mission {
-  padding-bottom: 173px;
   background-color: #000000;
 }
 
-/* line 7, src/scss/_components/abouts/_mission.scss */
+/* line 6, src/scss/_components/abouts/_mission.scss */
 .mission__wrapper {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 175px;
 }
 
-/* line 10, src/scss/_components/abouts/_mission.scss */
+/* line 11, src/scss/_components/abouts/_mission.scss */
+.mission__wrapper:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #0e65f3;
+}
+
+/* line 21, src/scss/_components/abouts/_mission.scss */
 .mission__wrapper-left {
   width: 100%;
   max-width: 398px;
 }
 
-/* line 15, src/scss/_components/abouts/_mission.scss */
+/* line 26, src/scss/_components/abouts/_mission.scss */
 .mission__wrapper-right {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2183,23 +2195,23 @@ picture {
           flex: 1;
   min-width: 1px;
   max-width: 100%;
-  padding-top: 91px;
+  padding-top: 94px;
   padding-left: 154px;
 }
 
-/* line 24, src/scss/_components/abouts/_mission.scss */
+/* line 35, src/scss/_components/abouts/_mission.scss */
 .mission__img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 30, src/scss/_components/abouts/_mission.scss */
+/* line 41, src/scss/_components/abouts/_mission.scss */
 .mission__title {
-  padding-bottom: 71px;
+  padding-bottom: 69px;
 }
 
-/* line 34, src/scss/_components/abouts/_mission.scss */
+/* line 45, src/scss/_components/abouts/_mission.scss */
 .mission__desc {
   width: 100%;
   max-width: 775px;
@@ -2208,9 +2220,9 @@ picture {
   color: #fff;
 }
 
-/* line 41, src/scss/_components/abouts/_mission.scss */
+/* line 52, src/scss/_components/abouts/_mission.scss */
 .mission__desc:not(:last-of-type) {
-  padding-bottom: 40px;
+  padding-bottom: 38px;
 }
 
 /* line 3, src/scss/_components/abouts/_roadmap.scss */

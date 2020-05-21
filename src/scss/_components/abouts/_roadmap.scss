@@ -1,27 +1,29 @@
 // SECTION :: START
 
 .roadmap {
-	padding-top: 175px;
-	padding-bottom: 240px;
+	padding-top: 163px;
+	padding-bottom: 234px;
 
 	&__wrapper {
 		padding-left: 63px;
 	}
 
 	&__title {
-		padding-bottom: 71px;
+		padding-bottom: 68px;
 	}
 
 	&__desc {
 		width: 100%;
 		max-width: 950px;
-		padding-bottom: 92px;
+		padding-bottom: 94px;
 		font-size: 24px;
 		line-height: 38px;
 		color: #000;
 	}
 
 	&__img {
+		position: relative;
+		left: -25px;
 		display: block;
 		max-width: 100%;
 		height: auto;
@@ -35,7 +37,7 @@
 		align-items: center;
 		flex-direction: column;
 		width: 100%;
-		padding-right: 86px;
+		padding-right: 60px;
 
 		&-wrapper {
 			display: flex;

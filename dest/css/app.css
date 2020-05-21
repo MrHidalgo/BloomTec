@@ -1709,13 +1709,13 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_main.scss */
 .main {
-  padding-top: 380px;
+  padding-top: 391px;
   padding-bottom: 136px;
 }
 
 /* line 7, src/scss/_components/homepage/_main.scss */
 .main__title {
-  padding-bottom: 74px;
+  padding-bottom: 78px;
   font-weight: bold;
   font-size: 110px;
   line-height: 110px;

@@ -2,8 +2,8 @@
 
 .a-main {
 	position: relative;
-	padding-top: 339px;
-	padding-bottom: 348px;
+	padding-top: 327px;
+	padding-bottom: 359px;
 	background-color: $c-black;
 	background-image: url('../img/img-about-main-bg@2x.png');
 	background-repeat: no-repeat;
@@ -19,6 +19,18 @@
 		width: 100%;
 		height: 324px;
 		background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
+	}
+
+	&__label {
+		padding-bottom: 22px;
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 110px;
+		line-height: 110px;
+		text-align: left;
+		color: #fff;
 	}
 }
 

@@ -2116,8 +2116,8 @@ picture {
 /* line 3, src/scss/_components/abouts/_main.scss */
 .a-main {
   position: relative;
-  padding-top: 339px;
-  padding-bottom: 348px;
+  padding-top: 327px;
+  padding-bottom: 359px;
   background-color: #000;
   background-image: url("../img/img-about-main-bg@2x.png");
   background-repeat: no-repeat;
@@ -2139,6 +2139,20 @@ picture {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
   background: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
+}
+
+/* line 24, src/scss/_components/abouts/_main.scss */
+.a-main__label {
+  padding-bottom: 22px;
+}
+
+/* line 28, src/scss/_components/abouts/_main.scss */
+.a-main__title {
+  font-weight: bold;
+  font-size: 110px;
+  line-height: 110px;
+  text-align: left;
+  color: #fff;
 }
 
 /* line 3, src/scss/_components/abouts/_mission.scss */

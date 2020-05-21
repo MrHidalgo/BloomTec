@@ -2481,14 +2481,14 @@ picture {
 
 /* line 3, src/scss/_components/contacts/_main.scss */
 .c-main {
-  padding-top: 338px;
+  padding-top: 327px;
   padding-bottom: 45px;
   background-color: #000;
 }
 
 /* line 8, src/scss/_components/contacts/_main.scss */
 .c-main__wrapper {
-  padding-bottom: 173px;
+  padding-bottom: 231px;
 }
 
 /* line 12, src/scss/_components/contacts/_main.scss */
@@ -2497,6 +2497,11 @@ picture {
 }
 
 /* line 16, src/scss/_components/contacts/_main.scss */
+.c-main__label {
+  padding-bottom: 22px;
+}
+
+/* line 20, src/scss/_components/contacts/_main.scss */
 .c-main__title {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2508,7 +2513,7 @@ picture {
           align-items: flex-start;
 }
 
-/* line 20, src/scss/_components/contacts/_main.scss */
+/* line 24, src/scss/_components/contacts/_main.scss */
 .c-main__title p {
   padding-right: 69px;
   font-weight: bold;
@@ -2517,10 +2522,10 @@ picture {
   color: #fff;
 }
 
-/* line 28, src/scss/_components/contacts/_main.scss */
+/* line 32, src/scss/_components/contacts/_main.scss */
 .c-main__title img {
   position: relative;
-  top: 50px;
+  top: 55px;
   display: block;
   max-width: 100%;
   height: auto;

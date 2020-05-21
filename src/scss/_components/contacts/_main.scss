@@ -1,16 +1,20 @@
 // SECTION :: START
 
 .c-main {
-	padding-top: 338px;
+	padding-top: 327px;
 	padding-bottom: 45px;
 	background-color: $c-black;
 
 	&__wrapper {
-		padding-bottom: 173px;
+		padding-bottom: 231px;
 	}
 
 	&__content {
 		padding-left: 63px;
+	}
+
+	&__label {
+		padding-bottom: 22px;
 	}
 
 	&__title {
@@ -27,7 +31,7 @@
 
 		img {
 			position: relative;
-			top: 50px;
+			top: 55px;
 			display: block;
 			max-width: 100%;
 			height: auto;

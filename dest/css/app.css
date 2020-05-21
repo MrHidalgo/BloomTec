@@ -571,7 +571,7 @@ picture {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 23px;
+  padding-bottom: 14px;
 }
 
 /* line 10, src/scss/_macros/_label.scss */
@@ -1731,11 +1731,17 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_about.scss */
 .about {
-  padding-top: 161px;
+  padding-top: 141px;
   padding-bottom: 40px;
 }
 
 /* line 7, src/scss/_components/homepage/_about.scss */
+.about__label {
+  position: relative;
+  left: -63px;
+}
+
+/* line 12, src/scss/_components/homepage/_about.scss */
 .about__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1744,7 +1750,7 @@ picture {
   padding-left: 63px;
 }
 
-/* line 13, src/scss/_components/homepage/_about.scss */
+/* line 18, src/scss/_components/homepage/_about.scss */
 .about__wrapper-1 .about__wrapper-left {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1754,13 +1760,14 @@ picture {
   max-width: 100%;
 }
 
-/* line 18, src/scss/_components/homepage/_about.scss */
+/* line 23, src/scss/_components/homepage/_about.scss */
 .about__wrapper-1 .about__wrapper-right {
   width: 100%;
   max-width: 812px;
+  padding-top: 7px;
 }
 
-/* line 27, src/scss/_components/homepage/_about.scss */
+/* line 33, src/scss/_components/homepage/_about.scss */
 .about__wrapper-2 .about__wrapper-left {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1770,18 +1777,18 @@ picture {
   max-width: 100%;
 }
 
-/* line 32, src/scss/_components/homepage/_about.scss */
+/* line 38, src/scss/_components/homepage/_about.scss */
 .about__wrapper-2 .about__wrapper-right {
   width: 100%;
   max-width: 1088px;
 }
 
-/* line 40, src/scss/_components/homepage/_about.scss */
+/* line 46, src/scss/_components/homepage/_about.scss */
 .about__title {
-  padding-bottom: 24px;
+  padding-bottom: 22px;
 }
 
-/* line 44, src/scss/_components/homepage/_about.scss */
+/* line 50, src/scss/_components/homepage/_about.scss */
 .about__desc {
   width: 100%;
   max-width: 562px;
@@ -1790,25 +1797,25 @@ picture {
   color: #8e8e8e;
 }
 
-/* line 52, src/scss/_components/homepage/_about.scss */
+/* line 58, src/scss/_components/homepage/_about.scss */
 .about__img {
   position: relative;
   width: 100%;
   height: 827px;
 }
 
-/* line 62, src/scss/_components/homepage/_about.scss */
+/* line 68, src/scss/_components/homepage/_about.scss */
 .about__block {
   width: 100%;
   min-height: 197px;
-  padding: 54px 54px 54px 138px;
+  padding: 54px 54px 53px 138px;
   background-color: #0e65f3;
 }
 
-/* line 68, src/scss/_components/homepage/_about.scss */
+/* line 74, src/scss/_components/homepage/_about.scss */
 .about__block-text {
   width: 100%;
-  max-width: 380px;
+  max-width: 385px;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;

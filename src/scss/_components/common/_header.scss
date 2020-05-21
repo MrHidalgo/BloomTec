@@ -46,9 +46,12 @@
 	}
 
 	&__nav {
+		position: relative;
+		top: -2px;
+		right: -2px;
 		display: flex;
 		width: 100%;
-		max-width: 1088px;
+		max-width: 1091px;
 		min-height: 124px;
 		border: 2px solid #0e65f3;
 
@@ -61,7 +64,7 @@
 		}
 
 		&-right {
-			width: 306px;
+			width: 305px;
 		}
 
 		&-list {
@@ -103,7 +106,6 @@
 		font-weight: bold;
 		font-size: 21px;
 		letter-spacing: 0.09em;
-		line-height: 42px;
 		color: #fff;
 	}
 }

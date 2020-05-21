@@ -519,7 +519,7 @@ picture {
 
 /* line 4, src/scss/_macros/_logotype.scss */
 .logo.logo--header {
-  padding-bottom: 41px;
+  padding-bottom: 40px;
 }
 
 /* line 8, src/scss/_macros/_logotype.scss */
@@ -669,17 +669,20 @@ picture {
 
 /* line 48, src/scss/_components/common/_header.scss */
 .header__nav {
+  position: relative;
+  top: -2px;
+  right: -2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  max-width: 1088px;
+  max-width: 1091px;
   min-height: 124px;
   border: 2px solid #0e65f3;
 }
 
-/* line 55, src/scss/_components/common/_header.scss */
+/* line 58, src/scss/_components/common/_header.scss */
 .header__nav-left {
   display: -webkit-box;
   display: -webkit-flex;
@@ -698,12 +701,12 @@ picture {
   max-width: 100%;
 }
 
-/* line 63, src/scss/_components/common/_header.scss */
+/* line 66, src/scss/_components/common/_header.scss */
 .header__nav-right {
-  width: 306px;
+  width: 305px;
 }
 
-/* line 67, src/scss/_components/common/_header.scss */
+/* line 70, src/scss/_components/common/_header.scss */
 .header__nav-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -713,7 +716,7 @@ picture {
   height: 100%;
 }
 
-/* line 73, src/scss/_components/common/_header.scss */
+/* line 76, src/scss/_components/common/_header.scss */
 .header__nav-item {
   width: 100%;
   max-width: -webkit-calc(100% / 5);
@@ -721,7 +724,7 @@ picture {
   height: 100%;
 }
 
-/* line 79, src/scss/_components/common/_header.scss */
+/* line 82, src/scss/_components/common/_header.scss */
 .header__nav-link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -744,12 +747,12 @@ picture {
   color: #000;
 }
 
-/* line 91, src/scss/_components/common/_header.scss */
+/* line 94, src/scss/_components/common/_header.scss */
 .header__nav-link.is-active {
   background-color: #0e65f3;
 }
 
-/* line 97, src/scss/_components/common/_header.scss */
+/* line 100, src/scss/_components/common/_header.scss */
 .header__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -768,7 +771,6 @@ picture {
   font-weight: bold;
   font-size: 21px;
   letter-spacing: 0.09em;
-  line-height: 42px;
   color: #fff;
 }
 

@@ -11,8 +11,7 @@
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
-		height: 100%;
-		max-height: 847px;
+		height: calc(100% - 67px);
 
 		&-line {
 			width: 1px;
@@ -23,8 +22,7 @@
 
 	&__wrapper {
 		position: relative;
-		padding-top: 168px;
-		padding-bottom: 165px;
+		padding-top: 156px;
 	}
 
 	&__content {
@@ -34,19 +32,20 @@
 
 		&-left {
 			width: 100%;
-			max-width: 522px;
+			max-width: 547px;
 		}
 
 		&-right {
 			flex: 1;
 			min-width: 1px;
 			max-width: 100%;
+			padding-top: 12px;
 		}
 	}
 
 	&__title {
 		padding-left: 63px;
-		padding-bottom: 380px;
+		padding-bottom: 382px;
 	}
 
 	&__btn {
@@ -55,7 +54,7 @@
 		align-items: center;
 		justify-content: center;
 		height: 61px;
-		padding-left: 31px;
+		padding-left: 32px;
 
 		&:before {
 			content: '';
@@ -82,37 +81,40 @@
 		}
 
 		svg {
-			margin-left: 35px;
+			margin-left: 31px;
 			stroke: #0e65f3;
 		}
 	}
 
 	&__slider {
 		position: relative;
+
 		width: calc(100% + 140px);
 	}
 
 	.swiper {
 		&-container {
-			padding-bottom: 50px;
+			padding-bottom: 67px;
 		}
 
 		&-slide {
 			overflow: hidden;
-			width: 546px !important;
-			height: 100%;
-			max-height: 670px;
+			position: relative;
+			width: calc((100% - 140px) / 2) !important;
+			height: 679px;
 
 			img {
-				position: relative;
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-				object-position: center;
+				@extend %imageResCoverAbs;
+				//position: relative;
+				//width: 100%;
+				//height: 100%;
+				//object-fit: cover;
+				//object-position: center;
 			}
 		}
 
 		&-pagination {
+			bottom: 0;
 			display: flex;
 			align-items: center;
 			justify-content: flex-start;

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* line 14, src/scss/_utilities/_extend.scss */
-.about__img img {
+.about__img img, .portfolio .swiper-slide img {
   position: absolute;
   top: 0;
   left: 0;
@@ -1843,25 +1843,24 @@ picture {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  height: 100%;
-  max-height: 847px;
+  height: -webkit-calc(100% - 67px);
+  height: calc(100% - 67px);
 }
 
-/* line 17, src/scss/_components/homepage/_portfolio.scss */
+/* line 16, src/scss/_components/homepage/_portfolio.scss */
 .portfolio__bg-line {
   width: 1px;
   height: 100%;
   background-color: #4e4e4e;
 }
 
-/* line 24, src/scss/_components/homepage/_portfolio.scss */
+/* line 23, src/scss/_components/homepage/_portfolio.scss */
 .portfolio__wrapper {
   position: relative;
-  padding-top: 168px;
-  padding-bottom: 165px;
+  padding-top: 156px;
 }
 
-/* line 30, src/scss/_components/homepage/_portfolio.scss */
+/* line 28, src/scss/_components/homepage/_portfolio.scss */
 .portfolio__content {
   z-index: 2;
   position: relative;
@@ -1871,13 +1870,13 @@ picture {
   display: flex;
 }
 
-/* line 35, src/scss/_components/homepage/_portfolio.scss */
+/* line 33, src/scss/_components/homepage/_portfolio.scss */
 .portfolio__content-left {
   width: 100%;
-  max-width: 522px;
+  max-width: 547px;
 }
 
-/* line 40, src/scss/_components/homepage/_portfolio.scss */
+/* line 38, src/scss/_components/homepage/_portfolio.scss */
 .portfolio__content-right {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1885,15 +1884,16 @@ picture {
           flex: 1;
   min-width: 1px;
   max-width: 100%;
+  padding-top: 12px;
 }
 
-/* line 47, src/scss/_components/homepage/_portfolio.scss */
+/* line 46, src/scss/_components/homepage/_portfolio.scss */
 .portfolio__title {
   padding-left: 63px;
-  padding-bottom: 380px;
+  padding-bottom: 382px;
 }
 
-/* line 52, src/scss/_components/homepage/_portfolio.scss */
+/* line 51, src/scss/_components/homepage/_portfolio.scss */
 .portfolio__btn {
   position: relative;
   display: -webkit-box;
@@ -1909,10 +1909,10 @@ picture {
       -ms-flex-pack: center;
           justify-content: center;
   height: 61px;
-  padding-left: 31px;
+  padding-left: 32px;
 }
 
-/* line 60, src/scss/_components/homepage/_portfolio.scss */
+/* line 59, src/scss/_components/homepage/_portfolio.scss */
 .portfolio__btn:before {
   content: '';
   position: absolute;
@@ -1923,7 +1923,7 @@ picture {
   background-color: #0e65f3;
 }
 
-/* line 70, src/scss/_components/homepage/_portfolio.scss */
+/* line 69, src/scss/_components/homepage/_portfolio.scss */
 .portfolio__btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1932,7 +1932,7 @@ picture {
   padding-left: 138px;
 }
 
-/* line 75, src/scss/_components/homepage/_portfolio.scss */
+/* line 74, src/scss/_components/homepage/_portfolio.scss */
 .portfolio__btn span {
   text-transform: uppercase;
   font-weight: bold;
@@ -1942,13 +1942,13 @@ picture {
   color: #fff;
 }
 
-/* line 84, src/scss/_components/homepage/_portfolio.scss */
+/* line 83, src/scss/_components/homepage/_portfolio.scss */
 .portfolio__btn svg {
-  margin-left: 35px;
+  margin-left: 31px;
   stroke: #0e65f3;
 }
 
-/* line 90, src/scss/_components/homepage/_portfolio.scss */
+/* line 89, src/scss/_components/homepage/_portfolio.scss */
 .portfolio__slider {
   position: relative;
   width: -webkit-calc(100% + 140px);
@@ -1957,30 +1957,21 @@ picture {
 
 /* line 96, src/scss/_components/homepage/_portfolio.scss */
 .portfolio .swiper-container {
-  padding-bottom: 50px;
+  padding-bottom: 67px;
 }
 
 /* line 100, src/scss/_components/homepage/_portfolio.scss */
 .portfolio .swiper-slide {
   overflow: hidden;
-  width: 546px !important;
-  height: 100%;
-  max-height: 670px;
-}
-
-/* line 106, src/scss/_components/homepage/_portfolio.scss */
-.portfolio .swiper-slide img {
   position: relative;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  width: -webkit-calc((100% - 140px) / 2) !important;
+  width: calc((100% - 140px) / 2) !important;
+  height: 679px;
 }
 
-/* line 115, src/scss/_components/homepage/_portfolio.scss */
+/* line 116, src/scss/_components/homepage/_portfolio.scss */
 .portfolio .swiper-pagination {
+  bottom: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1995,7 +1986,7 @@ picture {
           justify-content: flex-start;
 }
 
-/* line 120, src/scss/_components/homepage/_portfolio.scss */
+/* line 122, src/scss/_components/homepage/_portfolio.scss */
 .portfolio .swiper-pagination-bullet {
   opacity: 1;
   width: 27px;
@@ -2007,7 +1998,7 @@ picture {
   background-color: #4e4e4e;
 }
 
-/* line 129, src/scss/_components/homepage/_portfolio.scss */
+/* line 131, src/scss/_components/homepage/_portfolio.scss */
 .portfolio .swiper-pagination-bullet-active {
   background-color: #0e65f3;
 }

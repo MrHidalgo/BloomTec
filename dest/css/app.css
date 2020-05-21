@@ -777,7 +777,7 @@ picture {
 /* line 3, src/scss/_components/common/_footer.scss */
 .footer {
   position: relative;
-  padding-top: 326px;
+  padding-top: 313px;
   padding-bottom: 36px;
   background-color: #000;
 }
@@ -808,8 +808,8 @@ picture {
 
 /* line 26, src/scss/_components/common/_footer.scss */
 .footer__wrapper-1 {
-  padding-left: 73px;
-  padding-bottom: 90px;
+  padding-left: 68px;
+  padding-bottom: 33px;
 }
 
 /* line 31, src/scss/_components/common/_footer.scss */
@@ -825,8 +825,8 @@ picture {
 /* line 37, src/scss/_components/common/_footer.scss */
 .footer__wrapper-1 .footer__wrapper-right {
   width: 100%;
-  max-width: 536px;
-  padding-top: 100px;
+  max-width: 541px;
+  padding-top: 98px;
 }
 
 /* line 45, src/scss/_components/common/_footer.scss */
@@ -835,7 +835,7 @@ picture {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 10px;
+  padding-left: 8px;
 }
 
 /* line 50, src/scss/_components/common/_footer.scss */
@@ -882,52 +882,53 @@ picture {
 
 /* line 79, src/scss/_components/common/_footer.scss */
 .footer__title {
-  padding-bottom: 82px;
+  padding-bottom: 87px;
 }
 
 /* line 83, src/scss/_components/common/_footer.scss */
 .footer__subtitle {
-  padding-bottom: 84px;
+  padding-bottom: 45px;
+  text-transform: uppercase;
   font-weight: bold;
   font-size: 35px;
   line-height: 96px;
   color: #fff;
 }
 
-/* line 91, src/scss/_components/common/_footer.scss */
+/* line 92, src/scss/_components/common/_footer.scss */
 .footer__heading {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 25px;
-  line-height: 1;
+  line-height: 1.1;
   color: #fff;
 }
 
-/* line 98, src/scss/_components/common/_footer.scss */
+/* line 99, src/scss/_components/common/_footer.scss */
 .footer__heading--light {
   color: #8e8e8e;
 }
 
-/* line 103, src/scss/_components/common/_footer.scss */
+/* line 104, src/scss/_components/common/_footer.scss */
 .footer__details {
   width: 100%;
   max-width: 304px;
   padding-top: 38px;
 }
 
-/* line 109, src/scss/_components/common/_footer.scss */
+/* line 110, src/scss/_components/common/_footer.scss */
 .footer__details-wrapper:not(:last-of-type) {
   padding-bottom: 25px;
 }
 
-/* line 114, src/scss/_components/common/_footer.scss */
+/* line 115, src/scss/_components/common/_footer.scss */
 .footer__details-title, .footer__details-description {
   font-size: 16px;
   line-height: 26px;
   color: #fff;
 }
 
-/* line 122, src/scss/_components/common/_footer.scss */
+/* line 123, src/scss/_components/common/_footer.scss */
 .footer__line {
   width: 86px;
   height: 3px;
@@ -936,7 +937,7 @@ picture {
   background-color: #8e8e8e;
 }
 
-/* line 130, src/scss/_components/common/_footer.scss */
+/* line 131, src/scss/_components/common/_footer.scss */
 .footer__nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -949,7 +950,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 134, src/scss/_components/common/_footer.scss */
+/* line 135, src/scss/_components/common/_footer.scss */
 .footer__nav-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -962,12 +963,12 @@ picture {
           flex-direction: column;
 }
 
-/* line 138, src/scss/_components/common/_footer.scss */
+/* line 139, src/scss/_components/common/_footer.scss */
 .footer__nav-item:not(:last-of-type) {
   padding-bottom: 15px;
 }
 
-/* line 143, src/scss/_components/common/_footer.scss */
+/* line 144, src/scss/_components/common/_footer.scss */
 .footer__nav-link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -981,7 +982,7 @@ picture {
   color: #fff;
 }
 
-/* line 150, src/scss/_components/common/_footer.scss */
+/* line 151, src/scss/_components/common/_footer.scss */
 .footer__nav-link.is-active svg {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
@@ -993,7 +994,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 156, src/scss/_components/common/_footer.scss */
+/* line 157, src/scss/_components/common/_footer.scss */
 .footer__nav-link svg {
   -webkit-transform: scale(-1);
       -ms-transform: scale(-1);
@@ -1012,23 +1013,23 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 165, src/scss/_components/common/_footer.scss */
+/* line 166, src/scss/_components/common/_footer.scss */
 .footer__nav-link--inner {
   font-size: 16px;
   color: #8e8e8e;
 }
 
-/* line 169, src/scss/_components/common/_footer.scss */
+/* line 170, src/scss/_components/common/_footer.scss */
 .footer__nav-link--inner:not(:last-of-type) {
   padding-bottom: 15px;
 }
 
-/* line 174, src/scss/_components/common/_footer.scss */
+/* line 175, src/scss/_components/common/_footer.scss */
 .footer__nav-link:not(:last-of-type) {
   padding-bottom: 15px;
 }
 
-/* line 178, src/scss/_components/common/_footer.scss */
+/* line 179, src/scss/_components/common/_footer.scss */
 .footer__nav-link-wrapper {
   display: none;
   -webkit-box-orient: vertical;
@@ -1040,7 +1041,7 @@ picture {
   padding-left: 10px;
 }
 
-/* line 187, src/scss/_components/common/_footer.scss */
+/* line 188, src/scss/_components/common/_footer.scss */
 .footer__sitemap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1052,7 +1053,7 @@ picture {
           align-items: center;
 }
 
-/* line 191, src/scss/_components/common/_footer.scss */
+/* line 192, src/scss/_components/common/_footer.scss */
 .footer__sitemap-line {
   width: 122px;
   height: 2px;
@@ -1060,7 +1061,7 @@ picture {
   background-color: #fff;
 }
 
-/* line 198, src/scss/_components/common/_footer.scss */
+/* line 199, src/scss/_components/common/_footer.scss */
 .footer__sitemap-text {
   text-transform: uppercase;
   font-weight: bold;
@@ -1070,13 +1071,13 @@ picture {
   color: #fff;
 }
 
-/* line 207, src/scss/_components/common/_footer.scss */
+/* line 208, src/scss/_components/common/_footer.scss */
 .footer__sitemap svg {
   margin-left: 16px;
   stroke: #0E65F3;
 }
 
-/* line 213, src/scss/_components/common/_footer.scss */
+/* line 214, src/scss/_components/common/_footer.scss */
 .footer__form {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1090,17 +1091,18 @@ picture {
   width: 100%;
 }
 
-/* line 218, src/scss/_components/common/_footer.scss */
+/* line 219, src/scss/_components/common/_footer.scss */
 .footer__form-field {
   position: relative;
-}
-
-/* line 221, src/scss/_components/common/_footer.scss */
-.footer__form-field:not(:last-of-type) {
   padding-bottom: 36px;
 }
 
-/* line 226, src/scss/_components/common/_footer.scss */
+/* line 223, src/scss/_components/common/_footer.scss */
+.footer__form-field.footer__form-field--textarea {
+  padding-bottom: 48px;
+}
+
+/* line 228, src/scss/_components/common/_footer.scss */
 .footer__form-field.is-focus .footer__form-label {
   -webkit-transform: translateY(-9px) scale(0.55);
       -ms-transform: translateY(-9px) scale(0.55);
@@ -1112,7 +1114,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 233, src/scss/_components/common/_footer.scss */
+/* line 235, src/scss/_components/common/_footer.scss */
 .footer__form-input {
   outline: none;
   position: relative;
@@ -1129,7 +1131,7 @@ picture {
   color: #fff;
 }
 
-/* line 247, src/scss/_components/common/_footer.scss */
+/* line 249, src/scss/_components/common/_footer.scss */
 .footer__form-label {
   white-space: nowrap;
   position: absolute;
@@ -1159,7 +1161,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 264, src/scss/_components/common/_footer.scss */
+/* line 266, src/scss/_components/common/_footer.scss */
 .footer__form-btn {
   outline: none;
   cursor: pointer;
@@ -1180,7 +1182,7 @@ picture {
   background-color: transparent;
 }
 
-/* line 276, src/scss/_components/common/_footer.scss */
+/* line 278, src/scss/_components/common/_footer.scss */
 .footer__form-btn:after {
   content: '';
   position: absolute;
@@ -1191,7 +1193,7 @@ picture {
   background-color: #0e65f3;
 }
 
-/* line 286, src/scss/_components/common/_footer.scss */
+/* line 288, src/scss/_components/common/_footer.scss */
 .footer__form-btn span {
   text-transform: uppercase;
   font-weight: bold;
@@ -1201,7 +1203,7 @@ picture {
   color: #fff;
 }
 
-/* line 295, src/scss/_components/common/_footer.scss */
+/* line 297, src/scss/_components/common/_footer.scss */
 .footer__form-btn svg {
   margin-left: 10px;
   stroke: #0E65F3;

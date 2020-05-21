@@ -2,7 +2,7 @@
 
 .footer {
 	position: relative;
-	padding-top: 326px;
+	padding-top: 313px;
 	padding-bottom: 36px;
 	background-color: $c-black;
 
@@ -24,8 +24,8 @@
 		display: flex;
 
 		&-1 {
-			padding-left: 73px;
-			padding-bottom: 90px;
+			padding-left: 68px;
+			padding-bottom: 33px;
 
 			.footer__wrapper {
 				&-left {
@@ -36,15 +36,15 @@
 
 				&-right {
 					width: 100%;
-					max-width: 536px;
-					padding-top: 100px;
+					max-width: 541px;
+					padding-top: 98px;
 				}
 			}
 		}
 
 		&-2 {
 			align-items: center;
-			padding-left: 10px;
+			padding-left: 8px;
 
 			.footer__wrapper {
 				&-left,
@@ -77,11 +77,12 @@
 	}
 
 	&__title {
-		padding-bottom: 82px;
+		padding-bottom: 87px;
 	}
 
 	&__subtitle {
-		padding-bottom: 84px;
+		padding-bottom: 45px;
+		text-transform: uppercase;
 		font-weight: bold;
 		font-size: 35px;
 		line-height: 96px;
@@ -92,7 +93,7 @@
 		text-transform: uppercase;
 		font-weight: bold;
 		font-size: 25px;
-		line-height: 1;
+		line-height: 1.1;
 		color: #fff;
 
 		&--light {
@@ -217,9 +218,10 @@
 
 		&-field {
 			position: relative;
+			padding-bottom: 36px;
 
-			&:not(:last-of-type) {
-				padding-bottom: 36px;
+			&.footer__form-field--textarea {
+				padding-bottom: 48px;
 			}
 
 			&.is-focus {

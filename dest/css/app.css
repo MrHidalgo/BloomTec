@@ -1324,6 +1324,7 @@ picture {
 
 /* line 87, src/scss/_components/common/_menu.scss */
 .menu__btn-title span {
+  text-transform: uppercase;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;

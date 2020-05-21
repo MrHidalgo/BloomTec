@@ -2,17 +2,17 @@
 
 .services {
 	position: relative;
-	padding-top: 33px;
+	padding-top: 20px;
 
 	&__bg {
 		z-index: 0;
 		position: absolute;
-		top: 33px;
+		top: 37px;
 		left: 0;
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
-		height: calc(100% - 33px);
+		height: calc(100% - 37px);
 
 		&-line {
 			width: 1px;
@@ -28,17 +28,17 @@
 	&__content {
 		z-index: 2;
 		position: relative;
-		padding-bottom: 103px;
+		padding-bottom: 107px;
 	}
 
 	&__title {
 		padding-left: 63px;
-		padding-bottom: 82px;
+		padding-bottom: 81px;
 	}
 
 	&__box {
 		width: 100%;
-		max-width: 395px;
+		max-width: 425px;
 		padding-left: 30px;
 
 		&-wrapper {
@@ -53,14 +53,15 @@
 		}
 
 		&-num {
-			padding-bottom: 13px;
+			padding-bottom: 8px;
 			font-size: 16px;
 			line-height: 28px;
 			color: #000;
 		}
 
 		&-title {
-			padding-bottom: 32px;
+			padding-bottom: 28px;
+			text-transform: uppercase;
 			font-weight: bold;
 			font-size: 24px;
 			line-height: 30px;
@@ -68,7 +69,7 @@
 		}
 
 		&-desc {
-			padding-bottom: 32px;
+			padding-bottom: 35px;
 			font-size: 18px;
 			line-height: 28px;
 			color: #000;
@@ -80,7 +81,7 @@
 			align-items: center;
 			justify-content: center;
 			height: 61px;
-			padding-left: 31px;
+			padding-left: 32px;
 
 			&:before {
 				content: '';
@@ -107,7 +108,7 @@
 			}
 
 			svg {
-				margin-left: 35px;
+				margin-left: 38px;
 				stroke: #0e65f3;
 			}
 		}

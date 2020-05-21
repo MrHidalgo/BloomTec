@@ -1331,14 +1331,14 @@ picture {
 /* line 3, src/scss/_components/common/_services.scss */
 .services {
   position: relative;
-  padding-top: 33px;
+  padding-top: 20px;
 }
 
 /* line 7, src/scss/_components/common/_services.scss */
 .services__bg {
   z-index: 0;
   position: absolute;
-  top: 33px;
+  top: 37px;
   left: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1349,8 +1349,8 @@ picture {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  height: -webkit-calc(100% - 33px);
-  height: calc(100% - 33px);
+  height: -webkit-calc(100% - 37px);
+  height: calc(100% - 37px);
 }
 
 /* line 17, src/scss/_components/common/_services.scss */
@@ -1369,19 +1369,19 @@ picture {
 .services__content {
   z-index: 2;
   position: relative;
-  padding-bottom: 103px;
+  padding-bottom: 107px;
 }
 
 /* line 34, src/scss/_components/common/_services.scss */
 .services__title {
   padding-left: 63px;
-  padding-bottom: 82px;
+  padding-bottom: 81px;
 }
 
 /* line 39, src/scss/_components/common/_services.scss */
 .services__box {
   width: 100%;
-  max-width: 395px;
+  max-width: 425px;
   padding-left: 30px;
 }
 
@@ -1406,7 +1406,7 @@ picture {
 
 /* line 55, src/scss/_components/common/_services.scss */
 .services__box-num {
-  padding-bottom: 13px;
+  padding-bottom: 8px;
   font-size: 16px;
   line-height: 28px;
   color: #000;
@@ -1414,22 +1414,23 @@ picture {
 
 /* line 62, src/scss/_components/common/_services.scss */
 .services__box-title {
-  padding-bottom: 32px;
+  padding-bottom: 28px;
+  text-transform: uppercase;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   color: #000;
 }
 
-/* line 70, src/scss/_components/common/_services.scss */
+/* line 71, src/scss/_components/common/_services.scss */
 .services__box-desc {
-  padding-bottom: 32px;
+  padding-bottom: 35px;
   font-size: 18px;
   line-height: 28px;
   color: #000;
 }
 
-/* line 77, src/scss/_components/common/_services.scss */
+/* line 78, src/scss/_components/common/_services.scss */
 .services__box-btn {
   position: relative;
   display: -webkit-box;
@@ -1445,10 +1446,10 @@ picture {
       -ms-flex-pack: center;
           justify-content: center;
   height: 61px;
-  padding-left: 31px;
+  padding-left: 32px;
 }
 
-/* line 85, src/scss/_components/common/_services.scss */
+/* line 86, src/scss/_components/common/_services.scss */
 .services__box-btn:before {
   content: '';
   position: absolute;
@@ -1459,7 +1460,7 @@ picture {
   background-color: #0e65f3;
 }
 
-/* line 95, src/scss/_components/common/_services.scss */
+/* line 96, src/scss/_components/common/_services.scss */
 .services__box-btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1471,7 +1472,7 @@ picture {
           justify-content: flex-start;
 }
 
-/* line 100, src/scss/_components/common/_services.scss */
+/* line 101, src/scss/_components/common/_services.scss */
 .services__box-btn span {
   text-transform: uppercase;
   font-weight: bold;
@@ -1481,9 +1482,9 @@ picture {
   color: #000;
 }
 
-/* line 109, src/scss/_components/common/_services.scss */
+/* line 110, src/scss/_components/common/_services.scss */
 .services__box-btn svg {
-  margin-left: 35px;
+  margin-left: 38px;
   stroke: #0e65f3;
 }
 

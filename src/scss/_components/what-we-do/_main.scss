@@ -2,7 +2,7 @@
 
 .wwd-main {
 	position: relative;
-	padding-top: 338px;
+	padding-top: 327px;
 	padding-bottom: 155px;
 	background-color: #0E65F3;
 	background-image: url('../img/img-wwd-main-bg@2x.png');
@@ -26,8 +26,16 @@
 		position: relative;
 	}
 
+	&__label {
+		padding-bottom: 22px;
+	}
+
 	&__title {
-		padding-bottom: 70px;
+		padding-bottom: 81px;
+		font-weight: bold;
+		font-size: 110px;
+		line-height: 110px;
+		color: #fff;
 	}
 
 	&__btn {

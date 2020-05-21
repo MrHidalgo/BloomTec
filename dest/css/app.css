@@ -2356,7 +2356,7 @@ picture {
 /* line 3, src/scss/_components/what-we-do/_main.scss */
 .wwd-main {
   position: relative;
-  padding-top: 338px;
+  padding-top: 327px;
   padding-bottom: 155px;
   background-color: #0E65F3;
   background-image: url("../img/img-wwd-main-bg@2x.png");
@@ -2388,11 +2388,20 @@ picture {
 }
 
 /* line 29, src/scss/_components/what-we-do/_main.scss */
-.wwd-main__title {
-  padding-bottom: 70px;
+.wwd-main__label {
+  padding-bottom: 22px;
 }
 
 /* line 33, src/scss/_components/what-we-do/_main.scss */
+.wwd-main__title {
+  padding-bottom: 81px;
+  font-weight: bold;
+  font-size: 110px;
+  line-height: 110px;
+  color: #fff;
+}
+
+/* line 41, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2411,7 +2420,7 @@ picture {
   background-color: #0E65F3;
 }
 
-/* line 41, src/scss/_components/what-we-do/_main.scss */
+/* line 49, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__btn span {
   text-transform: uppercase;
   font-weight: bold;
@@ -2421,7 +2430,7 @@ picture {
   color: #fff;
 }
 
-/* line 50, src/scss/_components/what-we-do/_main.scss */
+/* line 58, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__btn svg {
   margin-left: 35px;
   stroke: #fff;

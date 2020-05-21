@@ -2533,7 +2533,7 @@ picture {
 
 /* line 3, src/scss/_components/contacts/_forms.scss */
 .forms {
-  padding-top: 43px;
+  padding-top: 41px;
   background-color: #000;
 }
 
@@ -2546,7 +2546,7 @@ picture {
 .forms__desc {
   width: 100%;
   max-width: 812px;
-  padding-bottom: 67px;
+  padding-bottom: 72px;
   font-size: 24px;
   line-height: 38px;
   color: #fff;

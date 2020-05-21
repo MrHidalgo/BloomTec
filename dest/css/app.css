@@ -2438,7 +2438,7 @@ picture {
 
 /* line 3, src/scss/_components/what-we-do/_relationships.scss */
 .relationships {
-  padding-top: 244px;
+  padding-top: 147px;
   background-color: #000;
 }
 
@@ -2446,7 +2446,7 @@ picture {
 .relationships__wrapper {
   position: relative;
   padding-left: 63px;
-  padding-bottom: 156px;
+  padding-bottom: 161px;
 }
 
 /* line 12, src/scss/_components/what-we-do/_relationships.scss */
@@ -2462,7 +2462,7 @@ picture {
 
 /* line 23, src/scss/_components/what-we-do/_relationships.scss */
 .relationships__title {
-  padding-bottom: 88px;
+  padding-bottom: 86px;
 }
 
 /* line 27, src/scss/_components/what-we-do/_relationships.scss */

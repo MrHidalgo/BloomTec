@@ -36,7 +36,17 @@
 
 	const menuToggle = () => {
 		$('[menu-toggle-js]').on('click', (ev) => {
-			$('#menu').toggle();
+			$('#menu').slideToggle();
+			$('html, body').toggleClass('is-hideScroll');
+		});
+	};
+
+
+	const scrollToTop = () => {
+		$('[scroll-top-js]').on('click', (ev) => {
+			$('body, html').animate({
+				scrollTop: 0
+			}, 1000);
 		});
 	};
 	/*
@@ -62,6 +72,7 @@
 		footerLinkToggle();
 		inputFocusAnimate();
 		menuToggle();
+		scrollToTop();
 		// ==========================================
 	};
 	initNative();

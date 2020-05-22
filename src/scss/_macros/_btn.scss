@@ -1,58 +1,80 @@
 // BUTTON :: START
 
-// ==================================================
-// ==================================================
-// ==================================================
-
-$bth-width: 250px;
-$bth-height: 45px;
-$btn-border-width: 1px;
-$btn-border-color: rgba(#000, 1);
-$bth-border-radius: 5px;
-$bth-box-shadow: none;
-$bth-background-color: rgba(#000, 1);
-$bth-color: rgba(#fff, 1);
-$bth-font-size: rgba(#000, 1);
-$bth-font-weight: bold;
-
-$btn-color--border: rgba(#000, 1);
-
-// ==================================================
-// ==================================================
-// ==================================================
-
 .c-btn {
   outline: none;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: $bth-width;
-  height: $bth-height;
-  border: $btn-border-width solid $btn-border-color;
-  box-shadow: $bth-box-shadow;
-  border-radius: $bth-border-radius;
-  color: $bth-color;
-  font-size: $bth-font-size;
-  font-weight: $bth-font-weight;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 61px;
+	padding-left: 32px;
+	border: none;
+	box-shadow: none;
+	border-radius: 0;
+	background-color: transparent;
 
-  &--border {
-    background-color: transparent;
-    color: $btn-color--border;
-  }
+	&:hover {
+		&:before {
+			width: 100%;
+			@include transition(width);
+		}
 
-  &--bg {
-    background-color: $bth-background-color;
-  }
+		span {
+			color: $c-white;
+			@include transition(color);
+		}
 
-  &__text {
-    &-wrap {}
-  }
+		svg {
+			stroke: $c-white;
+			transform: translateX(-150%);
+			@include transition(stroke, transform);
+		}
+	}
 
-  &__icon {
-    &-wrap {}
-  }
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 1px;
+		height: 100%;
+		background-color: #0e65f3;
+		@include transition(width);
+	}
+
+  &__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&.c-btn--light {
+		span {
+			color: $c-white;
+		}
+	}
+
+	span,
+	svg {
+		z-index: 2;
+		position: relative;
+	}
+
+	span {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 21px;
+		letter-spacing: 0.09em;
+		line-height: 42px;
+		color: $c-black;
+		@include transition(color);
+	}
+
+	svg {
+		margin-left: 38px;
+		stroke: #0e65f3;
+		@include transition(stroke, transform);
+	}
 }
 
 // BUTTON :: END

@@ -113,10 +113,46 @@
 		}
 
 		&-title,
-		&-description {
+		&-description,
+		&-link {
 			font-size: 16px;
 			line-height: 26px;
 			color: #fff;
+		}
+
+		&-link {
+			position: relative;
+			@include transition(color);
+
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				top: 100%;
+				width: 0;
+				height: 1px;
+				background-color: #0e65f3;
+				backface-visibility: hidden;
+				@include transition(width);
+			}
+
+			&:before {
+				left: 50%;
+			}
+			&:after {
+				right: 50%;
+			}
+
+			&:hover {
+				color: #0e65f3;
+				@include transition(color);
+
+				&:before,
+				&:after {
+					width: 50%;
+					@include transition(width);
+				}
+			}
 		}
 	}
 
@@ -142,10 +178,17 @@
 		}
 
 		&-link {
+			position: relative;
 			display: flex;
 			align-items: center;
 			font-size: 16px;
 			color: #fff;
+			@include transition(color);
+
+			&:hover {
+				color: #0e65f3;
+				@include transition(color);
+			}
 
 			&.is-active {
 				svg {
@@ -166,6 +209,11 @@
 			&--inner {
 				font-size: 16px;
 				color: #8e8e8e;
+
+				&:hover {
+					color: #fff;
+					@include transition(color);
+				}
 
 				&:not(:last-of-type) {
 					padding-bottom: 15px;
@@ -261,43 +309,6 @@
 			text-transform: uppercase;
 			transform-origin: left top;
 			@include transition(transform);
-		}
-
-		&-btn {
-			outline: none;
-			cursor: pointer;
-			position: relative;
-			display: flex;
-			align-items: center;
-			height: 61px;
-			padding-left: 31px;
-			border: none;
-			box-shadow: none;
-			background-color: transparent;
-
-			&:after {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 1px;
-				height: 100%;
-				background-color: #0e65f3;
-			}
-
-			span {
-				text-transform: uppercase;
-				font-weight: bold;
-				font-size: 21px;
-				letter-spacing: 0.09em;
-				line-height: 42px;
-				color: #fff;
-			}
-
-			svg {
-				margin-left: 10px;
-				stroke: #0E65F3;
-			}
 		}
 	}
 }

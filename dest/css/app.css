@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* line 14, src/scss/_utilities/_extend.scss */
-.about__img img, .portfolio .swiper-slide img {
+.about__img img, .portfolio .swiper-slide img, .mission__img img {
   position: absolute;
   top: 0;
   left: 0;
@@ -291,8 +291,8 @@ picture {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 75px;
+  padding-left: 75px;
 }
 
 @media screen and (max-width: 1279px) {
@@ -305,7 +305,7 @@ picture {
 
 /* line 24, src/scss/_shared/_grid.scss */
 .c-grid {
-  max-width: 1670px;
+  max-width: 1790px;
 }
 
 /* line 30, src/scss/_shared/_grid.scss */
@@ -347,10 +347,55 @@ picture {
 
 /* line 23, src/scss/_shared/_common.scss */
 .social__link {
+  position: relative;
   color: #000;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
-/* line 29, src/scss/_shared/_common.scss */
+/* line 28, src/scss/_shared/_common.scss */
+.social__link:before, .social__link:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 1px;
+  background-color: #0e65f3;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* line 40, src/scss/_shared/_common.scss */
+.social__link:before {
+  left: 50%;
+}
+
+/* line 43, src/scss/_shared/_common.scss */
+.social__link:after {
+  right: 50%;
+}
+
+/* line 47, src/scss/_shared/_common.scss */
+.social__link:hover {
+  color: #0e65f3;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 51, src/scss/_shared/_common.scss */
+.social__link:hover:before, .social__link:hover:after {
+  width: 50%;
+  -webkit-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* line 61, src/scss/_shared/_common.scss */
 .copyright__text {
   text-transform: uppercase;
   font-size: 14px;
@@ -360,7 +405,7 @@ picture {
   color: #fff;
 }
 
-/* line 39, src/scss/_shared/_common.scss */
+/* line 71, src/scss/_shared/_common.scss */
 .top {
   display: -webkit-box;
   display: -webkit-flex;
@@ -372,7 +417,7 @@ picture {
           align-items: center;
 }
 
-/* line 43, src/scss/_shared/_common.scss */
+/* line 75, src/scss/_shared/_common.scss */
 .top__text {
   padding-top: 10px;
   text-transform: uppercase;
@@ -383,42 +428,42 @@ picture {
   color: #fff;
 }
 
-/* line 53, src/scss/_shared/_common.scss */
+/* line 85, src/scss/_shared/_common.scss */
 .top svg {
   margin-left: 12px;
 }
 
-/* line 58, src/scss/_shared/_common.scss */
+/* line 90, src/scss/_shared/_common.scss */
 .c-checkbox {
   position: relative;
 }
 
-/* line 66, src/scss/_shared/_common.scss */
+/* line 98, src/scss/_shared/_common.scss */
 .c-checkbox--footer .c-checkbox__input:checked + .c-checkbox__label i {
   background-color: #8E8E8E;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  -o-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
 }
 
-/* line 75, src/scss/_shared/_common.scss */
+/* line 107, src/scss/_shared/_common.scss */
 .c-checkbox--footer .c-checkbox__label i {
   border-color: #8E8E8E;
 }
 
-/* line 79, src/scss/_shared/_common.scss */
+/* line 111, src/scss/_shared/_common.scss */
 .c-checkbox--footer .c-checkbox__label span {
   font-size: 14px;
   line-height: 26px;
   color: #8e8e8e;
 }
 
-/* line 84, src/scss/_shared/_common.scss */
+/* line 116, src/scss/_shared/_common.scss */
 .c-checkbox--footer .c-checkbox__label span a {
   color: #8e8e8e;
 }
 
-/* line 92, src/scss/_shared/_common.scss */
+/* line 124, src/scss/_shared/_common.scss */
 .c-checkbox__input {
   opacity: 0;
   visibility: hidden;
@@ -427,24 +472,24 @@ picture {
   height: 0;
 }
 
-/* line 101, src/scss/_shared/_common.scss */
+/* line 133, src/scss/_shared/_common.scss */
 .c-checkbox__input:checked + .c-checkbox__label i {
   background-color: #0e65f3;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  -o-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
 }
 
-/* line 105, src/scss/_shared/_common.scss */
+/* line 137, src/scss/_shared/_common.scss */
 .c-checkbox__input:checked + .c-checkbox__label i svg {
   opacity: 1;
   visibility: visible;
-  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
 }
 
-/* line 115, src/scss/_shared/_common.scss */
+/* line 147, src/scss/_shared/_common.scss */
 .c-checkbox__label {
   cursor: pointer;
   display: -webkit-box;
@@ -458,7 +503,7 @@ picture {
   width: 100%;
 }
 
-/* line 121, src/scss/_shared/_common.scss */
+/* line 153, src/scss/_shared/_common.scss */
 .c-checkbox__label i {
   position: relative;
   display: -webkit-box;
@@ -476,30 +521,41 @@ picture {
   width: 28px;
   height: 28px;
   border: 1px solid #0e65f3;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  -o-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
 }
 
-/* line 131, src/scss/_shared/_common.scss */
+/* line 163, src/scss/_shared/_common.scss */
 .c-checkbox__label i svg {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
 }
 
-/* line 138, src/scss/_shared/_common.scss */
+/* line 170, src/scss/_shared/_common.scss */
 .c-checkbox__label span {
   padding-left: 25px;
   font-size: 24px;
   color: #000;
 }
 
-/* line 143, src/scss/_shared/_common.scss */
+/* line 175, src/scss/_shared/_common.scss */
 .c-checkbox__label span a {
   text-decoration: underline;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 179, src/scss/_shared/_common.scss */
+.c-checkbox__label span a:hover {
+  color: #fff;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
 /* line 3, src/scss/_shared/_iconSVG.scss */
@@ -541,24 +597,209 @@ picture {
 /* line 3, src/scss/_macros/_title.scss */
 .c-title {
   font-weight: bold;
-  font-size: 85px;
-  line-height: 96px;
   color: #fff;
+  font-size: 45px;
+  line-height: 55px;
 }
 
-/* line 9, src/scss/_macros/_title.scss */
+@media screen and (min-width: 320px) {
+  /* line 3, src/scss/_macros/_title.scss */
+  .c-title {
+    font-size: -webkit-calc(45px + 40 * (100vw - 320px) / 1600);
+    font-size: calc(45px + 40 * (100vw - 320px) / 1600);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  /* line 3, src/scss/_macros/_title.scss */
+  .c-title {
+    font-size: 85px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 3, src/scss/_macros/_title.scss */
+  .c-title {
+    line-height: -webkit-calc(55px + 41 * (100vw - 320px) / 1600);
+    line-height: calc(55px + 41 * (100vw - 320px) / 1600);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  /* line 3, src/scss/_macros/_title.scss */
+  .c-title {
+    line-height: 96px;
+  }
+}
+
+/* line 11, src/scss/_macros/_title.scss */
+.c-title.c-title--big {
+  font-weight: bold;
+  font-size: 53px;
+  line-height: 53px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 11, src/scss/_macros/_title.scss */
+  .c-title.c-title--big {
+    font-size: -webkit-calc(53px + 57 * (100vw - 320px) / 1600);
+    font-size: calc(53px + 57 * (100vw - 320px) / 1600);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  /* line 11, src/scss/_macros/_title.scss */
+  .c-title.c-title--big {
+    font-size: 110px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 11, src/scss/_macros/_title.scss */
+  .c-title.c-title--big {
+    line-height: -webkit-calc(53px + 57 * (100vw - 320px) / 1600);
+    line-height: calc(53px + 57 * (100vw - 320px) / 1600);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  /* line 11, src/scss/_macros/_title.scss */
+  .c-title.c-title--big {
+    line-height: 110px;
+  }
+}
+
+/* line 18, src/scss/_macros/_title.scss */
 .c-title.c-title--dark {
   color: #000;
 }
 
-/* line 12, src/scss/_macros/_title.scss */
+/* line 21, src/scss/_macros/_title.scss */
 .c-title.c-title--blue {
   color: #0E65F3;
 }
 
-/* line 16, src/scss/_macros/_title.scss */
+/* line 25, src/scss/_macros/_title.scss */
 .c-title span {
   color: #0E65F3;
+}
+
+/* line 3, src/scss/_macros/_btn.scss */
+.c-btn {
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 61px;
+  padding-left: 32px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  background-color: transparent;
+}
+
+/* line 18, src/scss/_macros/_btn.scss */
+.c-btn:hover:before {
+  width: 100%;
+  -webkit-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* line 23, src/scss/_macros/_btn.scss */
+.c-btn:hover span {
+  color: #fff;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 28, src/scss/_macros/_btn.scss */
+.c-btn:hover svg {
+  stroke: #fff;
+  -webkit-transform: translateX(-150%);
+      -ms-transform: translateX(-150%);
+          transform: translateX(-150%);
+  -webkit-transition: stroke 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition: stroke 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -o-transition: stroke 0.4s ease-in-out, transform 0.4s ease-in-out;
+  transition: stroke 0.4s ease-in-out, transform 0.4s ease-in-out;
+  transition: stroke 0.4s ease-in-out, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+/* line 35, src/scss/_macros/_btn.scss */
+.c-btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #0e65f3;
+  -webkit-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* line 46, src/scss/_macros/_btn.scss */
+.c-btn__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 52, src/scss/_macros/_btn.scss */
+.c-btn.c-btn--light span {
+  color: #fff;
+}
+
+/* line 57, src/scss/_macros/_btn.scss */
+.c-btn span,
+.c-btn svg {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 63, src/scss/_macros/_btn.scss */
+.c-btn span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  letter-spacing: 0.09em;
+  line-height: 42px;
+  color: #000;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 73, src/scss/_macros/_btn.scss */
+.c-btn svg {
+  margin-left: 38px;
+  stroke: #0e65f3;
+  -webkit-transition: stroke 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition: stroke 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -o-transition: stroke 0.4s ease-in-out, transform 0.4s ease-in-out;
+  transition: stroke 0.4s ease-in-out, transform 0.4s ease-in-out;
+  transition: stroke 0.4s ease-in-out, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
 /* line 3, src/scss/_macros/_label.scss */
@@ -612,23 +853,32 @@ picture {
   padding-top: 45px;
 }
 
-/* line 14, src/scss/_components/common/_header.scss */
-.header.header--light .header__nav-link {
+/* line 15, src/scss/_components/common/_header.scss */
+.header.header--light .header__nav-link span {
   color: #ffffff;
 }
 
-/* line 19, src/scss/_components/common/_header.scss */
+/* line 21, src/scss/_components/common/_header.scss */
 .header.header--light .header__btn {
   background-color: #fff;
+}
+
+/* line 24, src/scss/_components/common/_header.scss */
+.header.header--light .header__btn:after {
+  background-color: #f2f2f2;
+}
+
+/* line 28, src/scss/_components/common/_header.scss */
+.header.header--light .header__btn span {
   color: #000;
 }
 
-/* line 25, src/scss/_components/common/_header.scss */
+/* line 34, src/scss/_components/common/_header.scss */
 .header.header--light .social__link {
   color: #ffffff;
 }
 
-/* line 30, src/scss/_components/common/_header.scss */
+/* line 39, src/scss/_components/common/_header.scss */
 .header__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -644,12 +894,12 @@ picture {
           justify-content: space-between;
 }
 
-/* line 35, src/scss/_components/common/_header.scss */
+/* line 44, src/scss/_components/common/_header.scss */
 .header__wrapper-left {
   padding-right: 30px;
 }
 
-/* line 39, src/scss/_components/common/_header.scss */
+/* line 48, src/scss/_components/common/_header.scss */
 .header__wrapper-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -667,7 +917,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 48, src/scss/_components/common/_header.scss */
+/* line 57, src/scss/_components/common/_header.scss */
 .header__nav {
   position: relative;
   top: -2px;
@@ -682,7 +932,7 @@ picture {
   border: 2px solid #0e65f3;
 }
 
-/* line 58, src/scss/_components/common/_header.scss */
+/* line 67, src/scss/_components/common/_header.scss */
 .header__nav-left {
   display: -webkit-box;
   display: -webkit-flex;
@@ -701,12 +951,12 @@ picture {
   max-width: 100%;
 }
 
-/* line 66, src/scss/_components/common/_header.scss */
+/* line 75, src/scss/_components/common/_header.scss */
 .header__nav-right {
   width: 305px;
 }
 
-/* line 70, src/scss/_components/common/_header.scss */
+/* line 79, src/scss/_components/common/_header.scss */
 .header__nav-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -716,7 +966,7 @@ picture {
   height: 100%;
 }
 
-/* line 76, src/scss/_components/common/_header.scss */
+/* line 85, src/scss/_components/common/_header.scss */
 .header__nav-item {
   width: 100%;
   max-width: -webkit-calc(100% / 5);
@@ -724,8 +974,9 @@ picture {
   height: 100%;
 }
 
-/* line 82, src/scss/_components/common/_header.scss */
+/* line 91, src/scss/_components/common/_header.scss */
 .header__nav-link {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -740,20 +991,73 @@ picture {
           justify-content: center;
   width: 100%;
   height: 100%;
+}
+
+/* line 99, src/scss/_components/common/_header.scss */
+.header__nav-link:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #0e65f3;
+  -webkit-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s, -webkit-transform 0.2s;
+  transition: width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s, -webkit-transform 0.2s;
+  -o-transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s, -webkit-transform 0.2s;
+}
+
+/* line 112, src/scss/_components/common/_header.scss */
+.header__nav-link:hover:before {
+  -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+          transform: scaleY(1);
+  width: -webkit-calc(100% + 1px);
+  width: calc(100% + 1px);
+}
+
+/* line 117, src/scss/_components/common/_header.scss */
+.header__nav-link:hover span {
+  color: #ffffff;
+  -webkit-transition-delay: 0.35s;
+       -o-transition-delay: 0.35s;
+          transition-delay: 0.35s;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 124, src/scss/_components/common/_header.scss */
+.header__nav-link.is-active {
+  background-color: #0e65f3;
+}
+
+/* line 128, src/scss/_components/common/_header.scss */
+.header__nav-link span {
+  z-index: 2;
+  position: relative;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 0.1em;
   line-height: 21px;
   color: #000;
+  -webkit-transition-delay: 0.35s;
+       -o-transition-delay: 0.35s;
+          transition-delay: 0.35s;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
-/* line 94, src/scss/_components/common/_header.scss */
-.header__nav-link.is-active {
-  background-color: #0e65f3;
-}
-
-/* line 100, src/scss/_components/common/_header.scss */
+/* line 142, src/scss/_components/common/_header.scss */
 .header__btn {
+  overflow: hidden;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -766,8 +1070,47 @@ picture {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
   height: 123px;
   background-color: #0e65f3;
+}
+
+/* line 152, src/scss/_components/common/_header.scss */
+.header__btn:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 33%;
+  height: -webkit-calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-color: #2675f4;
+  -webkit-transform: translateX(150%) skewX(-15deg);
+      -ms-transform: translateX(150%) skewX(-15deg);
+          transform: translateX(150%) skewX(-15deg);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+/* line 165, src/scss/_components/common/_header.scss */
+.header__btn:hover:after {
+  -webkit-transform: translateX(-350%) skewX(-15deg);
+      -ms-transform: translateX(-350%) skewX(-15deg);
+          transform: translateX(-350%) skewX(-15deg);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+/* line 171, src/scss/_components/common/_header.scss */
+.header__btn span {
+  z-index: 2;
+  position: relative;
   font-weight: bold;
   font-size: 21px;
   letter-spacing: 0.09em;
@@ -922,13 +1265,62 @@ picture {
 }
 
 /* line 115, src/scss/_components/common/_footer.scss */
-.footer__details-title, .footer__details-description {
+.footer__details-title, .footer__details-description, .footer__details-link {
   font-size: 16px;
   line-height: 26px;
   color: #fff;
 }
 
 /* line 123, src/scss/_components/common/_footer.scss */
+.footer__details-link {
+  position: relative;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 127, src/scss/_components/common/_footer.scss */
+.footer__details-link:before, .footer__details-link:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 1px;
+  background-color: #0e65f3;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* line 139, src/scss/_components/common/_footer.scss */
+.footer__details-link:before {
+  left: 50%;
+}
+
+/* line 142, src/scss/_components/common/_footer.scss */
+.footer__details-link:after {
+  right: 50%;
+}
+
+/* line 146, src/scss/_components/common/_footer.scss */
+.footer__details-link:hover {
+  color: #0e65f3;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 150, src/scss/_components/common/_footer.scss */
+.footer__details-link:hover:before, .footer__details-link:hover:after {
+  width: 50%;
+  -webkit-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* line 159, src/scss/_components/common/_footer.scss */
 .footer__line {
   width: 86px;
   height: 3px;
@@ -937,7 +1329,7 @@ picture {
   background-color: #8e8e8e;
 }
 
-/* line 131, src/scss/_components/common/_footer.scss */
+/* line 167, src/scss/_components/common/_footer.scss */
 .footer__nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -950,7 +1342,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 135, src/scss/_components/common/_footer.scss */
+/* line 171, src/scss/_components/common/_footer.scss */
 .footer__nav-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -963,13 +1355,14 @@ picture {
           flex-direction: column;
 }
 
-/* line 139, src/scss/_components/common/_footer.scss */
+/* line 175, src/scss/_components/common/_footer.scss */
 .footer__nav-item:not(:last-of-type) {
   padding-bottom: 15px;
 }
 
-/* line 144, src/scss/_components/common/_footer.scss */
+/* line 180, src/scss/_components/common/_footer.scss */
 .footer__nav-link {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -980,21 +1373,32 @@ picture {
           align-items: center;
   font-size: 16px;
   color: #fff;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
-/* line 151, src/scss/_components/common/_footer.scss */
+/* line 188, src/scss/_components/common/_footer.scss */
+.footer__nav-link:hover {
+  color: #0e65f3;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 194, src/scss/_components/common/_footer.scss */
 .footer__nav-link.is-active svg {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
-/* line 157, src/scss/_components/common/_footer.scss */
+/* line 200, src/scss/_components/common/_footer.scss */
 .footer__nav-link svg {
   -webkit-transform: scale(-1);
       -ms-transform: scale(-1);
@@ -1006,30 +1410,38 @@ picture {
   -webkit-transform-origin: center;
       -ms-transform-origin: center;
           transform-origin: center;
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
-/* line 166, src/scss/_components/common/_footer.scss */
+/* line 209, src/scss/_components/common/_footer.scss */
 .footer__nav-link--inner {
   font-size: 16px;
   color: #8e8e8e;
 }
 
-/* line 170, src/scss/_components/common/_footer.scss */
+/* line 213, src/scss/_components/common/_footer.scss */
+.footer__nav-link--inner:hover {
+  color: #fff;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+/* line 218, src/scss/_components/common/_footer.scss */
 .footer__nav-link--inner:not(:last-of-type) {
   padding-bottom: 15px;
 }
 
-/* line 175, src/scss/_components/common/_footer.scss */
+/* line 223, src/scss/_components/common/_footer.scss */
 .footer__nav-link:not(:last-of-type) {
   padding-bottom: 15px;
 }
 
-/* line 179, src/scss/_components/common/_footer.scss */
+/* line 227, src/scss/_components/common/_footer.scss */
 .footer__nav-link-wrapper {
   display: none;
   -webkit-box-orient: vertical;
@@ -1041,7 +1453,7 @@ picture {
   padding-left: 10px;
 }
 
-/* line 188, src/scss/_components/common/_footer.scss */
+/* line 236, src/scss/_components/common/_footer.scss */
 .footer__sitemap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1053,7 +1465,7 @@ picture {
           align-items: center;
 }
 
-/* line 192, src/scss/_components/common/_footer.scss */
+/* line 240, src/scss/_components/common/_footer.scss */
 .footer__sitemap-line {
   width: 122px;
   height: 2px;
@@ -1061,7 +1473,7 @@ picture {
   background-color: #fff;
 }
 
-/* line 199, src/scss/_components/common/_footer.scss */
+/* line 247, src/scss/_components/common/_footer.scss */
 .footer__sitemap-text {
   text-transform: uppercase;
   font-weight: bold;
@@ -1071,13 +1483,13 @@ picture {
   color: #fff;
 }
 
-/* line 208, src/scss/_components/common/_footer.scss */
+/* line 256, src/scss/_components/common/_footer.scss */
 .footer__sitemap svg {
   margin-left: 16px;
   stroke: #0E65F3;
 }
 
-/* line 214, src/scss/_components/common/_footer.scss */
+/* line 262, src/scss/_components/common/_footer.scss */
 .footer__form {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1091,30 +1503,30 @@ picture {
   width: 100%;
 }
 
-/* line 219, src/scss/_components/common/_footer.scss */
+/* line 267, src/scss/_components/common/_footer.scss */
 .footer__form-field {
   position: relative;
   padding-bottom: 36px;
 }
 
-/* line 223, src/scss/_components/common/_footer.scss */
+/* line 271, src/scss/_components/common/_footer.scss */
 .footer__form-field.footer__form-field--textarea {
   padding-bottom: 48px;
 }
 
-/* line 228, src/scss/_components/common/_footer.scss */
+/* line 276, src/scss/_components/common/_footer.scss */
 .footer__form-field.is-focus .footer__form-label {
   -webkit-transform: translateY(-9px) scale(0.55);
       -ms-transform: translateY(-9px) scale(0.55);
           transform: translateY(-9px) scale(0.55);
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
-/* line 235, src/scss/_components/common/_footer.scss */
+/* line 283, src/scss/_components/common/_footer.scss */
 .footer__form-input {
   outline: none;
   position: relative;
@@ -1131,7 +1543,7 @@ picture {
   color: #fff;
 }
 
-/* line 249, src/scss/_components/common/_footer.scss */
+/* line 297, src/scss/_components/common/_footer.scss */
 .footer__form-label {
   white-space: nowrap;
   position: absolute;
@@ -1154,59 +1566,11 @@ picture {
   -webkit-transform-origin: left top;
       -ms-transform-origin: left top;
           transform-origin: left top;
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-}
-
-/* line 266, src/scss/_components/common/_footer.scss */
-.footer__form-btn {
-  outline: none;
-  cursor: pointer;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 61px;
-  padding-left: 31px;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background-color: transparent;
-}
-
-/* line 278, src/scss/_components/common/_footer.scss */
-.footer__form-btn:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 100%;
-  background-color: #0e65f3;
-}
-
-/* line 288, src/scss/_components/common/_footer.scss */
-.footer__form-btn span {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 21px;
-  letter-spacing: 0.09em;
-  line-height: 42px;
-  color: #fff;
-}
-
-/* line 297, src/scss/_components/common/_footer.scss */
-.footer__form-btn svg {
-  margin-left: 10px;
-  stroke: #0E65F3;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
 /* line 3, src/scss/_components/common/_menu.scss */
@@ -1223,6 +1587,7 @@ picture {
 
 /* line 12, src/scss/_components/common/_menu.scss */
 .menu__btn {
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1241,9 +1606,26 @@ picture {
   height: 50%;
   padding: 30px;
   background-color: #0e65f3;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  -o-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
 }
 
 /* line 25, src/scss/_components/common/_menu.scss */
+.menu__btn:hover .menu__btn-bg {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+/* line 36, src/scss/_components/common/_menu.scss */
 .menu__btn-1:before, .menu__btn-1:after, .menu__btn-2:before, .menu__btn-2:after, .menu__btn-3:before, .menu__btn-3:after {
   content: '';
   position: absolute;
@@ -1252,19 +1634,19 @@ picture {
   background-color: #0b59d8;
 }
 
-/* line 34, src/scss/_components/common/_menu.scss */
+/* line 45, src/scss/_components/common/_menu.scss */
 .menu__btn-1:before, .menu__btn-2:before, .menu__btn-3:before {
   width: 103px;
   height: 2px;
 }
 
-/* line 38, src/scss/_components/common/_menu.scss */
+/* line 49, src/scss/_components/common/_menu.scss */
 .menu__btn-1:after, .menu__btn-2:after, .menu__btn-3:after {
   width: 2px;
   height: 103px;
 }
 
-/* line 47, src/scss/_components/common/_menu.scss */
+/* line 58, src/scss/_components/common/_menu.scss */
 .menu__btn-6:before, .menu__btn-6:after, .menu__btn-7:before, .menu__btn-7:after, .menu__btn-8:before, .menu__btn-8:after {
   content: '';
   position: absolute;
@@ -1272,7 +1654,7 @@ picture {
   background-color: #0b59d8;
 }
 
-/* line 55, src/scss/_components/common/_menu.scss */
+/* line 66, src/scss/_components/common/_menu.scss */
 .menu__btn-6:before, .menu__btn-7:before, .menu__btn-8:before {
   top: -2px;
   left: 0;
@@ -1280,14 +1662,14 @@ picture {
   height: 2px;
 }
 
-/* line 61, src/scss/_components/common/_menu.scss */
+/* line 72, src/scss/_components/common/_menu.scss */
 .menu__btn-6:after, .menu__btn-7:after, .menu__btn-8:after {
   top: 0;
   width: 2px;
   height: 103px;
 }
 
-/* line 68, src/scss/_components/common/_menu.scss */
+/* line 79, src/scss/_components/common/_menu.scss */
 .menu__btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1300,7 +1682,27 @@ picture {
   height: 100%;
 }
 
-/* line 75, src/scss/_components/common/_menu.scss */
+/* line 86, src/scss/_components/common/_menu.scss */
+.menu__btn-bg {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #000;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+/* line 98, src/scss/_components/common/_menu.scss */
 .menu__btn-num {
   padding-bottom: 13px;
   font-size: 16px;
@@ -1309,8 +1711,10 @@ picture {
   color: #fff;
 }
 
-/* line 83, src/scss/_components/common/_menu.scss */
+/* line 106, src/scss/_components/common/_menu.scss */
 .menu__btn-title {
+  z-index: 2;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1322,7 +1726,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 87, src/scss/_components/common/_menu.scss */
+/* line 112, src/scss/_components/common/_menu.scss */
 .menu__btn-title span {
   text-transform: uppercase;
   font-weight: bold;
@@ -1436,64 +1840,6 @@ picture {
   font-size: 18px;
   line-height: 28px;
   color: #000;
-}
-
-/* line 82, src/scss/_components/common/_services.scss */
-.services__box-btn {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 61px;
-  padding-left: 32px;
-}
-
-/* line 90, src/scss/_components/common/_services.scss */
-.services__box-btn:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 100%;
-  background-color: #0e65f3;
-}
-
-/* line 100, src/scss/_components/common/_services.scss */
-.services__box-btn-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-/* line 105, src/scss/_components/common/_services.scss */
-.services__box-btn span {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 21px;
-  letter-spacing: 0.09em;
-  line-height: 42px;
-  color: #000;
-}
-
-/* line 114, src/scss/_components/common/_services.scss */
-.services__box-btn svg {
-  margin-left: 38px;
-  stroke: #0e65f3;
 }
 
 /* line 3, src/scss/_components/common/_request.scss */
@@ -1624,6 +1970,10 @@ picture {
 
 /* line 96, src/scss/_components/common/_request.scss */
 .request__box-btn {
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1639,10 +1989,54 @@ picture {
   width: -webkit-calc(100% - 44px);
   width: calc(100% - 44px);
   height: 123px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
   background-color: #0e65f3;
 }
 
-/* line 104, src/scss/_components/common/_request.scss */
+/* line 111, src/scss/_components/common/_request.scss */
+.request__box-btn:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 33%;
+  height: -webkit-calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-color: #2675f4;
+  -webkit-transform: translateX(150%) skewX(-15deg);
+      -ms-transform: translateX(150%) skewX(-15deg);
+          transform: translateX(150%) skewX(-15deg);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+/* line 124, src/scss/_components/common/_request.scss */
+.request__box-btn:hover:after {
+  -webkit-transform: translateX(-350%) skewX(-15deg);
+      -ms-transform: translateX(-350%) skewX(-15deg);
+          transform: translateX(-350%) skewX(-15deg);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+/* line 130, src/scss/_components/common/_request.scss */
+.request__box-btn span,
+.request__box-btn svg {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 136, src/scss/_components/common/_request.scss */
 .request__box-btn span {
   text-transform: uppercase;
   font-weight: bold;
@@ -1652,7 +2046,7 @@ picture {
   color: #fff;
 }
 
-/* line 113, src/scss/_components/common/_request.scss */
+/* line 145, src/scss/_components/common/_request.scss */
 .request__box-btn svg {
   margin-left: 42px;
   stroke: #fff;
@@ -1745,13 +2139,9 @@ picture {
 /* line 7, src/scss/_components/homepage/_main.scss */
 .main__title {
   padding-bottom: 78px;
-  font-weight: bold;
-  font-size: 110px;
-  line-height: 110px;
-  color: #000;
 }
 
-/* line 15, src/scss/_components/homepage/_main.scss */
+/* line 11, src/scss/_components/homepage/_main.scss */
 .main__desc {
   font-size: 24px;
   line-height: 42px;
@@ -1828,12 +2218,34 @@ picture {
 
 /* line 58, src/scss/_components/homepage/_about.scss */
 .about__img {
+  overflow: hidden;
   position: relative;
   width: 100%;
   height: 827px;
 }
 
-/* line 68, src/scss/_components/homepage/_about.scss */
+/* line 65, src/scss/_components/homepage/_about.scss */
+.about__img:hover img {
+  -webkit-transform: scale(1.1) rotate(-0.5deg);
+      -ms-transform: scale(1.1) rotate(-0.5deg);
+          transform: scale(1.1) rotate(-0.5deg);
+  -webkit-transition: -webkit-transform 0.55s ease-in-out;
+  transition: -webkit-transform 0.55s ease-in-out;
+  -o-transition: transform 0.55s ease-in-out;
+  transition: transform 0.55s ease-in-out;
+  transition: transform 0.55s ease-in-out, -webkit-transform 0.55s ease-in-out;
+}
+
+/* line 71, src/scss/_components/homepage/_about.scss */
+.about__img img {
+  -webkit-transition: -webkit-transform 0.55s ease-in-out;
+  transition: -webkit-transform 0.55s ease-in-out;
+  -o-transition: transform 0.55s ease-in-out;
+  transition: transform 0.55s ease-in-out;
+  transition: transform 0.55s ease-in-out, -webkit-transform 0.55s ease-in-out;
+}
+
+/* line 77, src/scss/_components/homepage/_about.scss */
 .about__block {
   width: 100%;
   min-height: 197px;
@@ -1841,7 +2253,7 @@ picture {
   background-color: #0e65f3;
 }
 
-/* line 74, src/scss/_components/homepage/_about.scss */
+/* line 83, src/scss/_components/homepage/_about.scss */
 .about__block-text {
   width: 100%;
   max-width: 385px;
@@ -1921,74 +2333,24 @@ picture {
   padding-bottom: 382px;
 }
 
-/* line 51, src/scss/_components/homepage/_portfolio.scss */
-.portfolio__btn {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 61px;
-  padding-left: 32px;
-}
-
-/* line 59, src/scss/_components/homepage/_portfolio.scss */
-.portfolio__btn:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 100%;
-  background-color: #0e65f3;
-}
-
-/* line 69, src/scss/_components/homepage/_portfolio.scss */
+/* line 52, src/scss/_components/homepage/_portfolio.scss */
 .portfolio__btn-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   padding-left: 138px;
 }
 
-/* line 74, src/scss/_components/homepage/_portfolio.scss */
-.portfolio__btn span {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 21px;
-  letter-spacing: 0.09em;
-  line-height: 42px;
-  color: #fff;
-}
-
-/* line 83, src/scss/_components/homepage/_portfolio.scss */
-.portfolio__btn svg {
-  margin-left: 31px;
-  stroke: #0e65f3;
-}
-
-/* line 89, src/scss/_components/homepage/_portfolio.scss */
+/* line 57, src/scss/_components/homepage/_portfolio.scss */
 .portfolio__slider {
   position: relative;
   width: -webkit-calc(100% + 140px);
   width: calc(100% + 140px);
 }
 
-/* line 96, src/scss/_components/homepage/_portfolio.scss */
+/* line 64, src/scss/_components/homepage/_portfolio.scss */
 .portfolio .swiper-container {
   padding-bottom: 67px;
 }
 
-/* line 100, src/scss/_components/homepage/_portfolio.scss */
+/* line 68, src/scss/_components/homepage/_portfolio.scss */
 .portfolio .swiper-slide {
   overflow: hidden;
   position: relative;
@@ -1997,7 +2359,7 @@ picture {
   height: 679px;
 }
 
-/* line 116, src/scss/_components/homepage/_portfolio.scss */
+/* line 84, src/scss/_components/homepage/_portfolio.scss */
 .portfolio .swiper-pagination {
   bottom: 0;
   display: -webkit-box;
@@ -2014,7 +2376,7 @@ picture {
           justify-content: flex-start;
 }
 
-/* line 122, src/scss/_components/homepage/_portfolio.scss */
+/* line 90, src/scss/_components/homepage/_portfolio.scss */
 .portfolio .swiper-pagination-bullet {
   opacity: 1;
   width: 27px;
@@ -2026,9 +2388,20 @@ picture {
   background-color: #4e4e4e;
 }
 
-/* line 131, src/scss/_components/homepage/_portfolio.scss */
+/* line 99, src/scss/_components/homepage/_portfolio.scss */
+.portfolio .swiper-pagination-bullet:hover {
+  background-color: #0e65f3;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  -o-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+}
+
+/* line 104, src/scss/_components/homepage/_portfolio.scss */
 .portfolio .swiper-pagination-bullet-active {
   background-color: #0e65f3;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  -o-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
 }
 
 /* line 3, src/scss/_components/homepage/_do.scss */
@@ -2077,60 +2450,6 @@ picture {
   padding-bottom: 50px;
 }
 
-/* line 41, src/scss/_components/homepage/_do.scss */
-.do__btn {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 61px;
-  padding-left: 31px;
-}
-
-/* line 49, src/scss/_components/homepage/_do.scss */
-.do__btn:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 100%;
-  background-color: #0e65f3;
-}
-
-/* line 59, src/scss/_components/homepage/_do.scss */
-.do__btn-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-/* line 63, src/scss/_components/homepage/_do.scss */
-.do__btn span {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 21px;
-  letter-spacing: 0.09em;
-  line-height: 42px;
-  color: #fff;
-}
-
-/* line 72, src/scss/_components/homepage/_do.scss */
-.do__btn svg {
-  margin-left: 35px;
-  stroke: #0e65f3;
-}
-
 /* line 3, src/scss/_components/abouts/_main.scss */
 .a-main {
   position: relative;
@@ -2138,13 +2457,14 @@ picture {
   padding-bottom: 359px;
   background-color: #000;
   background-image: url("../img/img-about-main-bg@2x.png");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
 }
 
-/* line 13, src/scss/_components/abouts/_main.scss */
+/* line 14, src/scss/_components/abouts/_main.scss */
 .a-main:after {
   content: '';
   z-index: 2;
@@ -2159,12 +2479,12 @@ picture {
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
 }
 
-/* line 24, src/scss/_components/abouts/_main.scss */
+/* line 25, src/scss/_components/abouts/_main.scss */
 .a-main__label {
   padding-bottom: 22px;
 }
 
-/* line 28, src/scss/_components/abouts/_main.scss */
+/* line 29, src/scss/_components/abouts/_main.scss */
 .a-main__title {
   font-weight: bold;
   font-size: 110px;
@@ -2219,17 +2539,40 @@ picture {
 
 /* line 35, src/scss/_components/abouts/_mission.scss */
 .mission__img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 827px;
 }
 
-/* line 41, src/scss/_components/abouts/_mission.scss */
+/* line 43, src/scss/_components/abouts/_mission.scss */
+.mission__img:hover img {
+  -webkit-transform: scale(1.1) rotate(-0.5deg);
+      -ms-transform: scale(1.1) rotate(-0.5deg);
+          transform: scale(1.1) rotate(-0.5deg);
+  -webkit-transition: -webkit-transform 0.55s ease-in-out;
+  transition: -webkit-transform 0.55s ease-in-out;
+  -o-transition: transform 0.55s ease-in-out;
+  transition: transform 0.55s ease-in-out;
+  transition: transform 0.55s ease-in-out, -webkit-transform 0.55s ease-in-out;
+}
+
+/* line 49, src/scss/_components/abouts/_mission.scss */
+.mission__img img {
+  -webkit-transition: -webkit-transform 0.55s ease-in-out;
+  transition: -webkit-transform 0.55s ease-in-out;
+  -o-transition: transform 0.55s ease-in-out;
+  transition: transform 0.55s ease-in-out;
+  transition: transform 0.55s ease-in-out, -webkit-transform 0.55s ease-in-out;
+}
+
+/* line 55, src/scss/_components/abouts/_mission.scss */
 .mission__title {
   padding-bottom: 69px;
 }
 
-/* line 45, src/scss/_components/abouts/_mission.scss */
+/* line 59, src/scss/_components/abouts/_mission.scss */
 .mission__desc {
   width: 100%;
   max-width: 775px;
@@ -2238,7 +2581,7 @@ picture {
   color: #fff;
 }
 
-/* line 52, src/scss/_components/abouts/_mission.scss */
+/* line 66, src/scss/_components/abouts/_mission.scss */
 .mission__desc:not(:last-of-type) {
   padding-bottom: 38px;
 }
@@ -2365,13 +2708,14 @@ picture {
   padding-bottom: 155px;
   background-color: #0E65F3;
   background-image: url("../img/img-wwd-main-bg@2x.png");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
 }
 
-/* line 13, src/scss/_components/what-we-do/_main.scss */
+/* line 14, src/scss/_components/what-we-do/_main.scss */
 .wwd-main:after {
   content: '';
   z-index: 1;
@@ -2386,28 +2730,26 @@ picture {
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
 }
 
-/* line 24, src/scss/_components/what-we-do/_main.scss */
+/* line 25, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 29, src/scss/_components/what-we-do/_main.scss */
+/* line 30, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__label {
   padding-bottom: 22px;
 }
 
-/* line 33, src/scss/_components/what-we-do/_main.scss */
+/* line 34, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__title {
   padding-bottom: 81px;
-  font-weight: bold;
-  font-size: 110px;
-  line-height: 110px;
-  color: #fff;
 }
 
-/* line 41, src/scss/_components/what-we-do/_main.scss */
+/* line 38, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__btn {
+  overflow: hidden;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2425,7 +2767,46 @@ picture {
   background-color: #0E65F3;
 }
 
-/* line 49, src/scss/_components/what-we-do/_main.scss */
+/* line 48, src/scss/_components/what-we-do/_main.scss */
+.wwd-main__btn:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 33%;
+  height: -webkit-calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-color: #2675f4;
+  -webkit-transform: translateX(150%) skewX(-15deg);
+      -ms-transform: translateX(150%) skewX(-15deg);
+          transform: translateX(150%) skewX(-15deg);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+/* line 61, src/scss/_components/what-we-do/_main.scss */
+.wwd-main__btn:hover:after {
+  -webkit-transform: translateX(-350%) skewX(-15deg);
+      -ms-transform: translateX(-350%) skewX(-15deg);
+          transform: translateX(-350%) skewX(-15deg);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+/* line 67, src/scss/_components/what-we-do/_main.scss */
+.wwd-main__btn span,
+.wwd-main__btn svg {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 73, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__btn span {
   text-transform: uppercase;
   font-weight: bold;
@@ -2435,7 +2816,7 @@ picture {
   color: #fff;
 }
 
-/* line 58, src/scss/_components/what-we-do/_main.scss */
+/* line 82, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__btn svg {
   margin-left: 35px;
   stroke: #fff;
@@ -2670,6 +3051,8 @@ picture {
 .forms__form-btn {
   outline: none;
   cursor: pointer;
+  overflow: hidden;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2700,6 +3083,38 @@ picture {
 }
 
 /* line 109, src/scss/_components/contacts/_forms.scss */
+.forms__form-btn:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 33%;
+  height: -webkit-calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-color: #2675f4;
+  -webkit-transform: translateX(150%) skewX(-15deg);
+      -ms-transform: translateX(150%) skewX(-15deg);
+          transform: translateX(150%) skewX(-15deg);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+/* line 122, src/scss/_components/contacts/_forms.scss */
+.forms__form-btn:hover:after {
+  -webkit-transform: translateX(-350%) skewX(-15deg);
+      -ms-transform: translateX(-350%) skewX(-15deg);
+          transform: translateX(-350%) skewX(-15deg);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+/* line 130, src/scss/_components/contacts/_forms.scss */
 .forms__block {
   position: relative;
   width: 100%;
@@ -2709,7 +3124,7 @@ picture {
   background-color: #0E65F3;
 }
 
-/* line 117, src/scss/_components/contacts/_forms.scss */
+/* line 138, src/scss/_components/contacts/_forms.scss */
 .forms__block-text {
   width: 100%;
   max-width: 561px;

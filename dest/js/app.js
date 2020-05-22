@@ -90,7 +90,16 @@ var initSwiper = function initSwiper() {
 
 	var menuToggle = function menuToggle() {
 		$('[menu-toggle-js]').on('click', function (ev) {
-			$('#menu').toggle();
+			$('#menu').slideToggle();
+			$('html, body').toggleClass('is-hideScroll');
+		});
+	};
+
+	var scrollToTop = function scrollToTop() {
+		$('[scroll-top-js]').on('click', function (ev) {
+			$('body, html').animate({
+				scrollTop: 0
+			}, 1000);
 		});
 	};
 	/*
@@ -115,6 +124,7 @@ var initSwiper = function initSwiper() {
 		footerLinkToggle();
 		inputFocusAnimate();
 		menuToggle();
+		scrollToTop();
 		// ==========================================
 	};
 	initNative();

@@ -49,40 +49,8 @@
 	}
 
 	&__btn {
-		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 61px;
-		padding-left: 32px;
-
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 1px;
-			height: 100%;
-			background-color: #0e65f3;
-		}
-
 		&-wrapper {
-			display: flex;
 			padding-left: 138px;
-		}
-
-		span {
-			text-transform: uppercase;
-			font-weight: bold;
-			font-size: 21px;
-			letter-spacing: 0.09em;
-			line-height: 42px;
-			color: #fff;
-		}
-
-		svg {
-			margin-left: 31px;
-			stroke: #0e65f3;
 		}
 	}
 
@@ -128,8 +96,14 @@
 				border-radius: 0;
 				background-color: #4e4e4e;
 
+				&:hover {
+					background-color: #0e65f3;
+					@include transition(background-color);
+				}
+
 				&-active {
 					background-color: #0e65f3;
+					@include transition(background-color);
 				}
 			}
 		}

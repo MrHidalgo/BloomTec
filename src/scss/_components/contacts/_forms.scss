@@ -87,6 +87,8 @@
 		&-btn {
 			outline: none;
 			cursor: pointer;
+			overflow: hidden;
+			position: relative;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -103,6 +105,25 @@
 			letter-spacing: 0.09em;
 			line-height: 42px;
 			color: #fff;
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: -10px;
+				right: 0;
+				width: 33%;
+				height: calc(100% + 20px);
+				background-color: lighten(#0e65f3, 5%);
+				transform: translateX(150%) skewX(-15deg);
+				@include transition(transform);
+			}
+
+			&:hover {
+				&:after {
+					transform: translateX(-350%) skewX(-15deg);
+					@include transition(transform);
+				}
+			}
 		}
 	}
 

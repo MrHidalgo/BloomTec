@@ -94,12 +94,44 @@
 		}
 
 		&-btn {
+			outline: none;
+			cursor: pointer;
+			overflow: hidden;
+			position: relative;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			width: calc(100% - 44px);
 			height: 123px;
+			box-shadow: none;
+			border: none;
+			border-radius: 0;
 			background-color: #0e65f3;
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: -10px;
+				right: 0;
+				width: 33%;
+				height: calc(100% + 20px);
+				background-color: lighten(#0e65f3, 5%);
+				transform: translateX(150%) skewX(-15deg);
+				@include transition(transform);
+			}
+
+			&:hover {
+				&:after {
+					transform: translateX(-350%) skewX(-15deg);
+					@include transition(transform);
+				}
+			}
+
+			span,
+			svg {
+				z-index: 2;
+				position: relative;
+			}
 
 			span {
 				text-transform: uppercase;

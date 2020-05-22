@@ -52,14 +52,14 @@
             <div class="header__nav">
               <div class="header__nav-left">
                 <ul class="header__nav-list">
-                  <li class="header__nav-item"><a class="header__nav-link" href="#">HOME</a></li>
-                  <li class="header__nav-item"><a class="header__nav-link" href="#">About US</a></li>
-                  <li class="header__nav-item"><a class="header__nav-link" href="#">Portfolio</a></li>
-                  <li class="header__nav-item"><a class="header__nav-link" href="#">Services</a></li>
-                  <li class="header__nav-item"><a class="header__nav-link is-active" href="#">Contact</a></li>
+                  <li class="header__nav-item"><a class="header__nav-link" href="#"><span>HOME</span></a></li>
+                  <li class="header__nav-item"><a class="header__nav-link" href="#"><span>About US</span></a></li>
+                  <li class="header__nav-item"><a class="header__nav-link" href="#"><span>Portfolio</span></a></li>
+                  <li class="header__nav-item"><a class="header__nav-link" href="#"><span>Services</span></a></li>
+                  <li class="header__nav-item"><a class="header__nav-link is-active" href="#"><span>Contact</span></a></li>
                 </ul>
               </div>
-              <div class="header__nav-right"><a class="header__btn" href="#" menu-toggle-js>GET ESTIMATION</a></div>
+              <div class="header__nav-right"><a class="header__btn" href="#" menu-toggle-js><span>GET ESTIMATION</span></a></div>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@
         <div class="c-grid">
           <div class="c-main__wrapper">
             <p class="c-main__label c-label"><span class="c-label__line"></span><span>contact</span></p>
-            <div class="c-main__title">
+            <div class="c-main__title c-title c-title--big">
               <p>Hello, let’s talk</p><img src="img/img-contacts-main-arrow.svg" alt="">
             </div>
           </div>
@@ -153,10 +153,10 @@
                 <p class="footer__heading footer__heading--light">Rabat</p>
                 <div class="footer__details">
                   <div class="footer__details-wrapper">
-                    <p class="footer__details-title">Telephone</p><a class="footer__details-description" href="tel:212620306744">+212-6 2030 - 6744</a>
+                    <p class="footer__details-title">Telephone</p><a class="footer__details-link" href="tel:212620306744">+212-6 2030 - 6744</a>
                   </div>
                   <div class="footer__details-wrapper">
-                    <p class="footer__details-title">E-mail</p><a class="footer__details-description" href="mailto:hello@bloomtec.com">hello@bloomtec.com</a>
+                    <p class="footer__details-title">E-mail</p><a class="footer__details-link" href="mailto:hello@bloomtec.com">hello@bloomtec.com</a>
                   </div>
                   <div class="footer__details-wrapper">
                     <p class="footer__details-title">Address</p>
@@ -201,11 +201,13 @@
                 <label class="footer__form-label" for="let-from-question">Your question</label>
               </div>
               <div class="footer__form-field">
-                <button class="footer__form-btn" type="submit"><span>Discuss a project</span>
-                  <svg class="icon-svg icon-arrow-right ">
-                    <use xlink:href="./img/sprite.svg#arrow-right"></use>
-                  </svg>
-                </button>
+                <div class="c-btn__wrapper">
+                  <button class="footer__form-btn c-btn c-btn--light" type="submit"><span>Discuss a project</span>
+                    <svg class="icon-svg icon-arrow-right ">
+                      <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </button>
+                </div>
               </div>
               <div class="footer__form-field">
                 <div class="c-checkbox c-checkbox--footer">
@@ -234,7 +236,7 @@
               <p class="copyright__text">© Bloomtec 2020. All rights reserved.</p>
             </div>
           </div>
-          <div class="footer__wrapper-right"><a class="top" href="#"><span class="top__text">Top</span>
+          <div class="footer__wrapper-right"><a class="top" href="#" scroll-top-js><span class="top__text">Top</span>
               <svg class="icon-svg icon-top-arrow ">
                 <use xlink:href="./img/sprite.svg#top-arrow"></use>
               </svg></a></div>
@@ -245,13 +247,21 @@
     <!-- SECTION :: START-->
     <section class="menu" id="menu">
       <div class="menu__btn-wrapper"><a class="menu__btn menu__btn-1" href="#">
+          <div class="menu__btn-bg"></div>
           <p class="menu__btn-title"><i class="menu__btn-num">01</i><span>Brand<br>Marketing</span></p></a><a class="menu__btn menu__btn-2" href="#">
+          <div class="menu__btn-bg"></div>
           <p class="menu__btn-title"><i class="menu__btn-num">02</i><span>Website Design<br>& Development</span></p></a><a class="menu__btn menu__btn-3" href="#">
+          <div class="menu__btn-bg"></div>
           <p class="menu__btn-title"><i class="menu__btn-num">03</i><span>Creative, Graphic Design<br>& Communication</span></p></a><a class="menu__btn menu__btn-4" href="#">
+          <div class="menu__btn-bg"></div>
           <p class="menu__btn-title"><i class="menu__btn-num">04</i><span>Social Media<br>& Online Ads Management</span></p></a><a class="menu__btn menu__btn-5" href="#">
+          <div class="menu__btn-bg"></div>
           <p class="menu__btn-title"><i class="menu__btn-num">05</i><span>Marketing<br>Strategy</span></p></a><a class="menu__btn menu__btn-6" href="#">
+          <div class="menu__btn-bg"></div>
           <p class="menu__btn-title"><i class="menu__btn-num">06</i><span>Content Marketing<br>& Public Relations</span></p></a><a class="menu__btn menu__btn-7" href="#">
+          <div class="menu__btn-bg"></div>
           <p class="menu__btn-title"><i class="menu__btn-num">07</i><span>Mobile Application<br>Development</span></p></a><a class="menu__btn menu__btn-8" href="#">
+          <div class="menu__btn-bg"></div>
           <p class="menu__btn-title"><i class="menu__btn-num">08</i><span>Video<br>Production</span></p></a></div>
     </section>
     <!-- SECTION :: END-->

@@ -78,44 +78,6 @@
 			line-height: 28px;
 			color: #000;
 		}
-
-		&-btn {
-			position: relative;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 61px;
-			padding-left: 32px;
-
-			&:before {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 1px;
-				height: 100%;
-				background-color: #0e65f3;
-			}
-
-			&-wrapper {
-				display: flex;
-				justify-content: flex-start;
-			}
-
-			span {
-				text-transform: uppercase;
-				font-weight: bold;
-				font-size: 21px;
-				letter-spacing: 0.09em;
-				line-height: 42px;
-				color: $c-black;
-			}
-
-			svg {
-				margin-left: 38px;
-				stroke: #0e65f3;
-			}
-		}
 	}
 }
 

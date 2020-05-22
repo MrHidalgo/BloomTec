@@ -37,43 +37,6 @@
 			padding-bottom: 50px;
 		}
 	}
-
-	&__btn {
-		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 61px;
-		padding-left: 31px;
-
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 1px;
-			height: 100%;
-			background-color: #0e65f3;
-		}
-
-		&-wrapper {
-			display: flex;
-		}
-
-		span {
-			text-transform: uppercase;
-			font-weight: bold;
-			font-size: 21px;
-			letter-spacing: 0.09em;
-			line-height: 42px;
-			color: #fff;
-		}
-
-		svg {
-			margin-left: 35px;
-			stroke: #0e65f3;
-		}
-	}
 }
 
 // SECTION :: END

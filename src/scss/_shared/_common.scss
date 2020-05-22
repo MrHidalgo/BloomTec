@@ -21,7 +21,39 @@
 	}
 
 	&__link {
+		position: relative;
 		color: #000;
+		@include transition(color);
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			top: 100%;
+			width: 0;
+			height: 1px;
+			background-color: #0e65f3;
+			backface-visibility: hidden;
+			@include transition(width);
+		}
+
+		&:before {
+			left: 50%;
+		}
+		&:after {
+			right: 50%;
+		}
+
+		&:hover {
+			color: #0e65f3;
+			@include transition(color);
+
+			&:before,
+			&:after {
+				width: 50%;
+				@include transition(width);
+			}
+		}
 	}
 }
 
@@ -142,6 +174,12 @@
 
 			a {
 				text-decoration: underline;
+				@include transition(color);
+
+				&:hover {
+					color: #fff;
+					@include transition(color);
+				}
 			}
 		}
 	}

@@ -12,21 +12,47 @@
 		.header {
 			&__nav {
 				&-link {
+					@include adaptive(1023) {
+						&:hover {
+							span {
+								color: #ffffff;
+							}
+						}
+
+						&.is-active {
+							span {
+								color: #ffffff;
+							}
+						}
+					}
+
 					span {
 						color: #ffffff;
+						@include adaptive(1023) {
+							color: #000000;
+						}
 					}
 				}
 			}
 
 			&__btn {
 				background-color: $c-white;
+				@include adaptive(1023) {
+					background-color: #0e65f3;
+				}
 
 				&:after {
 					background-color: darken($c-white, 5%);
+					@include adaptive(1023) {
+						background-color: darken(#0e65f3, 5%);
+					}
 				}
 
 				span {
 					color: $c-black;
+					@include adaptive(1023) {
+						color: #ffffff;
+					}
 				}
 			}
 		}
@@ -204,6 +230,7 @@
 			}
 
 			&.is-active {
+				width: calc(100% + 1px);
 				background-color: #0e65f3;
 			}
 

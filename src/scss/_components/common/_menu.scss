@@ -8,6 +8,14 @@
 	left: 0;
 	width: 100%;
 	height: calc(100vh - 170px);
+	@include adaptive(1365) {
+		top: 149px;
+		height: calc(100vh - 149px);
+	}
+	@include adaptive(1279) {
+		top: 129px;
+		height: calc(100vh - 129px);
+	}
 	@include adaptive(1023) {
 		top: 0;
 		height: calc(100% - 79px);
@@ -25,11 +33,14 @@
 		padding: 30px;
 		background-color: #0e65f3;
 		@include transition(background-color);
+		@include adaptive(1279) {
+			padding: 10px;
+		}
 		@include adaptive(1023) {
+			justify-content: flex-start;
 			width: calc(100% / 3);
 			height: calc(100% / 3);
 			padding: 15px 15px 15px 10px;
-			justify-content: flex-start;
 		}
 
 		&:hover {
@@ -204,8 +215,11 @@
 				font-size: 24px;
 				line-height: 30px;
 				color: #fff;
-				@include adaptive(1023) {
+				@include adaptive(1279) {
 					font-size: 20px;
+				}
+				@include adaptive(1023) {
+					font-size: 18px;
 				}
 			}
 		}

@@ -6,6 +6,12 @@
 
 	&__wrapper {
 		padding-left: 63px;
+		@include adaptive(1279) {
+			padding-left: 40px;
+		}
+		@include adaptive(1023) {
+			padding-left: 0;
+		}
 	}
 
 	&__desc {
@@ -15,6 +21,9 @@
 		font-size: 24px;
 		line-height: 38px;
 		color: #fff;
+		@include adaptive(1023) {
+			font-size: 22px;
+		}
 	}
 
 	&__form {
@@ -22,6 +31,12 @@
 		width: 100%;
 		max-width: 1376px;
 		padding-left: 75px;
+		@include adaptive(1279) {
+			padding-left: 40px;
+		}
+		@include adaptive(1023) {
+			padding-left: 20px;
+		}
 
 		&:before {
 			content: '';
@@ -52,6 +67,15 @@
 			font-weight: bold;
 			font-size: 35px;
 			color: #fff;
+			@include adaptive(1535) {
+				font-size: 30px;
+			}
+			@include adaptive(1279) {
+				font-size: 26px;
+			}
+			@include adaptive(1023) {
+				font-size: 20px;
+			}
 		}
 
 		&-input,
@@ -72,6 +96,22 @@
 			@include inputPlaceholder {
 				font-size: 25px;
 				color: #8e8e8e;
+				@include adaptive(1279) {
+					font-size: 22px;
+				}
+				@include adaptive(1023) {
+					font-size: 20px;
+				}
+			}
+			@include adaptive(1279) {
+				height: 60px;
+				font-size: 22px;
+			}
+			@include adaptive(1023) {
+				width: 308px;
+				margin-left: 15px;
+				margin-right: 15px;
+				font-size: 20px;
 			}
 		}
 
@@ -82,6 +122,9 @@
 			height: 302px;
 			margin-right: 0;
 			padding: 25px 30px;
+			@include adaptive(1023) {
+				height: 202px;
+			}
 		}
 
 		&-btn {
@@ -105,6 +148,9 @@
 			letter-spacing: 0.09em;
 			line-height: 42px;
 			color: #fff;
+			@include adaptive(1279) {
+				height: 100px;
+			}
 
 			&:after {
 				content: '';
@@ -131,9 +177,11 @@
 		position: relative;
 		width: 100%;
 		max-width: 1088px;
-		min-height: 197px;
 		padding: 55px 55px 55px 138px;
 		background-color: #0E65F3;
+		@include adaptive(1279) {
+			padding: 35px 35px 35px 100px;
+		}
 
 		&-text {
 			width: 100%;
@@ -142,6 +190,10 @@
 			font-size: 24px;
 			line-height: 30px;
 			color: #fff;
+			@include adaptive(1279) {
+				font-size: 22px;
+				line-height: 28px;
+			}
 		}
 	}
 }

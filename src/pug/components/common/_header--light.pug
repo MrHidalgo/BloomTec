@@ -26,7 +26,13 @@ header#header.header.header--light
 
 			.header__wrapper-right
 
-				.header__nav
+				+hamburger()
+
+				.header__nav(mobile-block-js)
+
+					a.header__nav-close(href="#" mobile-close-js)
+						i.icon-font.icon-close
+
 					.header__nav-left
 
 						ul.header__nav-list

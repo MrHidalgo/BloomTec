@@ -3,7 +3,7 @@ ProjectTitle: BloomTec
 PageList:
 - file: index.html
   titleName: Home
-  ready: 35
+  ready: 55
 - file: abouts.html
   titleName: About Us
   ready: 35
@@ -27,4 +27,4 @@ PageList:
   ready: 1
 - file: contacts.html
   titleName: Contact Us
-  ready: 35
+  ready: 55

@@ -4,13 +4,25 @@
 	padding-top: 327px;
 	padding-bottom: 45px;
 	background-color: $c-black;
+	@include adaptive(1279) {
+		padding-top: 297px;
+	}
 
 	&__wrapper {
 		padding-bottom: 231px;
+		@include adaptive(1535) {
+			padding-bottom: 160px;
+		}
+		@include adaptive(1279) {
+			padding-bottom: 130px;
+		}
 	}
 
 	&__content {
 		padding-left: 63px;
+		@include adaptive(1279) {
+			padding-left: 40px;
+		}
 	}
 
 	&__label {
@@ -24,9 +36,9 @@
 		p {
 			padding-right: 69px;
 			font-weight: bold;
-			font-size: 110px;
-			line-height: 110px;
 			color: #fff;
+			@include fluid(font-size, 320px, 1920px, 38px, 110px);
+			@include fluid(line-height, 320px, 1920px, 55px, 110px);
 		}
 
 		img {
@@ -35,6 +47,12 @@
 			display: block;
 			max-width: 100%;
 			height: auto;
+			@include adaptive(1279) {
+				max-width: 158px;
+			}
+			@include adaptive(1023) {
+				max-width: 128px;
+			}
 		}
 	}
 }

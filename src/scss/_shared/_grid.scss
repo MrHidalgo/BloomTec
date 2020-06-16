@@ -11,7 +11,11 @@ $paddingRight: 75px;
   margin-left: auto;
   padding-right: $paddingRight;
   padding-left: $paddingLeft;
-	@include adaptive(1279) {
+	@include adaptive(1535) {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	@include adaptive(1365) {
 		padding-left: 20px;
 		padding-right: 20px;
 	}

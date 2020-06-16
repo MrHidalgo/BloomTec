@@ -4,19 +4,38 @@
 	padding-top: 318px;
 	padding-bottom: 210px;
 	background-color: $c-black;
+	@include adaptive(1365) {
+		padding-top: 228px;
+	}
+	@include adaptive(1023) {
+		padding-top: 158px;
+		padding-bottom: 170px;
+	}
 
 	&__wrapper {
 		padding-left: 63px;
+		@include adaptive(1599) {
+			padding-left: 0;
+		}
 	}
 
 	&__title {
 		padding-bottom: 90px;
+		@include adaptive(1279) {
+			padding-bottom: 70px;
+		}
 	}
 
 	&__content {
 		width: 100%;
 		max-width: 1163px;
 		padding-left: 213px;
+		@include adaptive(1599) {
+			padding-left: 150px;
+		}
+		@include adaptive(1279) {
+			padding-left: 100px;
+		}
 	}
 
 	&__subtitle {
@@ -25,6 +44,9 @@
 		font-size: 34px;
 		line-height: 30px;
 		color: #fff;
+		@include adaptive(1279) {
+			font-size: 30px;
+		}
 	}
 
 	&__desc {
@@ -32,6 +54,9 @@
 		font-size: 24px;
 		line-height: 38px;
 		color: #fff;
+		@include adaptive(1279) {
+			font-size: 20px;
+		}
 
 		&:last-of-type {
 			padding-bottom: 50px;

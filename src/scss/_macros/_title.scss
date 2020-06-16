@@ -5,19 +5,21 @@
 	//font-size: 85px;
 	//line-height: 96px;
 	color: #fff;
-	@include fluid(font-size, 320px, 1920px, 45px, 85px);
-	@include fluid(line-height, 320px, 1920px, 55px, 96px);
+	@include fluid(font-size, 320px, 1920px, 35px, 85px);
+	@include fluid(line-height, 320px, 1920px, 40px, 96px);
 
 	&.c-title--big {
 		font-weight: bold;
 		//font-size: 110px;
 		//line-height: 110px;
-		@include fluid(font-size, 320px, 1920px, 53px, 110px);
-		@include fluid(line-height, 320px, 1920px, 53px, 110px);
+		@include fluid(font-size, 320px, 1920px, 38px, 110px);
+		@include fluid(line-height, 320px, 1920px, 55px, 110px);
 	}
+
 	&.c-title--dark {
 		color: $c-black;
 	}
+
 	&.c-title--blue {
 		color: #0E65F3;
 	}

@@ -22,6 +22,12 @@
 		height: 2px;
 		margin-right: 10px;
 		background-color: $c-white;
+		@include adaptive(1365) {
+			width: 43px;
+		}
+		@include adaptive(1023) {
+			width: 33px;
+		}
 	}
 
 	span {
@@ -31,6 +37,10 @@
 		letter-spacing: 0.09em;
 		line-height: 42px;
 		color: #fff;
+		@include adaptive(1023) {
+			font-size: 12px;
+			line-height: 40px;
+		}
 	}
 }
 

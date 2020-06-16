@@ -27,7 +27,7 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == corner {
+	@if $filename == close {
 		$char: "\E001";
 	}
 
@@ -45,7 +45,7 @@
 	}
 }
 
-.icon-corner {
-	@include icon(corner);
+.icon-close {
+	@include icon(close);
 
 }

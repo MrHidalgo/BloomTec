@@ -3,6 +3,9 @@
 .logo {
 	&.logo--header {
 		padding-bottom: 40px;
+		@include adaptive(1279) {
+			padding-bottom: 20px;
+		}
 	}
 
 	&__btn {

@@ -13,6 +13,9 @@
 	&__link {
 		font-size: 15px;
 		line-height: 21px;
+		@include adaptive(1279) {
+			font-size: 13px;
+		}
 	}
 
 	&__title,
@@ -151,7 +154,7 @@
 		width: 100%;
 
 		i {
-			position: relative;
+			position: absolute;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -159,6 +162,10 @@
 			height: 28px;
 			border: 1px solid #0e65f3;
 			@include transition(background-color);
+			@include adaptive(1279) {
+				width: 24px;
+				height: 24px;
+			}
 
 			svg {
 				opacity: 0;
@@ -168,9 +175,12 @@
 		}
 
 		span {
-			padding-left: 25px;
+			padding-left: 53px;
 			font-size: 24px;
 			color: #000;
+			@include adaptive(1279) {
+				font-size: 20px;
+			}
 
 			a {
 				text-decoration: underline;

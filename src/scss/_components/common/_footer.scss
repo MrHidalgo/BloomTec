@@ -5,6 +5,12 @@
 	padding-top: 313px;
 	padding-bottom: 36px;
 	background-color: $c-black;
+	@include adaptive(1365) {
+		padding-top: 253px;
+	}
+	@include adaptive(1279) {
+		padding-top: 173px;
+	}
 
 	&:after {
 		content: '';
@@ -22,10 +28,16 @@
 
 	&__wrapper {
 		display: flex;
+		@include adaptive(1023) {
+			flex-wrap: wrap;
+		}
 
 		&-1 {
 			padding-left: 68px;
 			padding-bottom: 33px;
+			@include adaptive(1599) {
+				padding-left: 0;
+			}
 
 			.footer__wrapper {
 				&-left {
@@ -38,6 +50,15 @@
 					width: 100%;
 					max-width: 541px;
 					padding-top: 98px;
+					@include adaptive(1279) {
+						max-width: 50%;
+						padding-top: 128px;
+					}
+					@include adaptive(1023) {
+						max-width: 100%;
+						padding-top: 100px;
+						padding-bottom: 30px;
+					}
 				}
 			}
 		}
@@ -51,17 +72,33 @@
 				&-right {
 					width: 100%;
 					max-width: 235px;
+					@include adaptive(1023) {
+						max-width: 50%;
+					}
+				}
+
+				&-left {
+					@include adaptive(1023) {
+						order: 1;
+					}
 				}
 
 				&-middle {
 					flex: 1;
 					min-width: 1px;
 					max-width: 100%;
+					@include adaptive(1023) {
+						order: 3;
+						padding-top: 30px;
+					}
 				}
 
 				&-right {
 					display: flex;
 					justify-content: flex-end;
+					@include adaptive(1023) {
+						order: 2;
+					}
 				}
 			}
 		}
@@ -78,6 +115,9 @@
 
 	&__title {
 		padding-bottom: 87px;
+		@include adaptive(1279) {
+			padding-bottom: 57px;
+		}
 	}
 
 	&__subtitle {
@@ -87,6 +127,9 @@
 		font-size: 35px;
 		line-height: 96px;
 		color: #fff;
+		@include adaptive(1279) {
+			font-size: 28px;
+		}
 	}
 
 	&__heading {
@@ -95,6 +138,9 @@
 		font-size: 25px;
 		line-height: 1.1;
 		color: #fff;
+		@include adaptive(1279) {
+			font-size: 22px;
+		}
 
 		&--light {
 			color: #8e8e8e;

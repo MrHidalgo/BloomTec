@@ -13,6 +13,9 @@
 	box-shadow: none;
 	border-radius: 0;
 	background-color: transparent;
+	@include adaptive(1279) {
+		padding-left: 25px;
+	}
 
 	&:hover {
 		&:before {
@@ -68,12 +71,24 @@
 		line-height: 42px;
 		color: $c-black;
 		@include transition(color);
+		@include adaptive(1279) {
+			font-size: 19px;
+		}
+		@include adaptive(1023) {
+			font-size: 18px;
+		}
 	}
 
 	svg {
 		margin-left: 38px;
 		stroke: #0e65f3;
 		@include transition(stroke, transform);
+		@include adaptive(1279) {
+			margin-left: 30px;
+		}
+		@include adaptive(1023) {
+			margin-left: 25px;
+		}
 	}
 }
 

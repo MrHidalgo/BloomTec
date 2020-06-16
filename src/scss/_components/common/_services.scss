@@ -22,6 +22,11 @@
 			width: 1px;
 			height: 100%;
 			background-color: #8E8E8E;
+			@include adaptive(1023) {
+				&:last-of-type {
+					display: none;
+				}
+			}
 		}
 	}
 
@@ -33,6 +38,12 @@
 		z-index: 2;
 		position: relative;
 		padding-bottom: 107px;
+		@include adaptive(1279) {
+			padding-bottom: 87px;
+		}
+		@include adaptive(1023) {
+			padding-bottom: 50px;
+		}
 	}
 
 	&__title {
@@ -44,6 +55,10 @@
 		width: 100%;
 		max-width: 425px;
 		padding-left: 30px;
+		@include adaptive(1279) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 
 		&-wrapper {
 			display: flex;
@@ -53,6 +68,12 @@
 				width: 100%;
 				max-width: calc(100% / 3);
 				padding-bottom: 73px;
+				@include adaptive(1279) {
+					padding-bottom: 53px;
+				}
+				@include adaptive(1023) {
+					max-width: calc(100% / 2);
+				}
 			}
 		}
 
@@ -70,6 +91,13 @@
 			font-size: 24px;
 			line-height: 30px;
 			color: #000;
+			@include adaptive(1279) {
+				font-size: 20px;
+			}
+			@include adaptive(1023) {
+				padding-bottom: 20px;
+				font-size: 18px;
+			}
 		}
 
 		&-desc {
@@ -77,6 +105,9 @@
 			font-size: 18px;
 			line-height: 28px;
 			color: #000;
+			@include adaptive(1279) {
+				font-size: 16px;
+			}
 		}
 	}
 }

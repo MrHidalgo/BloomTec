@@ -3,15 +3,27 @@
 .about {
 	padding-top: 141px;
 	padding-bottom: 40px;
+	@include adaptive(1279) {
+		padding-top: 101px;
+	}
+	@include adaptive(1023) {
+		padding-top: 75px;
+	}
 
 	&__label {
 		position: relative;
 		left: -63px;
+		@include adaptive(1279) {
+			left: 0;
+		}
 	}
 
 	&__wrapper {
 		display: flex;
 		padding-left: 63px;
+		@include adaptive(1279) {
+			padding-left: 0;
+		}
 
 		&-1 {
 			.about__wrapper {
@@ -19,11 +31,19 @@
 					flex: 1;
 					min-width: 1px;
 					max-width: 100%;
+					padding-right: 15px;
 				}
+
 				&-right {
 					width: 100%;
 					max-width: 812px;
 					padding-top: 7px;
+					@include adaptive(1599) {
+						max-width: 712px;
+					}
+					@include adaptive(1279) {
+						max-width: 50%;
+					}
 				}
 			}
 		}
@@ -35,6 +55,7 @@
 					min-width: 1px;
 					max-width: 100%;
 				}
+
 				&-right {
 					width: 100%;
 					max-width: 1088px;
@@ -53,6 +74,15 @@
 		font-size: 24px;
 		line-height: 38px;
 		color: #8e8e8e;
+		@include adaptive(1599) {
+			font-size: 22px;
+		}
+		@include adaptive(1279) {
+			font-size: 20px;
+		}
+		@include adaptive(1023) {
+			font-size: 18px;
+		}
 	}
 
 	&__img {
@@ -60,6 +90,9 @@
 		position: relative;
 		width: 100%;
 		height: 827px;
+		@include adaptive(1279) {
+			height: 727px;
+		}
 
 		&:hover {
 			img {
@@ -76,9 +109,14 @@
 
 	&__block {
 		width: 100%;
-		min-height: 197px;
 		padding: 54px 54px 53px 138px;
 		background-color: #0e65f3;
+		@include adaptive(1279) {
+			padding: 34px 34px 33px 100px;
+		}
+		@include adaptive(1023) {
+			padding-left: 75px;
+		}
 
 		&-text {
 			width: 100%;
@@ -87,6 +125,15 @@
 			font-size: 24px;
 			line-height: 30px;
 			color: #fff;
+			@include adaptive(1599) {
+				font-size: 22px;
+			}
+			@include adaptive(1279) {
+				font-size: 20px;
+			}
+			@include adaptive(1023) {
+				font-size: 18px;
+			}
 		}
 	}
 }

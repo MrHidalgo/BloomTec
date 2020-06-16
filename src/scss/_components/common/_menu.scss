@@ -8,6 +8,11 @@
 	left: 0;
 	width: 100%;
 	height: calc(100vh - 170px);
+	@include adaptive(1023) {
+		top: 0;
+		height: calc(100% - 79px);
+		background-color: #0e65f3;
+	}
 
 	&__btn {
 		overflow: hidden;
@@ -20,6 +25,12 @@
 		padding: 30px;
 		background-color: #0e65f3;
 		@include transition(background-color);
+		@include adaptive(1023) {
+			width: calc(100% / 3);
+			height: calc(100% / 3);
+			padding: 15px 15px 15px 10px;
+			justify-content: flex-start;
+		}
 
 		&:hover {
 			.menu__btn-bg {
@@ -52,6 +63,37 @@
 			}
 		}
 
+		&-3 {
+			@include adaptive(1023) {
+				&:after {
+					display: none;
+				}
+			}
+		}
+
+		&-4,
+		&-5 {
+			@include adaptive(1023) {
+				&:before,
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					background-color: #0b59d8;
+				}
+
+				&:before {
+					width: 103px;
+					height: 2px;
+				}
+				&:after {
+					width: 2px;
+					height: 103px;
+				}
+			}
+		}
+
 		&-6,
 		&-7,
 		&-8 {
@@ -73,6 +115,53 @@
 				top: 0;
 				width: 2px;
 				height: 103px;
+			}
+		}
+
+		&-6 {
+			@include adaptive(1023) {
+				&:before {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: auto;
+					right: 0;
+					background-color: #0b59d8;
+				}
+
+				&:before {
+					top: auto;
+					left: auto;
+					width: 103px;
+					height: 2px;
+				}
+			}
+		}
+
+		&-7,
+		&-8 {
+			@include adaptive(1023) {
+				&:before,
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: auto;
+					right: 0;
+					background-color: #0b59d8;
+				}
+
+				&:before {
+					top: auto;
+					left: auto;
+					width: 103px;
+					height: 2px;
+				}
+				&:after {
+					top: auto;
+					width: 2px;
+					height: 103px;
+				}
 			}
 		}
 
@@ -115,6 +204,9 @@
 				font-size: 24px;
 				line-height: 30px;
 				color: #fff;
+				@include adaptive(1023) {
+					font-size: 20px;
+				}
 			}
 		}
 	}

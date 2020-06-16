@@ -184,6 +184,11 @@
 					transform: translateX(-350%) skewX(-15deg);
 					@include transition(transform);
 				}
+
+				svg {
+					animation-fill-mode: both;
+					animation: hoverBtn ease-out 0.3s;
+				}
 			}
 
 			span,

@@ -93,19 +93,6 @@
 		}
 	}
 }
-@keyframes hoverBtn {
-	0% { transform: translateX(0); }
-	51% {
-		opacity: 1;
-		transform: translateX(30px);
-	}
-	52% {
-		opacity: 0;
-		transform: translateX(-55px);
-	}
-	53% { opacity: 0; }
-	54% { opacity: 1;}
-	100% { transform: translateX(0); }
-}
+
 
 // BUTTON :: END

@@ -10,6 +10,13 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	@include adaptive(1279) {
+		padding-top: 297px;
+		padding-bottom: 259px;
+	}
+	@include adaptive(1023) {
+		padding-bottom: 189px;
+	}
 
 	&:after {
 		content: '';

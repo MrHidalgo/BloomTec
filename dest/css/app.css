@@ -3866,7 +3866,22 @@ picture {
           background-size: cover;
 }
 
-/* line 14, src/scss/_components/abouts/_main.scss */
+@media screen and (max-width: 1279px) {
+  /* line 3, src/scss/_components/abouts/_main.scss */
+  .a-main {
+    padding-top: 297px;
+    padding-bottom: 259px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 3, src/scss/_components/abouts/_main.scss */
+  .a-main {
+    padding-bottom: 189px;
+  }
+}
+
+/* line 21, src/scss/_components/abouts/_main.scss */
 .a-main:after {
   content: '';
   z-index: 2;
@@ -3881,12 +3896,12 @@ picture {
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
 }
 
-/* line 25, src/scss/_components/abouts/_main.scss */
+/* line 32, src/scss/_components/abouts/_main.scss */
 .a-main__label {
   padding-bottom: 22px;
 }
 
-/* line 29, src/scss/_components/abouts/_main.scss */
+/* line 36, src/scss/_components/abouts/_main.scss */
 .a-main__title {
   font-weight: bold;
   font-size: 110px;
@@ -3910,7 +3925,14 @@ picture {
   padding-bottom: 175px;
 }
 
-/* line 11, src/scss/_components/abouts/_mission.scss */
+@media screen and (max-width: 1023px) {
+  /* line 6, src/scss/_components/abouts/_mission.scss */
+  .mission__wrapper {
+    padding-bottom: 125px;
+  }
+}
+
+/* line 14, src/scss/_components/abouts/_mission.scss */
 .mission__wrapper:before {
   content: '';
   position: absolute;
@@ -3921,13 +3943,20 @@ picture {
   background-color: #0e65f3;
 }
 
-/* line 21, src/scss/_components/abouts/_mission.scss */
+/* line 24, src/scss/_components/abouts/_mission.scss */
 .mission__wrapper-left {
   width: 100%;
   max-width: 398px;
 }
 
-/* line 26, src/scss/_components/abouts/_mission.scss */
+@media screen and (max-width: 1023px) {
+  /* line 24, src/scss/_components/abouts/_mission.scss */
+  .mission__wrapper-left {
+    max-width: 40%;
+  }
+}
+
+/* line 32, src/scss/_components/abouts/_mission.scss */
 .mission__wrapper-right {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -3939,7 +3968,21 @@ picture {
   padding-left: 154px;
 }
 
-/* line 35, src/scss/_components/abouts/_mission.scss */
+@media screen and (max-width: 1279px) {
+  /* line 32, src/scss/_components/abouts/_mission.scss */
+  .mission__wrapper-right {
+    padding-left: 63px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 32, src/scss/_components/abouts/_mission.scss */
+  .mission__wrapper-right {
+    padding-left: 40px;
+  }
+}
+
+/* line 47, src/scss/_components/abouts/_mission.scss */
 .mission__img {
   overflow: hidden;
   position: relative;
@@ -3948,7 +3991,7 @@ picture {
   max-height: 827px;
 }
 
-/* line 43, src/scss/_components/abouts/_mission.scss */
+/* line 55, src/scss/_components/abouts/_mission.scss */
 .mission__img:hover img {
   -webkit-transform: scale(1.1) rotate(-0.5deg);
       -ms-transform: scale(1.1) rotate(-0.5deg);
@@ -3960,7 +4003,7 @@ picture {
   transition: transform 0.55s ease-in-out, -webkit-transform 0.55s ease-in-out;
 }
 
-/* line 49, src/scss/_components/abouts/_mission.scss */
+/* line 61, src/scss/_components/abouts/_mission.scss */
 .mission__img img {
   -webkit-transition: -webkit-transform 0.55s ease-in-out;
   transition: -webkit-transform 0.55s ease-in-out;
@@ -3969,12 +4012,19 @@ picture {
   transition: transform 0.55s ease-in-out, -webkit-transform 0.55s ease-in-out;
 }
 
-/* line 55, src/scss/_components/abouts/_mission.scss */
+/* line 67, src/scss/_components/abouts/_mission.scss */
 .mission__title {
   padding-bottom: 69px;
 }
 
-/* line 59, src/scss/_components/abouts/_mission.scss */
+@media screen and (max-width: 1023px) {
+  /* line 67, src/scss/_components/abouts/_mission.scss */
+  .mission__title {
+    padding-bottom: 49px;
+  }
+}
+
+/* line 74, src/scss/_components/abouts/_mission.scss */
 .mission__desc {
   width: 100%;
   max-width: 775px;
@@ -3983,7 +4033,21 @@ picture {
   color: #fff;
 }
 
-/* line 66, src/scss/_components/abouts/_mission.scss */
+@media screen and (max-width: 1365px) {
+  /* line 74, src/scss/_components/abouts/_mission.scss */
+  .mission__desc {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 74, src/scss/_components/abouts/_mission.scss */
+  .mission__desc {
+    font-size: 20px;
+  }
+}
+
+/* line 87, src/scss/_components/abouts/_mission.scss */
 .mission__desc:not(:last-of-type) {
   padding-bottom: 38px;
 }
@@ -3994,17 +4058,39 @@ picture {
   padding-bottom: 234px;
 }
 
-/* line 7, src/scss/_components/abouts/_roadmap.scss */
+@media screen and (max-width: 1279px) {
+  /* line 3, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap {
+    padding-top: 133px;
+    padding-bottom: 173px;
+  }
+}
+
+/* line 11, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__wrapper {
   padding-left: 63px;
 }
 
-/* line 11, src/scss/_components/abouts/_roadmap.scss */
+@media screen and (max-width: 1023px) {
+  /* line 11, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__wrapper {
+    padding-left: 0;
+  }
+}
+
+/* line 18, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__title {
   padding-bottom: 68px;
 }
 
-/* line 15, src/scss/_components/abouts/_roadmap.scss */
+@media screen and (max-width: 1023px) {
+  /* line 18, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__title {
+    padding-bottom: 48px;
+  }
+}
+
+/* line 25, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__desc {
   width: 100%;
   max-width: 950px;
@@ -4014,7 +4100,21 @@ picture {
   color: #000;
 }
 
-/* line 24, src/scss/_components/abouts/_roadmap.scss */
+@media screen and (max-width: 1365px) {
+  /* line 25, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__desc {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 25, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__desc {
+    font-size: 20px;
+  }
+}
+
+/* line 40, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__img {
   position: relative;
   left: -25px;
@@ -4026,7 +4126,14 @@ picture {
   padding-bottom: 28px;
 }
 
-/* line 35, src/scss/_components/abouts/_roadmap.scss */
+@media screen and (max-width: 1023px) {
+  /* line 40, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__img {
+    left: 0;
+  }
+}
+
+/* line 54, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4045,7 +4152,28 @@ picture {
   padding-right: 60px;
 }
 
-/* line 42, src/scss/_components/abouts/_roadmap.scss */
+@media screen and (max-width: 1535px) {
+  /* line 54, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__box {
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 54, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__box {
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 54, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__box {
+    padding-right: 10px;
+  }
+}
+
+/* line 70, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4053,25 +4181,53 @@ picture {
   display: flex;
 }
 
-/* line 45, src/scss/_components/abouts/_roadmap.scss */
+/* line 73, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc(100% / 5);
   max-width: calc(100% / 5);
 }
 
-/* line 51, src/scss/_components/abouts/_roadmap.scss */
+@media screen and (max-width: 1279px) {
+  /* line 78, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__box-wrapper > div:last-of-type .roadmap__box {
+    padding-right: 0;
+  }
+}
+
+/* line 86, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__box-head {
   padding-bottom: 32px;
 }
 
-/* line 55, src/scss/_components/abouts/_roadmap.scss */
+@media screen and (max-width: 1023px) {
+  /* line 86, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__box-head {
+    padding-bottom: 23px;
+  }
+}
+
+/* line 93, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__box-body {
   position: relative;
   padding-left: 45px;
 }
 
-/* line 59, src/scss/_components/abouts/_roadmap.scss */
+@media screen and (max-width: 1279px) {
+  /* line 93, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__box-body {
+    padding-left: 25px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 93, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__box-body {
+    padding-left: 15px;
+  }
+}
+
+/* line 103, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__box-body:before {
   content: '';
   position: absolute;
@@ -4082,7 +4238,14 @@ picture {
   background-color: #0e65f3;
 }
 
-/* line 70, src/scss/_components/abouts/_roadmap.scss */
+@media screen and (max-width: 1279px) {
+  /* line 103, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__box-body:before {
+    width: 5px;
+  }
+}
+
+/* line 117, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__box-title {
   text-transform: uppercase;
   font-weight: bold;
@@ -4091,16 +4254,44 @@ picture {
   color: #000;
 }
 
-/* line 77, src/scss/_components/abouts/_roadmap.scss */
+@media screen and (max-width: 1365px) {
+  /* line 117, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__box-title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 117, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__box-title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 117, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__box-title {
+    font-size: 18px;
+  }
+}
+
+/* line 133, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__box-title span {
   color: #0e65f3;
 }
 
-/* line 82, src/scss/_components/abouts/_roadmap.scss */
+/* line 138, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__box-desc {
   font-size: 18px;
   line-height: 31px;
   color: #8e8e8e;
+}
+
+@media screen and (max-width: 1365px) {
+  /* line 138, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__box-desc {
+    font-size: 16px;
+  }
 }
 
 /* line 3, src/scss/_components/what-we-do/_main.scss */

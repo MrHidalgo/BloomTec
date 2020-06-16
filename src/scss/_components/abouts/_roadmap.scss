@@ -3,13 +3,23 @@
 .roadmap {
 	padding-top: 163px;
 	padding-bottom: 234px;
+	@include adaptive(1279) {
+		padding-top: 133px;
+		padding-bottom: 173px;
+	}
 
 	&__wrapper {
 		padding-left: 63px;
+		@include adaptive(1023) {
+			padding-left: 0;
+		}
 	}
 
 	&__title {
 		padding-bottom: 68px;
+		@include adaptive(1023) {
+			padding-bottom: 48px;
+		}
 	}
 
 	&__desc {
@@ -19,6 +29,12 @@
 		font-size: 24px;
 		line-height: 38px;
 		color: #000;
+		@include adaptive(1365) {
+			font-size: 22px;
+		}
+		@include adaptive(1023) {
+			font-size: 20px;
+		}
 	}
 
 	&__img {
@@ -30,6 +46,9 @@
 		margin-left: auto;
 		margin-right: auto;
 		padding-bottom: 28px;
+		@include adaptive(1023) {
+			left: 0;
+		}
 	}
 
 	&__box {
@@ -38,6 +57,15 @@
 		flex-direction: column;
 		width: 100%;
 		padding-right: 60px;
+		@include adaptive(1535) {
+			padding-right: 30px;
+		}
+		@include adaptive(1279) {
+			padding-right: 20px;
+		}
+		@include adaptive(1023) {
+			padding-right: 10px;
+		}
 
 		&-wrapper {
 			display: flex;
@@ -45,16 +73,32 @@
 			> div {
 				width: 100%;
 				max-width: calc(100% / 5);
+				@include adaptive(1279) {
+					&:last-of-type {
+						.roadmap__box {
+							padding-right: 0;
+						}
+					}
+				}
 			}
 		}
 
 		&-head {
 			padding-bottom: 32px;
+			@include adaptive(1023) {
+				padding-bottom: 23px;
+			}
 		}
 
 		&-body {
 			position: relative;
 			padding-left: 45px;
+			@include adaptive(1279) {
+				padding-left: 25px;
+			}
+			@include adaptive(1023) {
+				padding-left: 15px;
+			}
 
 			&:before {
 				content: '';
@@ -64,6 +108,9 @@
 				width: 9px;
 				height: 53px;
 				background-color: #0e65f3;
+				@include adaptive(1279) {
+					width: 5px;
+				}
 			}
 		}
 
@@ -73,6 +120,15 @@
 			font-size: 24px;
 			line-height: 30px;
 			color: #000;
+			@include adaptive(1365) {
+				font-size: 22px;
+			}
+			@include adaptive(1279) {
+				font-size: 20px;
+			}
+			@include adaptive(1023) {
+				font-size: 18px;
+			}
 
 			span {
 				color: #0e65f3;
@@ -80,11 +136,12 @@
 		}
 
 		&-desc {
-			//width: 100%;
-			//width: 213px;
 			font-size: 18px;
 			line-height: 31px;
 			color: #8e8e8e;
+			@include adaptive(1365) {
+				font-size: 16px;
+			}
 		}
 	}
 }

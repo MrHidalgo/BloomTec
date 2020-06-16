@@ -7,6 +7,9 @@
 		position: relative;
 		display: flex;
 		padding-bottom: 175px;
+		@include adaptive(1023) {
+			padding-bottom: 125px;
+		}
 
 		&:before {
 			content: '';
@@ -21,6 +24,9 @@
 		&-left {
 			width: 100%;
 			max-width: 398px;
+			@include adaptive(1023) {
+				max-width: 40%;
+			}
 		}
 
 		&-right {
@@ -29,6 +35,12 @@
 			max-width: 100%;
 			padding-top: 94px;
 			padding-left: 154px;
+			@include adaptive(1279) {
+				padding-left: 63px;
+			}
+			@include adaptive(1023) {
+				padding-left: 40px;
+			}
 		}
 	}
 
@@ -54,6 +66,9 @@
 
 	&__title {
 		padding-bottom: 69px;
+		@include adaptive(1023) {
+			padding-bottom: 49px;
+		}
 	}
 
 	&__desc {
@@ -62,6 +77,12 @@
 		font-size: 24px;
 		line-height: 38px;
 		color: #fff;
+		@include adaptive(1365) {
+			font-size: 22px;
+		}
+		@include adaptive(1023) {
+			font-size: 20px;
+		}
 
 		&:not(:last-of-type) {
 			padding-bottom: 38px;

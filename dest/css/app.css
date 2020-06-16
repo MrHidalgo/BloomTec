@@ -879,7 +879,7 @@ picture {
   }
 }
 
-/* line 11, src/scss/_macros/_title.scss */
+/* line 9, src/scss/_macros/_title.scss */
 .c-title.c-title--big {
   font-weight: bold;
   font-size: 38px;
@@ -887,7 +887,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 11, src/scss/_macros/_title.scss */
+  /* line 9, src/scss/_macros/_title.scss */
   .c-title.c-title--big {
     font-size: -webkit-calc(38px + 72 * (100vw - 320px) / 1600);
     font-size: calc(38px + 72 * (100vw - 320px) / 1600);
@@ -895,14 +895,14 @@ picture {
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 11, src/scss/_macros/_title.scss */
+  /* line 9, src/scss/_macros/_title.scss */
   .c-title.c-title--big {
     font-size: 110px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 11, src/scss/_macros/_title.scss */
+  /* line 9, src/scss/_macros/_title.scss */
   .c-title.c-title--big {
     line-height: -webkit-calc(55px + 55 * (100vw - 320px) / 1600);
     line-height: calc(55px + 55 * (100vw - 320px) / 1600);
@@ -910,23 +910,23 @@ picture {
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 11, src/scss/_macros/_title.scss */
+  /* line 9, src/scss/_macros/_title.scss */
   .c-title.c-title--big {
     line-height: 110px;
   }
 }
 
-/* line 19, src/scss/_macros/_title.scss */
+/* line 15, src/scss/_macros/_title.scss */
 .c-title.c-title--dark {
   color: #000;
 }
 
-/* line 23, src/scss/_macros/_title.scss */
+/* line 19, src/scss/_macros/_title.scss */
 .c-title.c-title--blue {
   color: #0E65F3;
 }
 
-/* line 27, src/scss/_macros/_title.scss */
+/* line 23, src/scss/_macros/_title.scss */
 .c-title span {
   color: #0E65F3;
 }
@@ -3106,7 +3106,14 @@ picture {
   background-color: #000;
 }
 
-/* line 9, src/scss/_components/common/_clients.scss */
+@media screen and (max-width: 1023px) {
+  /* line 3, src/scss/_components/common/_clients.scss */
+  .clients {
+    padding-top: 106px;
+  }
+}
+
+/* line 12, src/scss/_components/common/_clients.scss */
 .clients:after {
   content: '';
   z-index: 0;
@@ -3118,19 +3125,19 @@ picture {
   background-color: #fff;
 }
 
-/* line 20, src/scss/_components/common/_clients.scss */
+/* line 23, src/scss/_components/common/_clients.scss */
 .clients__wrapper {
   z-index: 2;
   position: relative;
   padding-left: 63px;
 }
 
-/* line 26, src/scss/_components/common/_clients.scss */
+/* line 29, src/scss/_components/common/_clients.scss */
 .clients__title {
   padding-bottom: 124px;
 }
 
-/* line 31, src/scss/_components/common/_clients.scss */
+/* line 34, src/scss/_components/common/_clients.scss */
 .clients__box-wrapper {
   position: relative;
   right: 160px;
@@ -3146,7 +3153,24 @@ picture {
   margin-left: auto;
 }
 
-/* line 40, src/scss/_components/common/_clients.scss */
+@media screen and (max-width: 1535px) {
+  /* line 34, src/scss/_components/common/_clients.scss */
+  .clients__box-wrapper {
+    right: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 34, src/scss/_components/common/_clients.scss */
+  .clients__box-wrapper {
+    left: -63px;
+    width: -webkit-calc(100% + 63px);
+    width: calc(100% + 63px);
+  }
+}
+
+/* line 51, src/scss/_components/common/_clients.scss */
 .clients__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc(100% / 4);
@@ -3154,19 +3178,55 @@ picture {
   padding-bottom: 73px;
 }
 
-/* line 48, src/scss/_components/common/_clients.scss */
+@media screen and (max-width: 1023px) {
+  /* line 51, src/scss/_components/common/_clients.scss */
+  .clients__box-wrapper > div {
+    max-width: -webkit-calc(100% / 3);
+    max-width: calc(100% / 3);
+  }
+}
+
+/* line 61, src/scss/_components/common/_clients.scss */
+.clients__box-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 61, src/scss/_components/common/_clients.scss */
+  .clients__box-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 72, src/scss/_components/common/_clients.scss */
 .clients__block {
   z-index: 3;
   position: relative;
   top: 48px;
   width: 100%;
   max-width: 1088px;
-  min-height: 197px;
   padding: 54px 0 52px 138px;
   background-color: #0e65f3;
 }
 
-/* line 58, src/scss/_components/common/_clients.scss */
+@media screen and (max-width: 1365px) {
+  /* line 72, src/scss/_components/common/_clients.scss */
+  .clients__block {
+    padding: 34px 0 32px 100px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 72, src/scss/_components/common/_clients.scss */
+  .clients__block {
+    padding-left: 75px;
+  }
+}
+
+/* line 87, src/scss/_components/common/_clients.scss */
 .clients__block-text {
   width: 100%;
   max-width: 561px;
@@ -3174,6 +3234,13 @@ picture {
   font-size: 24px;
   line-height: 30px;
   color: #fff;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 87, src/scss/_components/common/_clients.scss */
+  .clients__block-text {
+    font-size: 22px;
+  }
 }
 
 /* line 3, src/scss/_components/homepage/_main.scss */
@@ -4050,7 +4117,15 @@ picture {
           background-size: cover;
 }
 
-/* line 14, src/scss/_components/what-we-do/_main.scss */
+@media screen and (max-width: 1023px) {
+  /* line 3, src/scss/_components/what-we-do/_main.scss */
+  .wwd-main {
+    padding-top: 287px;
+    padding-bottom: 115px;
+  }
+}
+
+/* line 18, src/scss/_components/what-we-do/_main.scss */
 .wwd-main:after {
   content: '';
   z-index: 1;
@@ -4065,23 +4140,23 @@ picture {
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
 }
 
-/* line 25, src/scss/_components/what-we-do/_main.scss */
+/* line 29, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 30, src/scss/_components/what-we-do/_main.scss */
+/* line 34, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__label {
   padding-bottom: 22px;
 }
 
-/* line 34, src/scss/_components/what-we-do/_main.scss */
+/* line 38, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__title {
   padding-bottom: 81px;
 }
 
-/* line 38, src/scss/_components/what-we-do/_main.scss */
+/* line 42, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__btn {
   overflow: hidden;
   position: relative;
@@ -4097,12 +4172,21 @@ picture {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 549px;
+  width: 100%;
+  max-width: 549px;
   height: 123px;
   background-color: #0E65F3;
 }
 
-/* line 48, src/scss/_components/what-we-do/_main.scss */
+@media screen and (max-width: 1023px) {
+  /* line 42, src/scss/_components/what-we-do/_main.scss */
+  .wwd-main__btn {
+    max-width: 509px;
+    height: 100px;
+  }
+}
+
+/* line 57, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__btn:after {
   content: '';
   position: absolute;
@@ -4122,7 +4206,7 @@ picture {
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
-/* line 61, src/scss/_components/what-we-do/_main.scss */
+/* line 70, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__btn:hover:after {
   -webkit-transform: translateX(-350%) skewX(-15deg);
       -ms-transform: translateX(-350%) skewX(-15deg);
@@ -4134,14 +4218,22 @@ picture {
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
-/* line 67, src/scss/_components/what-we-do/_main.scss */
+/* line 75, src/scss/_components/what-we-do/_main.scss */
+.wwd-main__btn:hover svg {
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation: hoverBtn ease-out 0.3s;
+          animation: hoverBtn ease-out 0.3s;
+}
+
+/* line 81, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__btn span,
 .wwd-main__btn svg {
   z-index: 2;
   position: relative;
 }
 
-/* line 73, src/scss/_components/what-we-do/_main.scss */
+/* line 87, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__btn span {
   text-transform: uppercase;
   font-weight: bold;
@@ -4151,7 +4243,14 @@ picture {
   color: #fff;
 }
 
-/* line 82, src/scss/_components/what-we-do/_main.scss */
+@media screen and (max-width: 1023px) {
+  /* line 87, src/scss/_components/what-we-do/_main.scss */
+  .wwd-main__btn span {
+    font-size: 19px;
+  }
+}
+
+/* line 99, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__btn svg {
   margin-left: 35px;
   stroke: #fff;
@@ -4163,14 +4262,21 @@ picture {
   background-color: #000;
 }
 
-/* line 7, src/scss/_components/what-we-do/_relationships.scss */
+@media screen and (max-width: 1023px) {
+  /* line 3, src/scss/_components/what-we-do/_relationships.scss */
+  .relationships {
+    padding-top: 107px;
+  }
+}
+
+/* line 10, src/scss/_components/what-we-do/_relationships.scss */
 .relationships__wrapper {
   position: relative;
   padding-left: 63px;
   padding-bottom: 161px;
 }
 
-/* line 12, src/scss/_components/what-we-do/_relationships.scss */
+/* line 15, src/scss/_components/what-we-do/_relationships.scss */
 .relationships__wrapper:before {
   content: '';
   position: absolute;
@@ -4181,12 +4287,12 @@ picture {
   background-color: #0e65f3;
 }
 
-/* line 23, src/scss/_components/what-we-do/_relationships.scss */
+/* line 26, src/scss/_components/what-we-do/_relationships.scss */
 .relationships__title {
   padding-bottom: 86px;
 }
 
-/* line 27, src/scss/_components/what-we-do/_relationships.scss */
+/* line 30, src/scss/_components/what-we-do/_relationships.scss */
 .relationships__desc {
   width: 100%;
   max-width: 812px;

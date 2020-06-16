@@ -5,6 +5,9 @@
 	position: relative;
 	padding-top: 156px;
 	background-color: $c-black;
+	@include adaptive(1023) {
+		padding-top: 106px;
+	}
 
 	&:after {
 		content: '';
@@ -36,11 +39,32 @@
 			width: 100%;
 			max-width: 1066px;
 			margin-left: auto;
+			@include adaptive(1535) {
+				right: auto;
+				margin-right: auto;
+			}
+			@include adaptive(1023) {
+				left: -63px;
+				width: calc(100% + 63px);
+			}
 
 			> div {
 				width: 100%;
 				max-width: calc(100% / 4);
 				padding-bottom: 73px;
+				@include adaptive(1023) {
+					max-width: calc(100% / 3);
+				}
+			}
+		}
+
+		&-img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			@include adaptive(1023) {
+				margin-left: auto;
+				margin-right: auto;
 			}
 		}
 	}
@@ -51,9 +75,14 @@
 		top: 48px;
 		width: 100%;
 		max-width: 1088px;
-		min-height: 197px;
 		padding: 54px 0 52px 138px;
 		background-color: #0e65f3;
+		@include adaptive(1365) {
+			padding: 34px 0 32px 100px;
+		}
+		@include adaptive(1023) {
+			padding-left: 75px;
+		}
 
 		&-text {
 			width: 100%;
@@ -62,6 +91,9 @@
 			font-size: 24px;
 			line-height: 30px;
 			color: #fff;
+			@include adaptive(1023) {
+				font-size: 22px;
+			}
 		}
 	}
 }

@@ -3,6 +3,9 @@
 .relationships {
 	padding-top: 147px;
 	background-color: $c-black;
+	@include adaptive(1023) {
+		padding-top: 107px;
+	}
 
 	&__wrapper {
 		position: relative;

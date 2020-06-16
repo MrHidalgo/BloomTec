@@ -67,9 +67,8 @@
 
 	&__btn {
 		&-wrapper {
-			padding-left: 138px;
+			justify-content: flex-end;
 			@include adaptive(1599) {
-				justify-content: flex-end;
 				padding-left: 0;
 			}
 			@include adaptive(1023) {

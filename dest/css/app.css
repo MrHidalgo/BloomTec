@@ -896,6 +896,7 @@ picture {
           justify-content: center;
   height: 61px;
   padding-left: 32px;
+  padding-right: 15px;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -911,7 +912,7 @@ picture {
   }
 }
 
-/* line 21, src/scss/_macros/_btn.scss */
+/* line 22, src/scss/_macros/_btn.scss */
 .c-btn:hover:before {
   width: 100%;
   -webkit-transition: width 0.4s ease-in-out;
@@ -919,7 +920,7 @@ picture {
   transition: width 0.4s ease-in-out;
 }
 
-/* line 26, src/scss/_macros/_btn.scss */
+/* line 27, src/scss/_macros/_btn.scss */
 .c-btn:hover span {
   color: #fff;
   -webkit-transition: color 0.4s ease-in-out;
@@ -927,20 +928,19 @@ picture {
   transition: color 0.4s ease-in-out;
 }
 
-/* line 31, src/scss/_macros/_btn.scss */
+/* line 32, src/scss/_macros/_btn.scss */
 .c-btn:hover svg {
   stroke: #fff;
-  -webkit-transform: translateX(-150%);
-      -ms-transform: translateX(-150%);
-          transform: translateX(-150%);
-  -webkit-transition: stroke 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
-  transition: stroke 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
-  -o-transition: stroke 0.4s ease-in-out, transform 0.4s ease-in-out;
-  transition: stroke 0.4s ease-in-out, transform 0.4s ease-in-out;
-  transition: stroke 0.4s ease-in-out, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation: hoverBtn ease-out 0.3s;
+          animation: hoverBtn ease-out 0.3s;
+  -webkit-transition: stroke 0.4s ease-in-out;
+  -o-transition: stroke 0.4s ease-in-out;
+  transition: stroke 0.4s ease-in-out;
 }
 
-/* line 38, src/scss/_macros/_btn.scss */
+/* line 40, src/scss/_macros/_btn.scss */
 .c-btn:before {
   content: '';
   position: absolute;
@@ -954,7 +954,7 @@ picture {
   transition: width 0.4s ease-in-out;
 }
 
-/* line 49, src/scss/_macros/_btn.scss */
+/* line 51, src/scss/_macros/_btn.scss */
 .c-btn__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -966,19 +966,19 @@ picture {
           align-items: center;
 }
 
-/* line 55, src/scss/_macros/_btn.scss */
+/* line 57, src/scss/_macros/_btn.scss */
 .c-btn.c-btn--light span {
   color: #fff;
 }
 
-/* line 60, src/scss/_macros/_btn.scss */
+/* line 62, src/scss/_macros/_btn.scss */
 .c-btn span,
 .c-btn svg {
   z-index: 2;
   position: relative;
 }
 
-/* line 66, src/scss/_macros/_btn.scss */
+/* line 68, src/scss/_macros/_btn.scss */
 .c-btn span {
   text-transform: uppercase;
   font-weight: bold;
@@ -992,41 +992,93 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 66, src/scss/_macros/_btn.scss */
+  /* line 68, src/scss/_macros/_btn.scss */
   .c-btn span {
     font-size: 19px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 66, src/scss/_macros/_btn.scss */
+  /* line 68, src/scss/_macros/_btn.scss */
   .c-btn span {
     font-size: 18px;
   }
 }
 
-/* line 82, src/scss/_macros/_btn.scss */
+/* line 84, src/scss/_macros/_btn.scss */
 .c-btn svg {
-  margin-left: 38px;
+  margin-left: 30px;
   stroke: #0e65f3;
-  -webkit-transition: stroke 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
-  transition: stroke 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
-  -o-transition: stroke 0.4s ease-in-out, transform 0.4s ease-in-out;
-  transition: stroke 0.4s ease-in-out, transform 0.4s ease-in-out;
-  transition: stroke 0.4s ease-in-out, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-transition: stroke 0.4s ease-in-out;
+  -o-transition: stroke 0.4s ease-in-out;
+  transition: stroke 0.4s ease-in-out;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 82, src/scss/_macros/_btn.scss */
+  /* line 84, src/scss/_macros/_btn.scss */
   .c-btn svg {
     margin-left: 30px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 82, src/scss/_macros/_btn.scss */
+  /* line 84, src/scss/_macros/_btn.scss */
   .c-btn svg {
     margin-left: 25px;
+  }
+}
+
+@-webkit-keyframes hoverBtn {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  51% {
+    opacity: 1;
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  52% {
+    opacity: 0;
+    -webkit-transform: translateX(-55px);
+            transform: translateX(-55px);
+  }
+  53% {
+    opacity: 0;
+  }
+  54% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes hoverBtn {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  51% {
+    opacity: 1;
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  52% {
+    opacity: 0;
+    -webkit-transform: translateX(-55px);
+            transform: translateX(-55px);
+  }
+  53% {
+    opacity: 0;
+  }
+  54% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -3324,16 +3376,15 @@ picture {
 
 /* line 69, src/scss/_components/homepage/_portfolio.scss */
 .portfolio__btn-wrapper {
-  padding-left: 138px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 @media screen and (max-width: 1599px) {
   /* line 69, src/scss/_components/homepage/_portfolio.scss */
   .portfolio__btn-wrapper {
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
     padding-left: 0;
   }
 }
@@ -3348,7 +3399,7 @@ picture {
   }
 }
 
-/* line 81, src/scss/_components/homepage/_portfolio.scss */
+/* line 80, src/scss/_components/homepage/_portfolio.scss */
 .portfolio__slider {
   position: relative;
   width: -webkit-calc(100% + 140px);
@@ -3356,19 +3407,19 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 81, src/scss/_components/homepage/_portfolio.scss */
+  /* line 80, src/scss/_components/homepage/_portfolio.scss */
   .portfolio__slider {
     width: -webkit-calc(100% + 20px);
     width: calc(100% + 20px);
   }
 }
 
-/* line 90, src/scss/_components/homepage/_portfolio.scss */
+/* line 89, src/scss/_components/homepage/_portfolio.scss */
 .portfolio .swiper-container {
   padding-bottom: 67px;
 }
 
-/* line 94, src/scss/_components/homepage/_portfolio.scss */
+/* line 93, src/scss/_components/homepage/_portfolio.scss */
 .portfolio .swiper-slide {
   overflow: hidden;
   position: relative;
@@ -3378,14 +3429,14 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 94, src/scss/_components/homepage/_portfolio.scss */
+  /* line 93, src/scss/_components/homepage/_portfolio.scss */
   .portfolio .swiper-slide {
     height: 600px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 94, src/scss/_components/homepage/_portfolio.scss */
+  /* line 93, src/scss/_components/homepage/_portfolio.scss */
   .portfolio .swiper-slide {
     width: -webkit-calc(100% - 20px) !important;
     width: calc(100% - 20px) !important;
@@ -3393,7 +3444,7 @@ picture {
   }
 }
 
-/* line 112, src/scss/_components/homepage/_portfolio.scss */
+/* line 111, src/scss/_components/homepage/_portfolio.scss */
 .portfolio .swiper-pagination {
   bottom: 0;
   display: -webkit-box;
@@ -3410,7 +3461,7 @@ picture {
           justify-content: flex-start;
 }
 
-/* line 118, src/scss/_components/homepage/_portfolio.scss */
+/* line 117, src/scss/_components/homepage/_portfolio.scss */
 .portfolio .swiper-pagination-bullet {
   opacity: 1;
   outline: none;
@@ -3424,13 +3475,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 118, src/scss/_components/homepage/_portfolio.scss */
+  /* line 117, src/scss/_components/homepage/_portfolio.scss */
   .portfolio .swiper-pagination-bullet {
     margin-right: 25px !important;
   }
 }
 
-/* line 131, src/scss/_components/homepage/_portfolio.scss */
+/* line 130, src/scss/_components/homepage/_portfolio.scss */
 .portfolio .swiper-pagination-bullet:hover {
   background-color: #0e65f3;
   -webkit-transition: background-color 0.4s ease-in-out;
@@ -3438,7 +3489,7 @@ picture {
   transition: background-color 0.4s ease-in-out;
 }
 
-/* line 136, src/scss/_components/homepage/_portfolio.scss */
+/* line 135, src/scss/_components/homepage/_portfolio.scss */
 .portfolio .swiper-pagination-bullet-active {
   background-color: #0e65f3;
   -webkit-transition: background-color 0.4s ease-in-out;

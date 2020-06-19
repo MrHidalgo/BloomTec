@@ -3,6 +3,9 @@
 .forms {
 	padding-top: 41px;
 	background-color: $c-black;
+	@include adaptive(767) {
+		padding-top: 40px;
+	}
 
 	&__wrapper {
 		padding-left: 63px;
@@ -23,6 +26,9 @@
 		color: #fff;
 		@include adaptive(1023) {
 			font-size: 22px;
+		}
+		@include adaptive(767) {
+			font-size: 18px;
 		}
 	}
 
@@ -52,14 +58,26 @@
 			display: flex;
 			align-items: center;
 			padding-bottom: 36px;
+			@include adaptive(767) {
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				align-items: flex-start;
+				padding-bottom: 20px;
+			}
 
 			&--textarea {
 				align-items: flex-start;
 				padding-bottom: 53px;
+				@include adaptive(767) {
+					padding-bottom: 40px;
+				}
 			}
 
 			&--btn {
 				padding-bottom: 201px;
+				@include adaptive(767) {
+					padding-bottom: 100px;
+				}
 			}
 		}
 
@@ -75,6 +93,11 @@
 			}
 			@include adaptive(1023) {
 				font-size: 20px;
+			}
+			@include adaptive(767) {
+				font-size: 18px;
+				padding-top: 10px;
+				padding-bottom: 10px;
 			}
 		}
 
@@ -113,6 +136,12 @@
 				margin-right: 15px;
 				font-size: 20px;
 			}
+			@include adaptive(767) {
+				width: 100%;
+				max-width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 
 		&-textarea {
@@ -124,6 +153,9 @@
 			padding: 25px 30px;
 			@include adaptive(1023) {
 				height: 202px;
+			}
+			@include adaptive(767) {
+				max-width: 100%;
 			}
 		}
 
@@ -182,6 +214,9 @@
 		@include adaptive(1279) {
 			padding: 35px 35px 35px 100px;
 		}
+		@include adaptive(767) {
+			padding-left: 55px;
+		}
 
 		&-text {
 			width: 100%;
@@ -193,6 +228,9 @@
 			@include adaptive(1279) {
 				font-size: 22px;
 				line-height: 28px;
+			}
+			@include adaptive(767) {
+				font-size: 18px;
 			}
 		}
 	}

@@ -5319,43 +5319,65 @@ picture {
   }
 }
 
-/* line 11, src/scss/_components/contacts/_main.scss */
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/contacts/_main.scss */
+  .c-main {
+    padding-top: 231px;
+    padding-bottom: 40px;
+  }
+}
+
+/* line 15, src/scss/_components/contacts/_main.scss */
 .c-main__wrapper {
   padding-bottom: 231px;
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 11, src/scss/_components/contacts/_main.scss */
+  /* line 15, src/scss/_components/contacts/_main.scss */
   .c-main__wrapper {
     padding-bottom: 160px;
   }
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 11, src/scss/_components/contacts/_main.scss */
+  /* line 15, src/scss/_components/contacts/_main.scss */
   .c-main__wrapper {
     padding-bottom: 130px;
   }
 }
 
-/* line 21, src/scss/_components/contacts/_main.scss */
+/* line 25, src/scss/_components/contacts/_main.scss */
 .c-main__content {
   padding-left: 63px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 21, src/scss/_components/contacts/_main.scss */
+  /* line 25, src/scss/_components/contacts/_main.scss */
   .c-main__content {
     padding-left: 40px;
   }
 }
 
-/* line 28, src/scss/_components/contacts/_main.scss */
+@media screen and (max-width: 767px) {
+  /* line 25, src/scss/_components/contacts/_main.scss */
+  .c-main__content {
+    padding-left: 20px;
+  }
+}
+
+/* line 35, src/scss/_components/contacts/_main.scss */
 .c-main__label {
   padding-bottom: 22px;
 }
 
-/* line 32, src/scss/_components/contacts/_main.scss */
+@media screen and (max-width: 767px) {
+  /* line 35, src/scss/_components/contacts/_main.scss */
+  .c-main__label {
+    padding-bottom: 20px;
+  }
+}
+
+/* line 42, src/scss/_components/contacts/_main.scss */
 .c-main__title {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5367,7 +5389,7 @@ picture {
           align-items: flex-start;
 }
 
-/* line 36, src/scss/_components/contacts/_main.scss */
+/* line 46, src/scss/_components/contacts/_main.scss */
 .c-main__title p {
   padding-right: 69px;
   font-weight: bold;
@@ -5377,7 +5399,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 36, src/scss/_components/contacts/_main.scss */
+  /* line 46, src/scss/_components/contacts/_main.scss */
   .c-main__title p {
     font-size: -webkit-calc(38px + 72 * (100vw - 320px) / 1600);
     font-size: calc(38px + 72 * (100vw - 320px) / 1600);
@@ -5385,14 +5407,14 @@ picture {
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 36, src/scss/_components/contacts/_main.scss */
+  /* line 46, src/scss/_components/contacts/_main.scss */
   .c-main__title p {
     font-size: 110px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 36, src/scss/_components/contacts/_main.scss */
+  /* line 46, src/scss/_components/contacts/_main.scss */
   .c-main__title p {
     line-height: -webkit-calc(55px + 55 * (100vw - 320px) / 1600);
     line-height: calc(55px + 55 * (100vw - 320px) / 1600);
@@ -5400,13 +5422,20 @@ picture {
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 36, src/scss/_components/contacts/_main.scss */
+  /* line 46, src/scss/_components/contacts/_main.scss */
   .c-main__title p {
     line-height: 110px;
   }
 }
 
-/* line 44, src/scss/_components/contacts/_main.scss */
+@media screen and (max-width: 767px) {
+  /* line 46, src/scss/_components/contacts/_main.scss */
+  .c-main__title p {
+    padding-right: 40px;
+  }
+}
+
+/* line 57, src/scss/_components/contacts/_main.scss */
 .c-main__title img {
   position: relative;
   top: 55px;
@@ -5416,16 +5445,23 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 44, src/scss/_components/contacts/_main.scss */
+  /* line 57, src/scss/_components/contacts/_main.scss */
   .c-main__title img {
     max-width: 158px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 44, src/scss/_components/contacts/_main.scss */
+  /* line 57, src/scss/_components/contacts/_main.scss */
   .c-main__title img {
     max-width: 128px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 57, src/scss/_components/contacts/_main.scss */
+  .c-main__title img {
+    max-width: 100px;
   }
 }
 
@@ -5435,26 +5471,33 @@ picture {
   background-color: #000;
 }
 
-/* line 7, src/scss/_components/contacts/_forms.scss */
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/contacts/_forms.scss */
+  .forms {
+    padding-top: 40px;
+  }
+}
+
+/* line 10, src/scss/_components/contacts/_forms.scss */
 .forms__wrapper {
   padding-left: 63px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 7, src/scss/_components/contacts/_forms.scss */
+  /* line 10, src/scss/_components/contacts/_forms.scss */
   .forms__wrapper {
     padding-left: 40px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 7, src/scss/_components/contacts/_forms.scss */
+  /* line 10, src/scss/_components/contacts/_forms.scss */
   .forms__wrapper {
     padding-left: 0;
   }
 }
 
-/* line 17, src/scss/_components/contacts/_forms.scss */
+/* line 20, src/scss/_components/contacts/_forms.scss */
 .forms__desc {
   width: 100%;
   max-width: 812px;
@@ -5465,13 +5508,20 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 17, src/scss/_components/contacts/_forms.scss */
+  /* line 20, src/scss/_components/contacts/_forms.scss */
   .forms__desc {
     font-size: 22px;
   }
 }
 
-/* line 29, src/scss/_components/contacts/_forms.scss */
+@media screen and (max-width: 767px) {
+  /* line 20, src/scss/_components/contacts/_forms.scss */
+  .forms__desc {
+    font-size: 18px;
+  }
+}
+
+/* line 35, src/scss/_components/contacts/_forms.scss */
 .forms__form {
   position: relative;
   width: 100%;
@@ -5480,20 +5530,20 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 29, src/scss/_components/contacts/_forms.scss */
+  /* line 35, src/scss/_components/contacts/_forms.scss */
   .forms__form {
     padding-left: 40px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 29, src/scss/_components/contacts/_forms.scss */
+  /* line 35, src/scss/_components/contacts/_forms.scss */
   .forms__form {
     padding-left: 20px;
   }
 }
 
-/* line 41, src/scss/_components/contacts/_forms.scss */
+/* line 47, src/scss/_components/contacts/_forms.scss */
 .forms__form:before {
   content: '';
   position: absolute;
@@ -5504,7 +5554,7 @@ picture {
   background-color: #0E65F3;
 }
 
-/* line 51, src/scss/_components/contacts/_forms.scss */
+/* line 57, src/scss/_components/contacts/_forms.scss */
 .forms__form-field {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5517,7 +5567,25 @@ picture {
   padding-bottom: 36px;
 }
 
-/* line 56, src/scss/_components/contacts/_forms.scss */
+@media screen and (max-width: 767px) {
+  /* line 57, src/scss/_components/contacts/_forms.scss */
+  .forms__form-field {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-bottom: 20px;
+  }
+}
+
+/* line 68, src/scss/_components/contacts/_forms.scss */
 .forms__form-field--textarea {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
@@ -5526,12 +5594,26 @@ picture {
   padding-bottom: 53px;
 }
 
-/* line 61, src/scss/_components/contacts/_forms.scss */
+@media screen and (max-width: 767px) {
+  /* line 68, src/scss/_components/contacts/_forms.scss */
+  .forms__form-field--textarea {
+    padding-bottom: 40px;
+  }
+}
+
+/* line 76, src/scss/_components/contacts/_forms.scss */
 .forms__form-field--btn {
   padding-bottom: 201px;
 }
 
-/* line 66, src/scss/_components/contacts/_forms.scss */
+@media screen and (max-width: 767px) {
+  /* line 76, src/scss/_components/contacts/_forms.scss */
+  .forms__form-field--btn {
+    padding-bottom: 100px;
+  }
+}
+
+/* line 84, src/scss/_components/contacts/_forms.scss */
 .forms__form-text {
   font-weight: bold;
   font-size: 35px;
@@ -5539,27 +5621,36 @@ picture {
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 66, src/scss/_components/contacts/_forms.scss */
+  /* line 84, src/scss/_components/contacts/_forms.scss */
   .forms__form-text {
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 66, src/scss/_components/contacts/_forms.scss */
+  /* line 84, src/scss/_components/contacts/_forms.scss */
   .forms__form-text {
     font-size: 26px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 66, src/scss/_components/contacts/_forms.scss */
+  /* line 84, src/scss/_components/contacts/_forms.scss */
   .forms__form-text {
     font-size: 20px;
   }
 }
 
-/* line 81, src/scss/_components/contacts/_forms.scss */
+@media screen and (max-width: 767px) {
+  /* line 84, src/scss/_components/contacts/_forms.scss */
+  .forms__form-text {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+/* line 104, src/scss/_components/contacts/_forms.scss */
 .forms__form-input, .forms__form-textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -5681,7 +5772,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 81, src/scss/_components/contacts/_forms.scss */
+  /* line 104, src/scss/_components/contacts/_forms.scss */
   .forms__form-input, .forms__form-textarea {
     height: 60px;
     font-size: 22px;
@@ -5689,7 +5780,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 81, src/scss/_components/contacts/_forms.scss */
+  /* line 104, src/scss/_components/contacts/_forms.scss */
   .forms__form-input, .forms__form-textarea {
     width: 308px;
     margin-left: 15px;
@@ -5698,7 +5789,17 @@ picture {
   }
 }
 
-/* line 118, src/scss/_components/contacts/_forms.scss */
+@media screen and (max-width: 767px) {
+  /* line 104, src/scss/_components/contacts/_forms.scss */
+  .forms__form-input, .forms__form-textarea {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 147, src/scss/_components/contacts/_forms.scss */
 .forms__form-textarea {
   resize: none;
   width: 100%;
@@ -5709,13 +5810,20 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 118, src/scss/_components/contacts/_forms.scss */
+  /* line 147, src/scss/_components/contacts/_forms.scss */
   .forms__form-textarea {
     height: 202px;
   }
 }
 
-/* line 130, src/scss/_components/contacts/_forms.scss */
+@media screen and (max-width: 767px) {
+  /* line 147, src/scss/_components/contacts/_forms.scss */
+  .forms__form-textarea {
+    max-width: 100%;
+  }
+}
+
+/* line 162, src/scss/_components/contacts/_forms.scss */
 .forms__form-btn {
   outline: none;
   cursor: pointer;
@@ -5751,13 +5859,13 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 130, src/scss/_components/contacts/_forms.scss */
+  /* line 162, src/scss/_components/contacts/_forms.scss */
   .forms__form-btn {
     height: 100px;
   }
 }
 
-/* line 155, src/scss/_components/contacts/_forms.scss */
+/* line 187, src/scss/_components/contacts/_forms.scss */
 .forms__form-btn:after {
   content: '';
   position: absolute;
@@ -5777,7 +5885,7 @@ picture {
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
-/* line 168, src/scss/_components/contacts/_forms.scss */
+/* line 200, src/scss/_components/contacts/_forms.scss */
 .forms__form-btn:hover:after {
   -webkit-transform: translateX(-350%) skewX(-15deg);
       -ms-transform: translateX(-350%) skewX(-15deg);
@@ -5789,7 +5897,7 @@ picture {
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
-/* line 176, src/scss/_components/contacts/_forms.scss */
+/* line 208, src/scss/_components/contacts/_forms.scss */
 .forms__block {
   position: relative;
   width: 100%;
@@ -5799,13 +5907,20 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 176, src/scss/_components/contacts/_forms.scss */
+  /* line 208, src/scss/_components/contacts/_forms.scss */
   .forms__block {
     padding: 35px 35px 35px 100px;
   }
 }
 
-/* line 186, src/scss/_components/contacts/_forms.scss */
+@media screen and (max-width: 767px) {
+  /* line 208, src/scss/_components/contacts/_forms.scss */
+  .forms__block {
+    padding-left: 55px;
+  }
+}
+
+/* line 221, src/scss/_components/contacts/_forms.scss */
 .forms__block-text {
   width: 100%;
   max-width: 561px;
@@ -5816,10 +5931,17 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 186, src/scss/_components/contacts/_forms.scss */
+  /* line 221, src/scss/_components/contacts/_forms.scss */
   .forms__block-text {
     font-size: 22px;
     line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 221, src/scss/_components/contacts/_forms.scss */
+  .forms__block-text {
+    font-size: 18px;
   }
 }
 

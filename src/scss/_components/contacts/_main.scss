@@ -7,6 +7,10 @@
 	@include adaptive(1279) {
 		padding-top: 297px;
 	}
+	@include adaptive(767) {
+		padding-top: 231px;
+		padding-bottom: 40px;
+	}
 
 	&__wrapper {
 		padding-bottom: 231px;
@@ -23,10 +27,16 @@
 		@include adaptive(1279) {
 			padding-left: 40px;
 		}
+		@include adaptive(767) {
+			padding-left: 20px;
+		}
 	}
 
 	&__label {
 		padding-bottom: 22px;
+		@include adaptive(767) {
+			padding-bottom: 20px;
+		}
 	}
 
 	&__title {
@@ -39,6 +49,9 @@
 			color: #fff;
 			@include fluid(font-size, 320px, 1920px, 38px, 110px);
 			@include fluid(line-height, 320px, 1920px, 55px, 110px);
+			@include adaptive(767) {
+				padding-right: 40px;
+			}
 		}
 
 		img {
@@ -52,6 +65,9 @@
 			}
 			@include adaptive(1023) {
 				max-width: 128px;
+			}
+			@include adaptive(767) {
+				max-width: 100px;
 			}
 		}
 	}

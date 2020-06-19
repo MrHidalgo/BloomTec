@@ -17,6 +17,10 @@
 	@include adaptive(1023) {
 		padding-bottom: 189px;
 	}
+	@include adaptive(767) {
+		padding-top: 231px;
+		padding-bottom: 200px;
+	}
 
 	&:after {
 		content: '';
@@ -27,18 +31,25 @@
 		width: 100%;
 		height: 324px;
 		background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
+		@include adaptive(767) {
+			height: 200px;
+		}
 	}
 
 	&__label {
 		padding-bottom: 22px;
+		@include adaptive(767) {
+			padding-bottom: 20px;
+		}
 	}
 
 	&__title {
-		font-weight: bold;
-		font-size: 110px;
-		line-height: 110px;
-		text-align: left;
 		color: #fff;
+		@include adaptive(767) {
+			br {
+				display: none;
+			}
+		}
 	}
 }
 

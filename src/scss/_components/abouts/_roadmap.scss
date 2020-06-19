@@ -7,6 +7,10 @@
 		padding-top: 133px;
 		padding-bottom: 173px;
 	}
+	@include adaptive(767) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
 
 	&__wrapper {
 		padding-left: 63px;
@@ -19,6 +23,9 @@
 		padding-bottom: 68px;
 		@include adaptive(1023) {
 			padding-bottom: 48px;
+		}
+		@include adaptive(767) {
+			padding-bottom: 40px;
 		}
 	}
 
@@ -35,6 +42,10 @@
 		@include adaptive(1023) {
 			font-size: 20px;
 		}
+		@include adaptive(767) {
+			padding-bottom: 75px;
+			font-size: 18px;
+		}
 	}
 
 	&__img {
@@ -48,6 +59,9 @@
 		padding-bottom: 28px;
 		@include adaptive(1023) {
 			left: 0;
+		}
+		@include adaptive(767) {
+			display: none;
 		}
 	}
 
@@ -69,6 +83,9 @@
 
 		&-wrapper {
 			display: flex;
+			@include adaptive(767) {
+				flex-wrap: wrap;
+			}
 
 			> div {
 				width: 100%;
@@ -78,6 +95,14 @@
 						.roadmap__box {
 							padding-right: 0;
 						}
+					}
+				}
+
+				@include adaptive(767) {
+					max-width: 100%;
+
+					&:not(:last-of-type) {
+						padding-bottom: 20px;
 					}
 				}
 			}
@@ -110,6 +135,9 @@
 				background-color: #0e65f3;
 				@include adaptive(1279) {
 					width: 5px;
+				}
+				@include adaptive(767) {
+					height: 100%;
 				}
 			}
 		}

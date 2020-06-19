@@ -8,6 +8,9 @@
 	@include adaptive(1023) {
 		padding-top: 106px;
 	}
+	@include adaptive(767) {
+		padding-top: 100px;
+	}
 
 	&:after {
 		content: '';
@@ -24,10 +27,20 @@
 		z-index: 2;
 		position: relative;
 		padding-left: 63px;
+		@include adaptive(767) {
+			padding-left: 0;
+		}
 	}
 
 	&__title {
 		padding-bottom: 124px;
+		@include adaptive(767) {
+			padding-bottom: 75px;
+
+			br {
+				display: none;
+			}
+		}
 	}
 
 	&__box {
@@ -47,6 +60,11 @@
 				left: -63px;
 				width: calc(100% + 63px);
 			}
+			@include adaptive(767) {
+				left: 0;
+				flex-wrap: wrap;
+				width: 100%;
+			}
 
 			> div {
 				width: 100%;
@@ -54,6 +72,9 @@
 				padding-bottom: 73px;
 				@include adaptive(1023) {
 					max-width: calc(100% / 3);
+				}
+				@include adaptive(767) {
+					max-width: calc(100% / 2);
 				}
 			}
 		}
@@ -75,13 +96,16 @@
 		top: 48px;
 		width: 100%;
 		max-width: 1088px;
-		padding: 54px 0 52px 138px;
+		padding: 54px 20px 52px 138px;
 		background-color: #0e65f3;
 		@include adaptive(1365) {
-			padding: 34px 0 32px 100px;
+			padding: 34px 20px 32px 100px;
 		}
 		@include adaptive(1023) {
 			padding-left: 75px;
+		}
+		@include adaptive(767) {
+			padding-left: 55px;
 		}
 
 		&-text {
@@ -91,8 +115,14 @@
 			font-size: 24px;
 			line-height: 30px;
 			color: #fff;
-			@include adaptive(1023) {
+			@include adaptive(1279) {
 				font-size: 22px;
+			}
+			@include adaptive(1023) {
+				font-size: 20px;
+			}
+			@include adaptive(767) {
+				font-size: 16px;
 			}
 		}
 	}

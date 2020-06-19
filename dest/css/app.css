@@ -3395,7 +3395,14 @@ picture {
   }
 }
 
-/* line 12, src/scss/_components/common/_clients.scss */
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/common/_clients.scss */
+  .clients {
+    padding-top: 100px;
+  }
+}
+
+/* line 15, src/scss/_components/common/_clients.scss */
 .clients:after {
   content: '';
   z-index: 0;
@@ -3407,19 +3414,37 @@ picture {
   background-color: #fff;
 }
 
-/* line 23, src/scss/_components/common/_clients.scss */
+/* line 26, src/scss/_components/common/_clients.scss */
 .clients__wrapper {
   z-index: 2;
   position: relative;
   padding-left: 63px;
 }
 
-/* line 29, src/scss/_components/common/_clients.scss */
+@media screen and (max-width: 767px) {
+  /* line 26, src/scss/_components/common/_clients.scss */
+  .clients__wrapper {
+    padding-left: 0;
+  }
+}
+
+/* line 35, src/scss/_components/common/_clients.scss */
 .clients__title {
   padding-bottom: 124px;
 }
 
-/* line 34, src/scss/_components/common/_clients.scss */
+@media screen and (max-width: 767px) {
+  /* line 35, src/scss/_components/common/_clients.scss */
+  .clients__title {
+    padding-bottom: 75px;
+  }
+  /* line 40, src/scss/_components/common/_clients.scss */
+  .clients__title br {
+    display: none;
+  }
+}
+
+/* line 47, src/scss/_components/common/_clients.scss */
 .clients__box-wrapper {
   position: relative;
   right: 160px;
@@ -3436,7 +3461,7 @@ picture {
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 34, src/scss/_components/common/_clients.scss */
+  /* line 47, src/scss/_components/common/_clients.scss */
   .clients__box-wrapper {
     right: auto;
     margin-right: auto;
@@ -3444,7 +3469,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 34, src/scss/_components/common/_clients.scss */
+  /* line 47, src/scss/_components/common/_clients.scss */
   .clients__box-wrapper {
     left: -63px;
     width: -webkit-calc(100% + 63px);
@@ -3452,7 +3477,18 @@ picture {
   }
 }
 
-/* line 51, src/scss/_components/common/_clients.scss */
+@media screen and (max-width: 767px) {
+  /* line 47, src/scss/_components/common/_clients.scss */
+  .clients__box-wrapper {
+    left: 0;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+/* line 69, src/scss/_components/common/_clients.scss */
 .clients__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc(100% / 4);
@@ -3461,14 +3497,22 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 51, src/scss/_components/common/_clients.scss */
+  /* line 69, src/scss/_components/common/_clients.scss */
   .clients__box-wrapper > div {
     max-width: -webkit-calc(100% / 3);
     max-width: calc(100% / 3);
   }
 }
 
-/* line 61, src/scss/_components/common/_clients.scss */
+@media screen and (max-width: 767px) {
+  /* line 69, src/scss/_components/common/_clients.scss */
+  .clients__box-wrapper > div {
+    max-width: -webkit-calc(100% / 2);
+    max-width: calc(100% / 2);
+  }
+}
+
+/* line 82, src/scss/_components/common/_clients.scss */
 .clients__box-img {
   display: block;
   max-width: 100%;
@@ -3476,39 +3520,46 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 61, src/scss/_components/common/_clients.scss */
+  /* line 82, src/scss/_components/common/_clients.scss */
   .clients__box-img {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-/* line 72, src/scss/_components/common/_clients.scss */
+/* line 93, src/scss/_components/common/_clients.scss */
 .clients__block {
   z-index: 3;
   position: relative;
   top: 48px;
   width: 100%;
   max-width: 1088px;
-  padding: 54px 0 52px 138px;
+  padding: 54px 20px 52px 138px;
   background-color: #0e65f3;
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 72, src/scss/_components/common/_clients.scss */
+  /* line 93, src/scss/_components/common/_clients.scss */
   .clients__block {
-    padding: 34px 0 32px 100px;
+    padding: 34px 20px 32px 100px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 72, src/scss/_components/common/_clients.scss */
+  /* line 93, src/scss/_components/common/_clients.scss */
   .clients__block {
     padding-left: 75px;
   }
 }
 
-/* line 87, src/scss/_components/common/_clients.scss */
+@media screen and (max-width: 767px) {
+  /* line 93, src/scss/_components/common/_clients.scss */
+  .clients__block {
+    padding-left: 55px;
+  }
+}
+
+/* line 111, src/scss/_components/common/_clients.scss */
 .clients__block-text {
   width: 100%;
   max-width: 561px;
@@ -3518,10 +3569,24 @@ picture {
   color: #fff;
 }
 
-@media screen and (max-width: 1023px) {
-  /* line 87, src/scss/_components/common/_clients.scss */
+@media screen and (max-width: 1279px) {
+  /* line 111, src/scss/_components/common/_clients.scss */
   .clients__block-text {
     font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 111, src/scss/_components/common/_clients.scss */
+  .clients__block-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 111, src/scss/_components/common/_clients.scss */
+  .clients__block-text {
+    font-size: 16px;
   }
 }
 
@@ -4401,7 +4466,15 @@ picture {
   }
 }
 
-/* line 21, src/scss/_components/abouts/_main.scss */
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/abouts/_main.scss */
+  .a-main {
+    padding-top: 231px;
+    padding-bottom: 200px;
+  }
+}
+
+/* line 25, src/scss/_components/abouts/_main.scss */
 .a-main:after {
   content: '';
   z-index: 2;
@@ -4416,18 +4489,35 @@ picture {
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
 }
 
-/* line 32, src/scss/_components/abouts/_main.scss */
+@media screen and (max-width: 767px) {
+  /* line 25, src/scss/_components/abouts/_main.scss */
+  .a-main:after {
+    height: 200px;
+  }
+}
+
+/* line 39, src/scss/_components/abouts/_main.scss */
 .a-main__label {
   padding-bottom: 22px;
 }
 
-/* line 36, src/scss/_components/abouts/_main.scss */
+@media screen and (max-width: 767px) {
+  /* line 39, src/scss/_components/abouts/_main.scss */
+  .a-main__label {
+    padding-bottom: 20px;
+  }
+}
+
+/* line 46, src/scss/_components/abouts/_main.scss */
 .a-main__title {
-  font-weight: bold;
-  font-size: 110px;
-  line-height: 110px;
-  text-align: left;
   color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 49, src/scss/_components/abouts/_main.scss */
+  .a-main__title br {
+    display: none;
+  }
 }
 
 /* line 3, src/scss/_components/abouts/_mission.scss */
@@ -4452,7 +4542,22 @@ picture {
   }
 }
 
-/* line 14, src/scss/_components/abouts/_mission.scss */
+@media screen and (max-width: 767px) {
+  /* line 6, src/scss/_components/abouts/_mission.scss */
+  .mission__wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-bottom: 100px;
+  }
+}
+
+/* line 19, src/scss/_components/abouts/_mission.scss */
 .mission__wrapper:before {
   content: '';
   position: absolute;
@@ -4463,20 +4568,28 @@ picture {
   background-color: #0e65f3;
 }
 
-/* line 24, src/scss/_components/abouts/_mission.scss */
+/* line 29, src/scss/_components/abouts/_mission.scss */
 .mission__wrapper-left {
   width: 100%;
   max-width: 398px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 24, src/scss/_components/abouts/_mission.scss */
+  /* line 29, src/scss/_components/abouts/_mission.scss */
   .mission__wrapper-left {
     max-width: 40%;
   }
 }
 
-/* line 32, src/scss/_components/abouts/_mission.scss */
+@media screen and (max-width: 767px) {
+  /* line 29, src/scss/_components/abouts/_mission.scss */
+  .mission__wrapper-left {
+    max-width: 100%;
+    padding-top: 20px;
+  }
+}
+
+/* line 41, src/scss/_components/abouts/_mission.scss */
 .mission__wrapper-right {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -4489,20 +4602,28 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 32, src/scss/_components/abouts/_mission.scss */
+  /* line 41, src/scss/_components/abouts/_mission.scss */
   .mission__wrapper-right {
     padding-left: 63px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 32, src/scss/_components/abouts/_mission.scss */
+  /* line 41, src/scss/_components/abouts/_mission.scss */
   .mission__wrapper-right {
     padding-left: 40px;
   }
 }
 
-/* line 47, src/scss/_components/abouts/_mission.scss */
+@media screen and (max-width: 767px) {
+  /* line 41, src/scss/_components/abouts/_mission.scss */
+  .mission__wrapper-right {
+    padding-top: 0;
+    padding-left: 20px;
+  }
+}
+
+/* line 60, src/scss/_components/abouts/_mission.scss */
 .mission__img {
   overflow: hidden;
   position: relative;
@@ -4511,7 +4632,14 @@ picture {
   max-height: 827px;
 }
 
-/* line 55, src/scss/_components/abouts/_mission.scss */
+@media screen and (max-width: 767px) {
+  /* line 60, src/scss/_components/abouts/_mission.scss */
+  .mission__img {
+    height: 527px;
+  }
+}
+
+/* line 71, src/scss/_components/abouts/_mission.scss */
 .mission__img:hover img {
   -webkit-transform: scale(1.1) rotate(-0.5deg);
       -ms-transform: scale(1.1) rotate(-0.5deg);
@@ -4523,7 +4651,7 @@ picture {
   transition: transform 0.55s ease-in-out, -webkit-transform 0.55s ease-in-out;
 }
 
-/* line 61, src/scss/_components/abouts/_mission.scss */
+/* line 77, src/scss/_components/abouts/_mission.scss */
 .mission__img img {
   -webkit-transition: -webkit-transform 0.55s ease-in-out;
   transition: -webkit-transform 0.55s ease-in-out;
@@ -4532,19 +4660,26 @@ picture {
   transition: transform 0.55s ease-in-out, -webkit-transform 0.55s ease-in-out;
 }
 
-/* line 67, src/scss/_components/abouts/_mission.scss */
+/* line 83, src/scss/_components/abouts/_mission.scss */
 .mission__title {
   padding-bottom: 69px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 67, src/scss/_components/abouts/_mission.scss */
+  /* line 83, src/scss/_components/abouts/_mission.scss */
   .mission__title {
     padding-bottom: 49px;
   }
 }
 
-/* line 74, src/scss/_components/abouts/_mission.scss */
+@media screen and (max-width: 767px) {
+  /* line 83, src/scss/_components/abouts/_mission.scss */
+  .mission__title {
+    padding-bottom: 40px;
+  }
+}
+
+/* line 93, src/scss/_components/abouts/_mission.scss */
 .mission__desc {
   width: 100%;
   max-width: 775px;
@@ -4554,22 +4689,36 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 74, src/scss/_components/abouts/_mission.scss */
+  /* line 93, src/scss/_components/abouts/_mission.scss */
   .mission__desc {
     font-size: 22px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 74, src/scss/_components/abouts/_mission.scss */
+  /* line 93, src/scss/_components/abouts/_mission.scss */
   .mission__desc {
     font-size: 20px;
   }
 }
 
-/* line 87, src/scss/_components/abouts/_mission.scss */
+@media screen and (max-width: 767px) {
+  /* line 93, src/scss/_components/abouts/_mission.scss */
+  .mission__desc {
+    font-size: 18px;
+  }
+}
+
+/* line 109, src/scss/_components/abouts/_mission.scss */
 .mission__desc:not(:last-of-type) {
   padding-bottom: 38px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 109, src/scss/_components/abouts/_mission.scss */
+  .mission__desc:not(:last-of-type) {
+    padding-bottom: 40px;
+  }
 }
 
 /* line 3, src/scss/_components/abouts/_roadmap.scss */
@@ -4586,31 +4735,46 @@ picture {
   }
 }
 
-/* line 11, src/scss/_components/abouts/_roadmap.scss */
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+/* line 15, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__wrapper {
   padding-left: 63px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 11, src/scss/_components/abouts/_roadmap.scss */
+  /* line 15, src/scss/_components/abouts/_roadmap.scss */
   .roadmap__wrapper {
     padding-left: 0;
   }
 }
 
-/* line 18, src/scss/_components/abouts/_roadmap.scss */
+/* line 22, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__title {
   padding-bottom: 68px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 18, src/scss/_components/abouts/_roadmap.scss */
+  /* line 22, src/scss/_components/abouts/_roadmap.scss */
   .roadmap__title {
     padding-bottom: 48px;
   }
 }
 
-/* line 25, src/scss/_components/abouts/_roadmap.scss */
+@media screen and (max-width: 767px) {
+  /* line 22, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__title {
+    padding-bottom: 40px;
+  }
+}
+
+/* line 32, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__desc {
   width: 100%;
   max-width: 950px;
@@ -4621,20 +4785,28 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 25, src/scss/_components/abouts/_roadmap.scss */
+  /* line 32, src/scss/_components/abouts/_roadmap.scss */
   .roadmap__desc {
     font-size: 22px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 25, src/scss/_components/abouts/_roadmap.scss */
+  /* line 32, src/scss/_components/abouts/_roadmap.scss */
   .roadmap__desc {
     font-size: 20px;
   }
 }
 
-/* line 40, src/scss/_components/abouts/_roadmap.scss */
+@media screen and (max-width: 767px) {
+  /* line 32, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__desc {
+    padding-bottom: 75px;
+    font-size: 18px;
+  }
+}
+
+/* line 51, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__img {
   position: relative;
   left: -25px;
@@ -4647,13 +4819,20 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 40, src/scss/_components/abouts/_roadmap.scss */
+  /* line 51, src/scss/_components/abouts/_roadmap.scss */
   .roadmap__img {
     left: 0;
   }
 }
 
-/* line 54, src/scss/_components/abouts/_roadmap.scss */
+@media screen and (max-width: 767px) {
+  /* line 51, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__img {
+    display: none;
+  }
+}
+
+/* line 68, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4673,27 +4852,27 @@ picture {
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 54, src/scss/_components/abouts/_roadmap.scss */
+  /* line 68, src/scss/_components/abouts/_roadmap.scss */
   .roadmap__box {
     padding-right: 30px;
   }
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 54, src/scss/_components/abouts/_roadmap.scss */
+  /* line 68, src/scss/_components/abouts/_roadmap.scss */
   .roadmap__box {
     padding-right: 20px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 54, src/scss/_components/abouts/_roadmap.scss */
+  /* line 68, src/scss/_components/abouts/_roadmap.scss */
   .roadmap__box {
     padding-right: 10px;
   }
 }
 
-/* line 70, src/scss/_components/abouts/_roadmap.scss */
+/* line 84, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4701,7 +4880,16 @@ picture {
   display: flex;
 }
 
-/* line 73, src/scss/_components/abouts/_roadmap.scss */
+@media screen and (max-width: 767px) {
+  /* line 84, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__box-wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+/* line 90, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc(100% / 5);
@@ -4709,45 +4897,56 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 78, src/scss/_components/abouts/_roadmap.scss */
+  /* line 95, src/scss/_components/abouts/_roadmap.scss */
   .roadmap__box-wrapper > div:last-of-type .roadmap__box {
     padding-right: 0;
   }
 }
 
-/* line 86, src/scss/_components/abouts/_roadmap.scss */
+@media screen and (max-width: 767px) {
+  /* line 90, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__box-wrapper > div {
+    max-width: 100%;
+  }
+  /* line 104, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__box-wrapper > div:not(:last-of-type) {
+    padding-bottom: 20px;
+  }
+}
+
+/* line 111, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__box-head {
   padding-bottom: 32px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 86, src/scss/_components/abouts/_roadmap.scss */
+  /* line 111, src/scss/_components/abouts/_roadmap.scss */
   .roadmap__box-head {
     padding-bottom: 23px;
   }
 }
 
-/* line 93, src/scss/_components/abouts/_roadmap.scss */
+/* line 118, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__box-body {
   position: relative;
   padding-left: 45px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 93, src/scss/_components/abouts/_roadmap.scss */
+  /* line 118, src/scss/_components/abouts/_roadmap.scss */
   .roadmap__box-body {
     padding-left: 25px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 93, src/scss/_components/abouts/_roadmap.scss */
+  /* line 118, src/scss/_components/abouts/_roadmap.scss */
   .roadmap__box-body {
     padding-left: 15px;
   }
 }
 
-/* line 103, src/scss/_components/abouts/_roadmap.scss */
+/* line 128, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__box-body:before {
   content: '';
   position: absolute;
@@ -4759,13 +4958,20 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 103, src/scss/_components/abouts/_roadmap.scss */
+  /* line 128, src/scss/_components/abouts/_roadmap.scss */
   .roadmap__box-body:before {
     width: 5px;
   }
 }
 
-/* line 117, src/scss/_components/abouts/_roadmap.scss */
+@media screen and (max-width: 767px) {
+  /* line 128, src/scss/_components/abouts/_roadmap.scss */
+  .roadmap__box-body:before {
+    height: 100%;
+  }
+}
+
+/* line 145, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__box-title {
   text-transform: uppercase;
   font-weight: bold;
@@ -4775,32 +4981,32 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 117, src/scss/_components/abouts/_roadmap.scss */
+  /* line 145, src/scss/_components/abouts/_roadmap.scss */
   .roadmap__box-title {
     font-size: 22px;
   }
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 117, src/scss/_components/abouts/_roadmap.scss */
+  /* line 145, src/scss/_components/abouts/_roadmap.scss */
   .roadmap__box-title {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 117, src/scss/_components/abouts/_roadmap.scss */
+  /* line 145, src/scss/_components/abouts/_roadmap.scss */
   .roadmap__box-title {
     font-size: 18px;
   }
 }
 
-/* line 133, src/scss/_components/abouts/_roadmap.scss */
+/* line 161, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__box-title span {
   color: #0e65f3;
 }
 
-/* line 138, src/scss/_components/abouts/_roadmap.scss */
+/* line 166, src/scss/_components/abouts/_roadmap.scss */
 .roadmap__box-desc {
   font-size: 18px;
   line-height: 31px;
@@ -4808,7 +5014,7 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 138, src/scss/_components/abouts/_roadmap.scss */
+  /* line 166, src/scss/_components/abouts/_roadmap.scss */
   .roadmap__box-desc {
     font-size: 16px;
   }

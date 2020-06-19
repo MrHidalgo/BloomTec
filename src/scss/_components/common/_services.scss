@@ -9,6 +9,9 @@
 
 	&.services--wwd {
 		padding-top: 158px;
+		@include adaptive(767) {
+			padding-top: 100px;
+		}
 	}
 
 	&__bg {

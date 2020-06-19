@@ -14,6 +14,10 @@
 		padding-top: 287px;
 		padding-bottom: 115px;
 	}
+	@include adaptive(767) {
+		padding-top: 231px;
+		padding-bottom: 100px;
+	}
 
 	&:after {
 		content: '';
@@ -24,6 +28,9 @@
 		width: 100%;
 		height: 324px;
 		background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
+		@include adaptive(767) {
+			height: 100px;
+		}
 	}
 
 	&__wrapper {
@@ -33,10 +40,20 @@
 
 	&__label {
 		padding-bottom: 22px;
+		@include adaptive(767) {
+			padding-bottom: 20px;
+		}
 	}
 
 	&__title {
 		padding-bottom: 81px;
+		@include adaptive(767) {
+			padding-bottom: 55px;
+
+			br {
+				display: none;
+			}
+		}
 	}
 
 	&__btn {
@@ -52,6 +69,9 @@
 		@include adaptive(1023) {
 			max-width: 509px;
 			height: 100px;
+		}
+		@include adaptive(767) {
+			height: 75px;
 		}
 
 		&:after {
@@ -93,6 +113,9 @@
 			color: #fff;
 			@include adaptive(1023) {
 				font-size: 19px;
+			}
+			@include adaptive(767) {
+				font-size: 15px;
 			}
 		}
 

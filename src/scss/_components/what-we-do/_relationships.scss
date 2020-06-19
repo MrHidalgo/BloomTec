@@ -6,11 +6,18 @@
 	@include adaptive(1023) {
 		padding-top: 107px;
 	}
+	@include adaptive(767) {
+		padding-top: 75px;
+	}
 
 	&__wrapper {
 		position: relative;
 		padding-left: 63px;
 		padding-bottom: 161px;
+		@include adaptive(767) {
+			padding-left: 20px;
+			padding-bottom: 100px;
+		}
 
 		&:before {
 			content: '';
@@ -25,6 +32,13 @@
 
 	&__title {
 		padding-bottom: 86px;
+		@include adaptive(767) {
+			padding-bottom: 40px;
+
+			br {
+				display: none;
+			}
+		}
 	}
 
 	&__desc {
@@ -33,6 +47,9 @@
 		font-size: 24px;
 		line-height: 38px;
 		color: #fff;
+		@include adaptive(767) {
+			font-size: 18px;
+		}
 	}
 }
 

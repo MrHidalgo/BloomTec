@@ -9,7 +9,7 @@ PageList:
   ready: 90
 - file: what-we-do.html
   titleName: What We Do
-  ready: 55
+  ready: 90
 - file: brand-marketing.html
   titleName: WWD - Brand Marketing
   ready: 1

@@ -14,11 +14,22 @@
 	@include adaptive(1023) {
 		padding-top: 281px;
 	}
+	@include adaptive(767) {
+		padding-top: 231px;
+		padding-bottom: 55px;
+	}
 
 	&__title {
 		padding-bottom: 78px;
 		@include adaptive(1023) {
 			padding-bottom: 50px;
+		}
+		@include adaptive(767) {
+			padding-bottom: 30px;
+
+			br {
+				display: none;
+			}
 		}
 	}
 
@@ -31,6 +42,9 @@
 		}
 		@include adaptive(1023) {
 			font-size: 20px;
+		}
+		@include adaptive(767) {
+			font-size: 18px;
 		}
 	}
 }

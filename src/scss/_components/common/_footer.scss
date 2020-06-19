@@ -11,6 +11,9 @@
 	@include adaptive(1279) {
 		padding-top: 173px;
 	}
+	@include adaptive(767) {
+		padding-top: 150px;
+	}
 
 	&:after {
 		content: '';
@@ -59,6 +62,10 @@
 						padding-top: 100px;
 						padding-bottom: 30px;
 					}
+					@include adaptive(767) {
+						padding-top: 55px;
+						padding-bottom: 40px;
+					}
 				}
 			}
 		}
@@ -66,6 +73,9 @@
 		&-2 {
 			align-items: center;
 			padding-left: 8px;
+			@include adaptive(767) {
+				padding-left: 0;
+			}
 
 			.footer__wrapper {
 				&-left,
@@ -118,6 +128,9 @@
 		@include adaptive(1279) {
 			padding-bottom: 57px;
 		}
+		@include adaptive(767) {
+			padding-bottom: 40px;
+		}
 	}
 
 	&__subtitle {
@@ -130,6 +143,10 @@
 		@include adaptive(1279) {
 			font-size: 28px;
 		}
+		@include adaptive(767) {
+			font-size: 24px;
+			line-height: 50px;
+		}
 	}
 
 	&__heading {
@@ -140,6 +157,9 @@
 		color: #fff;
 		@include adaptive(1279) {
 			font-size: 22px;
+		}
+		@include adaptive(767) {
+			font-size: 20px;
 		}
 
 		&--light {
@@ -297,6 +317,10 @@
 			letter-spacing: 0.09em;
 			line-height: 42px;
 			color: #fff;
+			@include adaptive(767) {
+				font-size: 12px;
+				line-height: 38px;
+			}
 		}
 
 		svg {

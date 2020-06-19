@@ -8,6 +8,9 @@
 	@include adaptive(1023) {
 		padding-top: 106px;
 	}
+	@include adaptive(767) {
+		padding-top: 80px;
+	}
 
 	&__wrapper {
 		display: flex;
@@ -48,6 +51,9 @@
 
 	&__title {
 		padding-bottom: 80px;
+		@include adaptive(767) {
+			padding-bottom: 55px;
+		}
 	}
 
 	&__subtitle {
@@ -59,9 +65,16 @@
 		@include adaptive(1279) {
 			font-size: 30px;
 		}
+		@include adaptive(767) {
+			padding-bottom: 20px;
+			font-size: 26px;
+		}
 
 		&-2 {
 			padding-top: 25px;
+			@include adaptive(767) {
+				padding-bottom: 40px;
+			}
 		}
 	}
 
@@ -75,6 +88,9 @@
 		@include adaptive(1279) {
 			font-size: 20px;
 		}
+		@include adaptive(767) {
+			font-size: 18px;
+		}
 	}
 
 	&__tel {
@@ -85,6 +101,9 @@
 		color: #fff;
 		@include adaptive(1279) {
 			font-size: 38px;
+		}
+		@include adaptive(767) {
+			font-size: 30px;
 		}
 	}
 
@@ -101,6 +120,10 @@
 		@include adaptive(1023) {
 			top: 100px;
 		}
+		@include adaptive(767) {
+			top: 75px;
+			padding: 40px 20px 40px;
+		}
 
 		&-title {
 			padding-bottom: 31px;
@@ -112,11 +135,18 @@
 				padding-bottom: 24px;
 				font-size: 30px;
 			}
+			@include adaptive(767) {
+				padding-bottom: 20px;
+				font-size: 26px;
+			}
 
 			&-2 {
 				padding-bottom: 52px;
 				@include adaptive(1279) {
 					padding-bottom: 42px;
+				}
+				@include adaptive(767) {
+					padding-bottom: 40px;
 				}
 			}
 		}
@@ -130,6 +160,10 @@
 				padding-bottom: 30px;
 				font-size: 20px;
 			}
+			@include adaptive(767) {
+				font-size: 18px;
+				padding-bottom: 20px;
+			}
 		}
 
 		&-checkbox {
@@ -138,6 +172,9 @@
 			@include adaptive(1279) {
 				padding-left: 0;
 				padding-bottom: 17px;
+			}
+			@include adaptive(767) {
+				padding-bottom: 20px;
 			}
 
 			.c-checkbox {
@@ -165,6 +202,9 @@
 			@include adaptive(1279) {
 				width: 100%;
 				height: 103px;
+			}
+			@include adaptive(767) {
+				height: 83px;
 			}
 
 			&:after {
@@ -206,6 +246,9 @@
 				color: #fff;
 				@include adaptive(1279) {
 					font-size: 17px;
+				}
+				@include adaptive(767) {
+					font-size: 15px;
 				}
 			}
 

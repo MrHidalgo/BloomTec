@@ -3,6 +3,9 @@
 .portfolio {
 	overflow: hidden;
 	background-color: $c-black;
+	@include adaptive(767) {
+		padding-bottom: 40px;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -13,6 +16,9 @@
 		justify-content: space-between;
 		width: 100%;
 		height: calc(100% - 67px);
+		@include adaptive(767) {
+			height: calc(100% - 40px);
+		}
 
 		&-line {
 			width: 1px;
@@ -20,6 +26,11 @@
 			background-color: #4e4e4e;
 			@include adaptive(1023) {
 				&:last-of-type {
+					display: none;
+				}
+			}
+			@include adaptive(767) {
+				&:nth-of-type(2) {
 					display: none;
 				}
 			}
@@ -32,12 +43,18 @@
 		@include adaptive(1023) {
 			padding-top: 106px;
 		}
+		@include adaptive(767) {
+			padding-top: 80px;
+		}
 	}
 
 	&__content {
 		z-index: 2;
 		position: relative;
 		display: flex;
+		@include adaptive(767) {
+			flex-wrap: wrap;
+		}
 
 		&-left {
 			width: 100%;
@@ -47,6 +64,10 @@
 				max-width: (100% / 2);
 				padding-right: 0;
 			}
+			@include adaptive(767) {
+				max-width: 100%;
+				padding-bottom: 40px;
+			}
 		}
 
 		&-right {
@@ -54,6 +75,15 @@
 			min-width: 1px;
 			max-width: 100%;
 			padding-top: 12px;
+			@include adaptive(767) {
+				padding-top: 0;
+			}
+		}
+	}
+
+	&__label {
+		@include adaptive(767) {
+			padding-left: 20px;
 		}
 	}
 
@@ -62,6 +92,10 @@
 		padding-bottom: 382px;
 		@include adaptive(1365) {
 			padding-bottom: 338px;
+		}
+		@include adaptive(767) {
+			padding-left: 20px;
+			padding-bottom: 100px;
 		}
 	}
 
@@ -73,6 +107,9 @@
 			}
 			@include adaptive(1023) {
 				justify-content: center;
+			}
+			@include adaptive(767) {
+				justify-content: flex-end;
 			}
 		}
 	}
@@ -88,6 +125,9 @@
 	.swiper {
 		&-container {
 			padding-bottom: 67px;
+			@include adaptive(767) {
+				padding-bottom: 40px;
+			}
 		}
 
 		&-slide {
@@ -113,6 +153,9 @@
 			display: flex;
 			align-items: center;
 			justify-content: flex-start;
+			@include adaptive(767) {
+				justify-content: center;
+			}
 
 			&-bullet {
 				opacity: 1;

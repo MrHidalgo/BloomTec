@@ -16,6 +16,9 @@
 		@include adaptive(1279) {
 			font-size: 13px;
 		}
+		@include adaptive(767) {
+			font-size: 11px;
+		}
 	}
 
 	&__title,
@@ -68,6 +71,10 @@
 		line-height: 42px;
 		text-align: center;
 		color: #fff;
+		@include adaptive(767) {
+			font-size: 12px;
+			line-height: 38px;
+		}
 	}
 }
 
@@ -83,6 +90,10 @@
 		letter-spacing: 0.09em;
 		line-height: 42px;
 		color: #fff;
+		@include adaptive(767) {
+			font-size: 12px;
+			line-height: 38px;
+		}
 	}
 
 	svg {
@@ -180,6 +191,10 @@
 			color: #000;
 			@include adaptive(1279) {
 				font-size: 20px;
+			}
+			@include adaptive(767) {
+				padding-left: 40px;
+				font-size: 18px;
 			}
 
 			a {

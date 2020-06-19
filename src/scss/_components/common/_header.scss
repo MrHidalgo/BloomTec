@@ -7,6 +7,9 @@
 	left: 0;
 	width: 100%;
 	padding-top: 45px;
+	@include adaptive(767) {
+		padding-top: 20px;
+	}
 
 	&.header--light {
 		.header {
@@ -69,6 +72,9 @@
 
 		&-left {
 			padding-right: 30px;
+			@include adaptive(767) {
+				padding-right: 20px;
+			}
 		}
 
 		&-right {
@@ -82,6 +88,9 @@
 			}
 			@include adaptive(1279) {
 				padding-left: 0;
+			}
+			@include adaptive(767) {
+				padding-top: 5px;
 			}
 		}
 	}

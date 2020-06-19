@@ -11,6 +11,9 @@
 	&__btn {
 		display: flex;
 		max-width: 219px;
+		@include adaptive(767) {
+			max-width: 200px;
+		}
 	}
 
 	&__img {

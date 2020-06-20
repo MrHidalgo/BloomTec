@@ -5945,4 +5945,140 @@ picture {
   }
 }
 
+/* line 3, src/scss/_components/details/_details-main.scss */
+.details-main {
+  padding-top: 262px;
+}
+
+/* line 6, src/scss/_components/details/_details-main.scss */
+.details-main__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 9, src/scss/_components/details/_details-main.scss */
+.details-main__wrapper-left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-top: 118px;
+  padding-right: 20px;
+}
+
+/* line 17, src/scss/_components/details/_details-main.scss */
+.details-main__wrapper-right {
+  width: 672px;
+}
+
+/* line 22, src/scss/_components/details/_details-main.scss */
+.details-main__title {
+  color: #000;
+}
+
+/* line 26, src/scss/_components/details/_details-main.scss */
+.details-main__img {
+  position: relative;
+  width: 100%;
+  max-width: 672px;
+}
+
+/* line 31, src/scss/_components/details/_details-main.scss */
+.details-main__img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 3, src/scss/_components/details/_details-welcome.scss */
+.details-welcome {
+  padding-bottom: 100px;
+}
+
+/* line 6, src/scss/_components/details/_details-welcome.scss */
+.details-welcome__wrapper {
+  padding-left: 63px;
+}
+
+/* line 10, src/scss/_components/details/_details-welcome.scss */
+.details-welcome__title {
+  padding-bottom: 90px;
+}
+
+/* line 13, src/scss/_components/details/_details-welcome.scss */
+.details-welcome__title span {
+  color: #0e65f3;
+}
+
+/* line 18, src/scss/_components/details/_details-welcome.scss */
+.details-welcome__content {
+  padding-left: 489px;
+}
+
+/* line 22, src/scss/_components/details/_details-welcome.scss */
+.details-welcome__desc {
+  width: 100%;
+  max-width: 950px;
+  font-size: 24px;
+  line-height: 38px;
+  color: #000;
+}
+
+/* line 29, src/scss/_components/details/_details-welcome.scss */
+.details-welcome__desc:nth-of-type(1) {
+  padding-bottom: 40px;
+}
+
+/* line 33, src/scss/_components/details/_details-welcome.scss */
+.details-welcome__desc-wrapper {
+  padding-bottom: 63px;
+}
+
+/* line 38, src/scss/_components/details/_details-welcome.scss */
+.details-welcome__list {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 46px;
+}
+
+/* line 44, src/scss/_components/details/_details-welcome.scss */
+.details-welcome__list:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 9px;
+  height: 100%;
+  background-color: #0e65f3;
+}
+
+/* line 54, src/scss/_components/details/_details-welcome.scss */
+.details-welcome__list li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 58, src/scss/_components/details/_details-welcome.scss */
+.details-welcome__list p {
+  font-size: 18px;
+  line-height: 31px;
+  color: #8e8e8e;
+}
+
 /*# sourceMappingURL=maps/app.css.map */

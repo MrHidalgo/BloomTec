@@ -1,0 +1,41 @@
+// SECTION :: START
+
+.details-main {
+	padding-top: 262px;
+
+	&__wrapper {
+		display: flex;
+
+		&-left {
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+			padding-top: 118px;
+			padding-right: 20px;
+		}
+
+		&-right {
+			width: 672px;
+		}
+	}
+
+	&__title {
+		color: #000;
+	}
+
+	&__img {
+		position: relative;
+		width: 100%;
+		max-width: 672px;
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+// SECTION :: END

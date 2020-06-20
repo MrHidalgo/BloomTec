@@ -5998,7 +5998,7 @@ picture {
 
 /* line 3, src/scss/_components/details/_details-welcome.scss */
 .details-welcome {
-  padding-bottom: 100px;
+  padding-bottom: 176px;
 }
 
 /* line 6, src/scss/_components/details/_details-welcome.scss */
@@ -6079,6 +6079,41 @@ picture {
   font-size: 18px;
   line-height: 31px;
   color: #8e8e8e;
+}
+
+/* line 3, src/scss/_components/details/_details-description.scss */
+.details-description {
+  padding-bottom: 176px;
+}
+
+/* line 6, src/scss/_components/details/_details-description.scss */
+.details-description__wrapper {
+  padding-left: 63px;
+}
+
+/* line 10, src/scss/_components/details/_details-description.scss */
+.details-description__content {
+  padding-left: 489px;
+  padding-bottom: 176px;
+}
+
+/* line 14, src/scss/_components/details/_details-description.scss */
+.details-description__content:last-of-type {
+  padding-bottom: 0;
+}
+
+/* line 19, src/scss/_components/details/_details-description.scss */
+.details-description__title {
+  padding-bottom: 90px;
+}
+
+/* line 23, src/scss/_components/details/_details-description.scss */
+.details-description__desc {
+  width: 100%;
+  max-width: 950px;
+  font-size: 24px;
+  line-height: 38px;
+  color: #000;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

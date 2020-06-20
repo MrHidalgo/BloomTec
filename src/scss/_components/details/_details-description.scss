@@ -1,0 +1,32 @@
+// SECTION :: START
+
+.details-description {
+	padding-bottom: 176px;
+
+	&__wrapper {
+		padding-left: 63px;
+	}
+
+	&__content {
+		padding-left: 489px;
+		padding-bottom: 176px;
+
+		&:last-of-type {
+			padding-bottom: 0;
+		}
+	}
+
+	&__title {
+		padding-bottom: 90px;
+	}
+
+	&__desc {
+		width: 100%;
+		max-width: 950px;
+		font-size: 24px;
+		line-height: 38px;
+		color: #000;
+	}
+}
+
+// SECTION :: END

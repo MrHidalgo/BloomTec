@@ -12,19 +12,19 @@ PageList:
   ready: 90
 - file: brand-marketing.html
   titleName: WWD - Brand Marketing
-  ready: 1
+  ready: 33
 - file: social-media.html
   titleName: WWD - Social Media
-  ready: 1
+  ready: 33
 - file: website-design.html
   titleName: WWD - Website Design
-  ready: 1
+  ready: 33
 - file: graphic-design.html
   titleName: WWD - Graphic Design
-  ready: 1
+  ready: 33
 - file: content-marketing.html
   titleName: WWD - Content Marketing
-  ready: 1
+  ready: 33
 - file: contacts.html
   titleName: Contact Us
   ready: 90

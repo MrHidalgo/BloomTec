@@ -2,9 +2,19 @@
 
 .details-main {
 	padding-top: 262px;
+	@include adaptive(1023) {
+		padding-bottom: 40px;
+	}
+	@include adaptive(767) {
+		padding-top: 231px;
+		padding-bottom: 55px;
+	}
 
 	&__wrapper {
 		display: flex;
+		@include adaptive(767) {
+			flex-wrap: wrap;
+		}
 
 		&-left {
 			flex: 1;
@@ -12,21 +22,53 @@
 			max-width: 100%;
 			padding-top: 118px;
 			padding-right: 20px;
+			@include adaptive(1279) {
+				padding-top: 55px;
+			}
+			@include adaptive(767) {
+				padding-top: 0;
+				padding-right: 0;
+				padding-bottom: 40px;
+			}
 		}
 
 		&-right {
 			width: 672px;
+			@include adaptive(1439) {
+				width: 572px;
+			}
+			@include adaptive(1279) {
+				width: 472px;
+			}
+			@include adaptive(1023) {
+				width: 300px;
+			}
+			@include adaptive(767) {
+				width: 100%;
+			}
 		}
 	}
 
 	&__title {
+		font-weight: bold;
 		color: #000;
+		@include fluid(font-size, 320px, 1920px, 30px, 110px);
+		@include fluid(line-height, 320px, 1920px, 55px, 110px);
+		@include adaptive(767) {
+			br {
+				display: none;
+			}
+		}
 	}
 
 	&__img {
 		position: relative;
 		width: 100%;
 		max-width: 672px;
+		@include adaptive(767) {
+			margin-left: auto;
+			margin-right: auto;
+		}
 
 		img {
 			display: block;

@@ -2,15 +2,47 @@
 
 .details-list {
 	padding-bottom: 93px;
+	@include adaptive(1365) {
+		padding-bottom: 53px;
+	}
+	@include adaptive(1023) {
+		padding-bottom: 33px;
+	}
+	@include adaptive(767) {
+		font-size: 13px;
+	}
 
 	&__wrapper {
 		padding-left: 63px;
+		@include adaptive(1365) {
+			padding-left: 53px;
+		}
+		@include adaptive(1023) {
+			padding-left: 43px;
+		}
+		@include adaptive(767) {
+			padding-left: 0;
+		}
 	}
 
 	&__content {
 		display: flex;
-		padding-bottom: 83px;
 		padding-left: 360px;
+		padding-bottom: 83px;
+		@include adaptive(1365) {
+			padding-left: 260px;
+		}
+		@include adaptive(1279) {
+			padding-left: 160px;
+		}
+		@include adaptive(1023) {
+			padding-left: 60px;
+			padding-bottom: 63px;
+		}
+		@include adaptive(767) {
+			padding-left: 0;
+			padding-bottom: 43px;
+		}
 
 		&--pb0 {
 			padding-bottom: 0;
@@ -18,6 +50,9 @@
 
 		&-left {
 			width: 129px;
+			@include adaptive(767) {
+				width: 100px;
+			}
 		}
 
 		&-right {
@@ -25,11 +60,26 @@
 			min-width: 1px;
 			max-width: 100%;
 			padding-top: 15px;
+			@include adaptive(1279) {
+				padding-top: 10px;
+			}
+			@include adaptive(767) {
+				padding-top: 5px;
+			}
 		}
 	}
 
 	&__title {
 		padding-bottom: 90px;
+		@include adaptive(1365) {
+			padding-bottom: 75px;
+		}
+		@include adaptive(1023) {
+			padding-bottom: 55px;
+		}
+		@include adaptive(767) {
+			padding-bottom: 40px;
+		}
 
 		span {
 			color: #0e65f3;
@@ -42,6 +92,17 @@
 		font-size: 34px;
 		line-height: 30px;
 		color: #000;
+		@include adaptive(1279) {
+			font-size: 30px;
+		}
+		@include adaptive(1023) {
+			padding-bottom: 55px;
+			font-size: 26px;
+		}
+		@include adaptive(767) {
+			padding-bottom: 40px;
+			font-size: 22px;
+		}
 	}
 
 	ul {
@@ -55,9 +116,19 @@
 			font-size: 18px;
 			line-height: 31px;
 			color: #8e8e8e;
+			@include adaptive(767) {
+				padding-left: 30px;
+				font-size: 16px;
+			}
 
 			&:not(:last-of-type) {
 				margin-bottom: 24px;
+				@include adaptive(1023) {
+					margin-bottom: 15px;
+				}
+				@include adaptive(767) {
+					margin-bottom: 10px;
+				}
 			}
 
 			&:before {
@@ -68,6 +139,9 @@
 				width: 9px;
 				height: 100%;
 				background-color: #0e65f3;
+				@include adaptive(767) {
+					width: 7px;
+				}
 			}
 		}
 	}

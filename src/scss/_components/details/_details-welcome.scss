@@ -2,13 +2,44 @@
 
 .details-welcome {
 	padding-bottom: 176px;
+	@include adaptive(1365) {
+		padding-bottom: 136px;
+	}
+	@include adaptive(1023) {
+		padding-bottom: 96px;
+	}
+	@include adaptive(767) {
+		padding-bottom: 46px;
+	}
 
 	&__wrapper {
 		padding-left: 63px;
+		@include adaptive(1365) {
+			padding-left: 53px;
+		}
+		@include adaptive(1023) {
+			padding-left: 43px;
+		}
+		@include adaptive(767) {
+			padding-left: 0;
+		}
 	}
 
 	&__title {
 		padding-bottom: 90px;
+		@include adaptive(1365) {
+			padding-bottom: 75px;
+		}
+		@include adaptive(1023) {
+			padding-bottom: 55px;
+		}
+		@include adaptive(767) {
+			padding-bottom: 40px;
+
+			br {
+				display: none;
+			}
+		}
 
 		span {
 			color: #0e65f3;
@@ -17,6 +48,18 @@
 
 	&__content {
 		padding-left: 489px;
+		@include adaptive(1365) {
+			padding-left: 389px;
+		}
+		@include adaptive(1279) {
+			padding-left: 289px;
+		}
+		@include adaptive(1023) {
+			padding-left: 189px;
+		}
+		@include adaptive(767) {
+			padding-left: 0;
+		}
 	}
 
 	&__desc {
@@ -25,13 +68,28 @@
 		font-size: 24px;
 		line-height: 38px;
 		color: #000;
+		@include adaptive(1279) {
+			font-size: 22px;
+		}
+		@include adaptive(1023) {
+			font-size: 20px;
+		}
+		@include adaptive(767) {
+			font-size: 18px;
+		}
 
 		&:nth-of-type(1) {
 			padding-bottom: 40px;
+			@include adaptive(767) {
+				padding-bottom: 20px;
+			}
 		}
 
 		&-wrapper {
 			padding-bottom: 63px;
+			@include adaptive(767) {
+				padding-bottom: 40px;
+			}
 		}
 	}
 
@@ -40,6 +98,9 @@
 		display: flex;
 		flex-direction: column;
 		padding-left: 46px;
+		@include adaptive(767) {
+			padding-left: 40px;
+		}
 
 		&:before {
 			content: '';
@@ -49,6 +110,9 @@
 			width: 9px;
 			height: 100%;
 			background-color: #0e65f3;
+			@include adaptive(767) {
+				width: 7px;
+			}
 		}
 
 		li {
@@ -59,6 +123,9 @@
 			font-size: 18px;
 			line-height: 31px;
 			color: #8e8e8e;
+			@include adaptive(767) {
+				font-size: 16px;
+			}
 		}
 	}
 }

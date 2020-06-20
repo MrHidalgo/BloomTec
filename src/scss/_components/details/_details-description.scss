@@ -2,14 +2,47 @@
 
 .details-description {
 	padding-bottom: 176px;
+	@include adaptive(1365) {
+		padding-bottom: 136px;
+	}
+	@include adaptive(1023) {
+		padding-bottom: 96px;
+	}
+	@include adaptive(767) {
+		padding-bottom: 46px;
+	}
 
 	&__wrapper {
 		padding-left: 63px;
+		@include adaptive(1365) {
+			padding-left: 53px;
+		}
+		@include adaptive(1023) {
+			padding-left: 43px;
+		}
+		@include adaptive(767) {
+			padding-left: 0;
+		}
 	}
 
 	&__content {
 		padding-left: 489px;
 		padding-bottom: 176px;
+		@include adaptive(1365) {
+			padding-left: 389px;
+			padding-bottom: 136px;
+		}
+		@include adaptive(1279) {
+			padding-left: 289px;
+		}
+		@include adaptive(1023) {
+			padding-left: 189px;
+			padding-bottom: 96px;
+		}
+		@include adaptive(767) {
+			padding-left: 0;
+			padding-bottom: 46px;
+		}
 
 		&:last-of-type {
 			padding-bottom: 0;
@@ -18,6 +51,15 @@
 
 	&__title {
 		padding-bottom: 90px;
+		@include adaptive(1365) {
+			padding-bottom: 75px;
+		}
+		@include adaptive(1023) {
+			padding-bottom: 55px;
+		}
+		@include adaptive(767) {
+			padding-bottom: 40px;
+		}
 	}
 
 	&__desc {
@@ -26,6 +68,15 @@
 		font-size: 24px;
 		line-height: 38px;
 		color: #000;
+		@include adaptive(1279) {
+			font-size: 22px;
+		}
+		@include adaptive(1023) {
+			font-size: 20px;
+		}
+		@include adaptive(767) {
+			font-size: 18px;
+		}
 	}
 }
 

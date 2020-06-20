@@ -6116,4 +6116,106 @@ picture {
   color: #000;
 }
 
+/* line 3, src/scss/_components/details/_details-list.scss */
+.details-list {
+  padding-bottom: 93px;
+}
+
+/* line 6, src/scss/_components/details/_details-list.scss */
+.details-list__wrapper {
+  padding-left: 63px;
+}
+
+/* line 10, src/scss/_components/details/_details-list.scss */
+.details-list__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 83px;
+  padding-left: 360px;
+}
+
+/* line 15, src/scss/_components/details/_details-list.scss */
+.details-list__content--pb0 {
+  padding-bottom: 0;
+}
+
+/* line 19, src/scss/_components/details/_details-list.scss */
+.details-list__content-left {
+  width: 129px;
+}
+
+/* line 23, src/scss/_components/details/_details-list.scss */
+.details-list__content-right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-top: 15px;
+}
+
+/* line 31, src/scss/_components/details/_details-list.scss */
+.details-list__title {
+  padding-bottom: 90px;
+}
+
+/* line 34, src/scss/_components/details/_details-list.scss */
+.details-list__title span {
+  color: #0e65f3;
+}
+
+/* line 39, src/scss/_components/details/_details-list.scss */
+.details-list__subtitle {
+  padding-bottom: 67px;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 30px;
+  color: #000;
+}
+
+/* line 47, src/scss/_components/details/_details-list.scss */
+.details-list ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 51, src/scss/_components/details/_details-list.scss */
+.details-list ul li {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 46px;
+  font-size: 18px;
+  line-height: 31px;
+  color: #8e8e8e;
+}
+
+/* line 59, src/scss/_components/details/_details-list.scss */
+.details-list ul li:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
+/* line 63, src/scss/_components/details/_details-list.scss */
+.details-list ul li:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 9px;
+  height: 100%;
+  background-color: #0e65f3;
+}
+
 /*# sourceMappingURL=maps/app.css.map */

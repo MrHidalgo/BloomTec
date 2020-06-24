@@ -17,7 +17,12 @@ section#about.about
 			.about__wrapper-right
 
 				.about__img
-					img(src="img/img-about.jpg" srcset="img/img-about@2x.jpg 2x" alt="")
+					img.lazy(
+						src="img/img-about.jpg"
+						data-src="img/img-about.jpg"
+						data-srcset="img/img-about@2x.jpg 2x"
+						alt=""
+						)
 
 		.about__wrapper.about__wrapper-2
 

@@ -22,6 +22,10 @@
 		padding-bottom: 200px;
 	}
 
+	&.visible {
+		background-image: url('../img/img-about-main-bg@2x.png');
+	}
+
 	&:after {
 		content: '';
 		z-index: 2;

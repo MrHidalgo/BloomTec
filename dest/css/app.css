@@ -4482,6 +4482,11 @@ picture {
 }
 
 /* line 25, src/scss/_components/abouts/_main.scss */
+.a-main.visible {
+  background-image: url("../img/img-about-main-bg@2x.png");
+}
+
+/* line 29, src/scss/_components/abouts/_main.scss */
 .a-main:after {
   content: '';
   z-index: 2;
@@ -4497,31 +4502,31 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 25, src/scss/_components/abouts/_main.scss */
+  /* line 29, src/scss/_components/abouts/_main.scss */
   .a-main:after {
     height: 200px;
   }
 }
 
-/* line 39, src/scss/_components/abouts/_main.scss */
+/* line 43, src/scss/_components/abouts/_main.scss */
 .a-main__label {
   padding-bottom: 22px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 39, src/scss/_components/abouts/_main.scss */
+  /* line 43, src/scss/_components/abouts/_main.scss */
   .a-main__label {
     padding-bottom: 20px;
   }
 }
 
-/* line 46, src/scss/_components/abouts/_main.scss */
+/* line 50, src/scss/_components/abouts/_main.scss */
 .a-main__title {
   color: #fff;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 49, src/scss/_components/abouts/_main.scss */
+  /* line 53, src/scss/_components/abouts/_main.scss */
   .a-main__title br {
     display: none;
   }
@@ -5058,6 +5063,11 @@ picture {
 }
 
 /* line 22, src/scss/_components/what-we-do/_main.scss */
+.wwd-main.visible {
+  background-image: url("../img/img-wwd-main-bg@2x.png");
+}
+
+/* line 26, src/scss/_components/what-we-do/_main.scss */
 .wwd-main:after {
   content: '';
   z-index: 1;
@@ -5073,47 +5083,47 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 22, src/scss/_components/what-we-do/_main.scss */
+  /* line 26, src/scss/_components/what-we-do/_main.scss */
   .wwd-main:after {
     height: 100px;
   }
 }
 
-/* line 36, src/scss/_components/what-we-do/_main.scss */
+/* line 40, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 41, src/scss/_components/what-we-do/_main.scss */
+/* line 45, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__label {
   padding-bottom: 22px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 41, src/scss/_components/what-we-do/_main.scss */
+  /* line 45, src/scss/_components/what-we-do/_main.scss */
   .wwd-main__label {
     padding-bottom: 20px;
   }
 }
 
-/* line 48, src/scss/_components/what-we-do/_main.scss */
+/* line 52, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__title {
   padding-bottom: 81px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 48, src/scss/_components/what-we-do/_main.scss */
+  /* line 52, src/scss/_components/what-we-do/_main.scss */
   .wwd-main__title {
     padding-bottom: 55px;
   }
-  /* line 53, src/scss/_components/what-we-do/_main.scss */
+  /* line 57, src/scss/_components/what-we-do/_main.scss */
   .wwd-main__title br {
     display: none;
   }
 }
 
-/* line 59, src/scss/_components/what-we-do/_main.scss */
+/* line 63, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__btn {
   overflow: hidden;
   position: relative;
@@ -5136,7 +5146,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 59, src/scss/_components/what-we-do/_main.scss */
+  /* line 63, src/scss/_components/what-we-do/_main.scss */
   .wwd-main__btn {
     max-width: 509px;
     height: 100px;
@@ -5144,13 +5154,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 59, src/scss/_components/what-we-do/_main.scss */
+  /* line 63, src/scss/_components/what-we-do/_main.scss */
   .wwd-main__btn {
     height: 75px;
   }
 }
 
-/* line 77, src/scss/_components/what-we-do/_main.scss */
+/* line 81, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__btn:after {
   content: '';
   position: absolute;
@@ -5170,7 +5180,7 @@ picture {
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
-/* line 90, src/scss/_components/what-we-do/_main.scss */
+/* line 94, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__btn:hover:after {
   -webkit-transform: translateX(-350%) skewX(-15deg);
       -ms-transform: translateX(-350%) skewX(-15deg);
@@ -5182,7 +5192,7 @@ picture {
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
-/* line 95, src/scss/_components/what-we-do/_main.scss */
+/* line 99, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__btn:hover svg {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
@@ -5190,14 +5200,14 @@ picture {
           animation: hoverBtn ease-out 0.3s;
 }
 
-/* line 101, src/scss/_components/what-we-do/_main.scss */
+/* line 105, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__btn span,
 .wwd-main__btn svg {
   z-index: 2;
   position: relative;
 }
 
-/* line 107, src/scss/_components/what-we-do/_main.scss */
+/* line 111, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__btn span {
   text-transform: uppercase;
   font-weight: bold;
@@ -5208,20 +5218,20 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 107, src/scss/_components/what-we-do/_main.scss */
+  /* line 111, src/scss/_components/what-we-do/_main.scss */
   .wwd-main__btn span {
     font-size: 19px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 107, src/scss/_components/what-we-do/_main.scss */
+  /* line 111, src/scss/_components/what-we-do/_main.scss */
   .wwd-main__btn span {
     font-size: 15px;
   }
 }
 
-/* line 122, src/scss/_components/what-we-do/_main.scss */
+/* line 126, src/scss/_components/what-we-do/_main.scss */
 .wwd-main__btn svg {
   margin-left: 35px;
   stroke: #fff;

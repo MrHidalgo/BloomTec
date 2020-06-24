@@ -19,6 +19,10 @@
 		padding-bottom: 100px;
 	}
 
+	&.visible {
+		background-image: url('../img/img-wwd-main-bg@2x.png');
+	}
+
 	&:after {
 		content: '';
 		z-index: 1;

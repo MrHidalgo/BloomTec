@@ -49,11 +49,11 @@ section#services.services(class!= (pageClassName === 'p-whatWeDo')?'services--ww
 
 	.c-grid
 
-		p.services__label.c-label.c-label--dark
+		p.services__label.c-label.c-label--dark(data-aos="fade-up")
 			span.c-label__line
 			span Services
 
-		p.services__title.c-title.c-title--dark!= "360°of Digital<br>Services Expertise"
+		p.services__title.c-title.c-title--dark(data-aos="fade-up" data-aos-delay='100')!= "360°of Digital<br>Services Expertise"
 
 		.services__wrapper
 
@@ -67,7 +67,7 @@ section#services.services(class!= (pageClassName === 'p-whatWeDo')?'services--ww
 
 				.services__box-wrapper
 					-for(let i = 0; i < arrServices.length; i ++)
-						div
+						div(data-aos="fade-up")
 							.services__box
 								p.services__box-num!= arrServices[i].num
 								p.services__box-title!= arrServices[i].title

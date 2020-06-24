@@ -7,12 +7,12 @@ footer#footer.footer
 		.footer__wrapper.footer__wrapper-1
 			.footer__wrapper-left
 
-				p.c-label
+				p.c-label(data-aos="fade-up")
 					span CONTACT
-				p.footer__title.c-title!= "Let’s discuss your<br>future project"
+				p.footer__title.c-title(data-aos="fade-up")!= "Let’s discuss your<br>future project"
 
 				.footer__row
-					.footer__col.footer__col-1
+					.footer__col.footer__col-1(data-aos="fade-up")
 						p.footer__heading Morocco
 						p.footer__heading.footer__heading--light Rabat
 
@@ -27,7 +27,7 @@ footer#footer.footer
 								p.footer__details-title Address
 								p.footer__details-description Broadway #101A, Vancouver, BC V6H 1E3, Canada
 
-					.footer__col.footer__col-2
+					.footer__col.footer__col-2(data-aos="fade-up")
 						p.footer__heading BloomTec
 
 						.footer__line
@@ -50,9 +50,9 @@ footer#footer.footer
 
 			.footer__wrapper-right
 
-				p.footer__subtitle Let’s talk :)
+				p.footer__subtitle(data-aos="fade-up") Let’s talk :)
 
-				form.footer__form(action='' method='' autocomplete='off')
+				form.footer__form(action='' method='' autocomplete='off' data-aos="fade-up")
 					.footer__form-field
 						input.footer__form-input(type='text' name='let-from-name' id='let-from-name' required input-js)
 						label.footer__form-label(for='let-from-name') name
@@ -79,7 +79,7 @@ footer#footer.footer
 									+iconSVG('checkmark')
 								span!= "I have read and agreed to the <a href='#'>Terms and Conditions</a>"
 
-		.footer__wrapper.footer__wrapper-2
+		.footer__wrapper.footer__wrapper-2(data-aos="fade-in" data-aos-offset='0')
 			.footer__wrapper-left
 
 				.footer__sitemap

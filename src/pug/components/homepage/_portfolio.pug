@@ -15,20 +15,20 @@ section#portfolio.portfolio
 			.portfolio__content
 				.portfolio__content-left
 
-					p.portfolio__label.c-label
+					p.portfolio__label.c-label(data-aos="fade-up")
 						span.c-label__line
 						span Portfolio
 
-					p.portfolio__title.c-title Our best projects
+					p.portfolio__title.c-title(data-aos="fade-up" data-aos-delay='100') Our best projects
 
-					.portfolio__btn-wrapper.c-btn__wrapper
+					.portfolio__btn-wrapper.c-btn__wrapper(data-aos="fade-up")
 						a.portfolio__btn.c-btn.c-btn--light(href="#")
 							span Go to the pagE
 							+iconSVG('arrow-right')
 
 				.portfolio__content-right
 
-					.portfolio__slider
+					.portfolio__slider(data-aos="fade-up")
 
 						mixin swiperContent()
 							.swiper-slide.swiper-slide-1
